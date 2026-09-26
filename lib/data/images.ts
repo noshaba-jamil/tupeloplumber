@@ -7,8 +7,13 @@
 // Alt text describes what is actually visible, per the site's own image rules —
 // none of these are labeled as "our team" or "our work"; they're generic,
 // professional stock photography used to illustrate each service.
+//
+// Exception: `hero` uses a local image (app/hero.png) instead of Pexels.
 
-export type SiteImage = { url: string; alt: string; source: string };
+import type { StaticImageData } from "next/image";
+import heroImage from "../../app/hero.png";
+
+export type SiteImage = { url: string | StaticImageData; alt: string; source?: string };
 
 function pexels(id: number, alt: string): SiteImage {
   return {
@@ -19,7 +24,10 @@ function pexels(id: number, alt: string): SiteImage {
 }
 
 export const images: Record<string, SiteImage> = {
-  hero: pexels(29226620, "Plumber installing a radiator pipe with specialized tools"),
+  hero: {
+    url: heroImage,
+    alt: "Licensed plumber providing residential and commercial plumbing services in Tupelo, MS",
+  },
   "emergency-plumbing-tupelo-ms": pexels(32588548, "Plumber working on a pipe repair with a wrench"),
   "plumbing-repair-tupelo-ms": pexels(34927382, "Worker focused on a repair in a workshop setting"),
   "drain-cleaning-tupelo-ms": pexels(16509869, "Worker using a wrench on pipes in an indoor setting"),
