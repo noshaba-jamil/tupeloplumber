@@ -3,11 +3,11 @@
 
 export const SITE = {
   name: "Tupelo Plumber",
-  domain: "MyTupeloPlumber.com",
-  url: "https://mytupeloplumber.com",
+  domain: "plumberstupeloms.com",
+  url: "https://www.plumberstupeloms.com",
   phoneDisplay: "(662) 370-8439",
   phoneTel: "+16623708439",
-  email: "info@MyTupeloPlumber.com",
+  email: "plumberstupeloms17@gmail.com",
   addressLine1: "1427 Cliff Gookin Blvd",
   addressCity: "Tupelo",
   addressState: "MS",
