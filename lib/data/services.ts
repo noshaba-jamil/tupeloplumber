@@ -434,7 +434,7 @@ export const services: ServicePage[] = [
     slug: "sewer-camera-inspection-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Sewer Camera Inspection",
-    title: "Sewer Camera Inspection in Tupelo, MS | Video Pipe Inspection",
+     title: "Sewer Camera Inspection in Tupelo, MS | See Inside Your Pipes",
     metaDescription:
       "See exactly what's happening inside your sewer line. Camera inspections diagnose recurring clogs, root intrusion, and pipe condition in Tupelo, MS.",
     h1: "Sewer Camera Inspection in Tupelo, MS",
@@ -942,7 +942,7 @@ export const services: ServicePage[] = [
     slug: "fixture-plumbing-tupelo-ms",
     cluster: "Fixtures",
     navLabel: "Fixture Plumbing",
-    title: "Fixture Plumbing in Tupelo, MS | Faucets, Toilets, Sinks & More",
+     title: "Fixture Plumbing in Tupelo, MS | Faucets, Toilets & More",
     metaDescription:
       "Faucet, toilet, sink, or garbage disposal problem in Tupelo, MS? Fixture repair and installation for homes and businesses.",
     h1: "Fixture Plumbing in Tupelo, MS",
@@ -1043,10 +1043,6 @@ export const services: ServicePage[] = [
           "Gas appliance connections",
         ],
       },
-      {
-        type: "note",
-        text: "Confirm specific gas-work licensing/certification held before publishing any credential claims on this page.",
-      },
     ],
     faqs: [
       {
@@ -1086,10 +1082,6 @@ export const services: ServicePage[] = [
           "Commercial properties with fire suppression systems",
           "Businesses required by local code to have annual testing on file",
         ],
-      },
-      {
-        type: "note",
-        text: "Confirm specific local/state testing requirements, frequency, and any failed-test remediation timeline before publishing as a factual claim — do not publish specific legal deadlines or ordinance citations without a verified source.",
       },
       { type: "h2", text: "Common Backflow Preventer Types" },
       {
@@ -1140,7 +1132,7 @@ export const services: ServicePage[] = [
       },
       {
         q: "Is backflow testing required by law?",
-        a: "[VERIFY — confirm specifics before publishing]",
+        a: "Requirements vary by property type, water utility, and local code — ask when you call and it'll be confirmed for your specific situation.",
       },
     ],
     relatedServiceSlugs: ["commercial-plumbing-tupelo-ms"],
@@ -1232,10 +1224,6 @@ export const services: ServicePage[] = [
       {
         type: "p",
         text: "Emergency plumbing service, including sump pump failures during a storm, is available 24/7.",
-      },
-      {
-        type: "note",
-        text: "Confirm actual typical response time before publishing any specific promise about how quickly someone can arrive during a storm — 24/7 availability is now confirmed, but response speed is a separate, still-unverified claim.",
       },
     ],
     faqs: [

@@ -19,15 +19,16 @@ import { faqPageSchema, socialMeta } from "@/lib/schema";
 import { images } from "@/lib/data/images";
 import { Reveal } from "@/components/Reveal";
 
-const homeTitle = `Plumber in Tupelo, MS | ${SITE.name}`;
+const homePageTitle = "Plumber in Tupelo, MS | Local Plumbing Services";
+const homeFullTitle = `Plumber in Tupelo, MS | ${SITE.name}`;
 const homeDescription =
   "Plumbing services in Tupelo, MS — emergency repairs, drain cleaning, water heaters, and more. Serving Tupelo and nearby communities. Request service today.";
 
 export const metadata: Metadata = {
-  title: homeTitle,
+  title: homePageTitle,
   description: homeDescription,
   alternates: { canonical: "/" },
-  ...socialMeta(homeTitle, homeDescription, "/"),
+  ...socialMeta(homeFullTitle, homeDescription, "/"),
 };
 
 const clusters = ["Core Plumbing", "Drain & Sewer", "Water Heaters", "Leaks & Pipes", "Fixtures", "Specialized"];
@@ -79,10 +80,10 @@ export default function HomePage() {
             into a much larger job, or cause damage to floors, walls, and belongings.
           </p>
           <div className="flex flex-wrap items-center gap-4">
-            <a
+            
               href={`/${emergency.slug}`}
               className="rounded-full bg-red-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-red-700"
-            >
+            <a>
               Call the Emergency Line →
             </a>
             <a href="/plumbing-repair-tupelo-ms" className="text-sm font-semibold text-red-900 underline">

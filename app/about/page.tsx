@@ -6,14 +6,14 @@ import { SITE } from "@/lib/site";
 import { aboutPageSchema, breadcrumbSchema, socialMeta } from "@/lib/schema";
 import { images } from "@/lib/data/images";
 
-const title = `About | ${SITE.name}`;
+const pageTitle = "About Us | Local Plumbing Experts Tupelo, MS";
 const description = "Plumbing services for Tupelo, MS and the surrounding area, focused on clear diagnosis and straightforward recommendations.";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: pageTitle },
   description,
   alternates: { canonical: "/about" },
-  ...socialMeta(title, description, "/about"),
+  ...socialMeta(pageTitle, description, "/about"),
 };
 
 export default function AboutPage() {

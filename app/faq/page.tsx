@@ -5,14 +5,14 @@ import { faqCategories } from "@/lib/data/faq";
 import { SITE } from "@/lib/site";
 import { breadcrumbSchema, socialMeta } from "@/lib/schema";
 
-const title = `Frequently Asked Questions | ${SITE.name}`;
+const pageTitle = "Plumbing FAQs | Tupelo, MS Plumber Questions Answered";
 const description = "Common questions about plumbing service in Tupelo, MS — service areas, emergencies, scheduling, and more.";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: pageTitle },
   description,
   alternates: { canonical: "/faq" },
-  ...socialMeta(title, description, "/faq"),
+  ...socialMeta(pageTitle, description, "/faq"),
 };
 
 export default function FAQPage() {

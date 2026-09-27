@@ -7,16 +7,20 @@ import { locations } from "@/lib/data/locations";
 import ContactForm from "@/components/ContactForm";
 import { contactPageSchema, breadcrumbSchema, socialMeta } from "@/lib/schema";
 
-const title = `Contact | ${SITE.name}`;
-const description = "Contact Tupelo Plumber to request service, ask a question, or schedule an estimate in Tupelo, MS.";
+const pageTitle = "Call a Plumber in Tupelo, MS | Contact Us";
+const description =
+  "Contact Tupelo Plumber to request service, ask a question, or schedule an estimate in Tupelo, MS.";
 
 export const metadata: Metadata = {
-  title,
+  title: {
+    absolute: pageTitle,
+  },
   description,
-  alternates: { canonical: "/contact" },
-  ...socialMeta(title, description, "/contact"),
+  alternates: {
+    canonical: "/contact",
+  },
+  ...socialMeta(pageTitle, description, "/contact"),
 };
-
 export default function ContactPage() {
   const breadcrumbItems = [{ label: "Home", href: "/" }, { label: "Contact" }];
 

@@ -60,12 +60,7 @@ export function Hero({
               >
                 Call Now — {SITE.phoneDisplay}
               </a>
-              <a
-                href="/contact"
-                className="rounded-full border-2 border-white/40 px-7 py-3.5 text-base font-bold text-white backdrop-blur-sm transition hover:border-white hover:bg-white hover:text-black"
-              >
-                {primaryLabel}
-              </a>
+              
             </div>
           </div>
         </Reveal>

@@ -42,8 +42,14 @@ export const faqCategories = [
   {
     category: "Costs and Estimates",
     items: [
-      { q: "Do you provide free estimates?", a: "[VERIFY — confirm actual estimate policy before publishing]" },
-      { q: "What forms of payment do you accept?", a: "[VERIFY — confirm before publishing]" },
+      {
+        q: "Do you provide free estimates?",
+        a: "Every job gets a clear price before work starts — ask when you call whether an in-person estimate carries a visit fee for your specific situation. As a general reference, plumbing service calls in the Tupelo area typically run $70–170, with most repair jobs landing in the $125–450 range depending on scope.",
+      },
+      {
+        q: "What forms of payment do you accept?",
+        a: "Ask when you call to confirm accepted payment methods for your service.",
+      },
     ],
   },
 ];

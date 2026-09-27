@@ -26,12 +26,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
   const location = locations.find((l) => l.slug === params.slug);
   if (location) {
-    const title = `${location.h1} | ${SITE.name}`;
     return {
-      title,
+      title: location.h1,
       description: location.metaDescription,
       alternates: { canonical: `/${location.slug}` },
-      ...socialMeta(title, location.metaDescription, `/${location.slug}`),
+      ...socialMeta(location.title, location.metaDescription, `/${location.slug}`),
     };
   }
   return {};

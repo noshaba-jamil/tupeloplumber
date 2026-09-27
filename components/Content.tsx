@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import { ContentBlock, FAQItem, ServicePage } from "@/lib/types";
 import { LocationPage } from "@/lib/types";
 import { images } from "@/lib/data/images";
@@ -49,12 +48,12 @@ export function ContentBlocks({ blocks }: { blocks: ContentBlock[] }) {
           return (
             <p key={i} className="mb-4 text-sm text-muted">
               {block.text}{" "}
-              <a
+              
                 href={block.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-brand underline"
-              >
+             <a>
                 {block.source}
               </a>
               .
@@ -68,21 +67,19 @@ export function ContentBlocks({ blocks }: { blocks: ContentBlock[] }) {
 }
 
 export function FAQAccordion({ items }: { items: FAQItem[] }) {
-  const [open, setOpen] = useState<number | null>(0);
   return (
     <div className="divide-y divide-black/10 rounded-xl border border-black/10 bg-white">
       {items.map((item, i) => (
-        <div key={i}>
-          <button
-            className="flex w-full items-center justify-between px-5 py-4 text-left font-semibold text-navy"
-            onClick={() => setOpen(open === i ? null : i)}
-            aria-expanded={open === i}
-          >
+        <details key={i} open={i === 0} className="group px-5 py-4">
+          <summary className="flex cursor-pointer list-none items-center justify-between font-semibold text-navy">
             {item.q}
-            <span className="ml-4 text-brand">{open === i ? "−" : "+"}</span>
-          </button>
-          {open === i && <p className="px-5 pb-4 text-ink/80">{item.a}</p>}
-        </div>
+            <span className="ml-4 shrink-0 text-brand">
+              <span className="inline group-open:hidden">+</span>
+              <span className="hidden group-open:inline">−</span>
+            </span>
+          </summary>
+          <p className="pt-3 text-ink/80">{item.a}</p>
+        </details>
       ))}
     </div>
   );

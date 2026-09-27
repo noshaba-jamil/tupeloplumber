@@ -5,14 +5,15 @@ import { extendedCommunities } from "@/lib/data/locations";
 import { SITE } from "@/lib/site";
 import { breadcrumbSchema, socialMeta } from "@/lib/schema";
 
-const title = `Communities We Also Serve | ${SITE.name}`;
+const pageTitle = "Service Areas Near Tupelo, MS";
+const fullTitle = `${pageTitle} | ${SITE.name}`;
 const description = "Plumbing service extends to smaller communities throughout the greater Tupelo, MS area beyond the primary service towns.";
 
 export const metadata: Metadata = {
-  title,
+  title: pageTitle,
   description,
   alternates: { canonical: "/communities-we-also-serve" },
-  ...socialMeta(title, description, "/communities-we-also-serve"),
+  ...socialMeta(fullTitle, description, "/communities-we-also-serve"),
 };
 
 export default function CommunitiesPage() {

@@ -6,14 +6,15 @@ import { blogPosts } from "@/lib/data/blog";
 import { SITE } from "@/lib/site";
 import { breadcrumbSchema, blogCollectionSchema, socialMeta } from "@/lib/schema";
 
-const title = `Plumbing Guides & Articles | ${SITE.name}`;
+const pageTitle = "Tupelo, MS Plumbing Guides & Articles";
+const fullTitle = `${pageTitle} | ${SITE.name}`;
 const description = "Helpful plumbing guides covering water heaters, drains, sewer lines, and emergency plumbing for Tupelo, MS homeowners.";
 
 export const metadata: Metadata = {
-  title,
+  title: pageTitle,
   description,
   alternates: { canonical: "/blog" },
-  ...socialMeta(title, description, "/blog"),
+  ...socialMeta(fullTitle, description, "/blog"),
 };
 
 export default function BlogIndexPage() {

@@ -21,17 +21,18 @@ export type ServicePage = {
   ctaLabel: string;
 };
 
-export type LocationPage = {
+export interface LocationPage {
   slug: string;
-  tier: 1 | 2;
+  tier: number;
   name: string;
+  title: string;
   h1: string;
   metaDescription: string;
   distanceNote: string;
   reasoning: string;
   neighborSlugs: string[];
+  brief?: boolean;
   faqs: FAQItem[];
-  brief?: boolean; // true for Belden/Plantersville — intentionally shorter
 };
 
 export type BlogPost = {

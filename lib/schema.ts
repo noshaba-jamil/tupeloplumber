@@ -27,8 +27,6 @@ export function businessSchema() {
       postalCode: SITE.addressZip,
       addressCountry: "US",
     },
-    // Real phone/email, reused verbatim from the site's own NAP — not a separate,
-    // invented contact channel. No department/hours claimed since none are verified.
     contactPoint: {
       "@type": "ContactPoint",
       telephone: SITE.phoneTel,
@@ -72,11 +70,18 @@ export function rootSchemaGraph() {
   };
 }
 
+// Fix: Google requires every ListItem except the last to carry a real "item" URL.
+// A crumb with no href (e.g. an unlinked cluster label like "Drain & Sewer") can't
+// satisfy that, so it's dropped from the schema entirely rather than emitted with
+// a missing field. Positions are renumbered sequentially after filtering so there
+// are no gaps. This only affects the JSON-LD — the visible breadcrumb UI is untouched.
 export function breadcrumbSchema(items: { label: string; href?: string }[]) {
+  const validItems = items.filter((item, i) => item.href || i === items.length - 1);
+
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, i) => ({
+    itemListElement: validItems.map((item, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: item.label,
