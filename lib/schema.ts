@@ -106,6 +106,11 @@ export function faqPageSchema(items: FAQItem[]) {
 // and uses the page's actual intro/description — never a generic shared blurb.
 // `image` is only included when a real photo is actually displayed on that page —
 // never a placeholder or unrelated stock URL.
+//
+// img.url is now a static-import object (Next.js resolves local .webp imports to
+// { src, width, height } at build time), not a plain string — so img.url.src is the
+// actual hashed asset path (e.g. "/_next/static/media/abc123.webp"), and prepending
+// SITE.url turns it into the absolute URL schema.org's "image" field requires.
 export function servicePageSchema(service: ServicePage) {
   const img = images[service.slug];
   return {
@@ -120,7 +125,7 @@ export function servicePageSchema(service: ServicePage) {
       "@type": "City",
       name: "Tupelo, MS",
     },
-    ...(img ? { image: img.url } : {}),
+    ...(img ? { image: `${SITE.url}${img.url.src}` } : {}),
   };
 }
 
@@ -213,7 +218,7 @@ export function socialMeta(title: string, description: string, path: string) {
       type: "website" as const,
     },
     twitter: {
-      card: "summary" as const,
+      card: "summary_large_image" as const,
       title,
       description,
     },
