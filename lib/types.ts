@@ -21,18 +21,20 @@ export type ServicePage = {
   ctaLabel: string;
 };
 
-export interface LocationPage {
+export type LocationPage = {
   slug: string;
-  tier: number;
+  tier: 1 | 2;
   name: string;
-  title: string;
+  title: string; // SEO title
   h1: string;
   metaDescription: string;
   distanceNote: string;
   reasoning: string;
   neighborSlugs: string[];
-  brief?: boolean;
   faqs: FAQItem[];
+  localBody?: ContentBlock[]; // town-specific sections, rendered after the intro paragraph
+  featuredServiceSlugs?: string[]; // services most relevant to this town (falls back to first 8 services)
+  brief?: boolean; // true for intentionally shorter pages
 };
 
 export type BlogPost = {

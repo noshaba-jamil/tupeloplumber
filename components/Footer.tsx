@@ -89,7 +89,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-6 text-center text-xs text-white/40">
+      <div className="border-t border-white/10 py-6 text-center text-xs text-white/70">
         © {new Date().getFullYear()} {SITE.name}. Serving Tupelo, MS and the surrounding area.
       </div>
     </footer>

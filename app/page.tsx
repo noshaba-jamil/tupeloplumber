@@ -14,21 +14,21 @@ import {
 } from "@/components/HomeSections";
 import { services } from "@/lib/data/services";
 import { locations } from "@/lib/data/locations";
-import { SITE } from "@/lib/site";
 import { faqPageSchema, socialMeta } from "@/lib/schema";
 import { images } from "@/lib/data/images";
 import { Reveal } from "@/components/Reveal";
 
-const homePageTitle = "Plumber in Tupelo, MS | Local Plumbing Services";
-const homeFullTitle = `Plumber in Tupelo, MS | ${SITE.name}`;
+// "absolute" skips the layout's "| Tupelo Plumber" template, so the title stays short
+// and the site name isn't doubled or pushed past the ~60 character display limit.
+const homeTitle = "Plumber in Tupelo, MS | Local Plumbing Services";
 const homeDescription =
   "Plumbing services in Tupelo, MS — emergency repairs, drain cleaning, water heaters, and more. Serving Tupelo and nearby communities. Request service today.";
 
 export const metadata: Metadata = {
-  title: homePageTitle,
+  title: { absolute: homeTitle },
   description: homeDescription,
   alternates: { canonical: "/" },
-  ...socialMeta(homeFullTitle, homeDescription, "/"),
+  ...socialMeta(homeTitle, homeDescription, "/"),
 };
 
 const clusters = ["Core Plumbing", "Drain & Sewer", "Water Heaters", "Leaks & Pipes", "Fixtures", "Specialized"];
@@ -46,7 +46,10 @@ export default function HomePage() {
       q: "When should I call an emergency plumber?",
       a: "For active leaks, burst pipes, sewage backups, or a complete loss of water.",
     },
-    { q: "Do you serve residential and commercial customers?", a: "Yes." },
+    {
+      q: "Do you serve residential and commercial customers?",
+      a: "Yes. Tupelo Plumber handles plumbing for both homes and businesses, from everyday repairs, drains and water heaters to emergency calls. See Residential Plumbing and Commercial Plumbing for what each covers.",
+    },
     {
       q: "What areas near Tupelo do you serve?",
       a: "Tupelo and surrounding communities including Saltillo, Verona, Shannon, Mooreville, Guntown, Baldwyn, Fulton, Pontotoc, and Nettleton.",
@@ -83,7 +86,7 @@ export default function HomePage() {
             
               href={`/${emergency.slug}`}
               className="rounded-full bg-red-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-red-700"
-            <a>
+           <a>
               Call the Emergency Line →
             </a>
             <a href="/plumbing-repair-tupelo-ms" className="text-sm font-semibold text-red-900 underline">
@@ -143,7 +146,7 @@ export default function HomePage() {
           <SectionHeading kicker="What We Do">Plumbing Services in Tupelo, MS</SectionHeading>
           {clusters.map((cluster) => (
             <div key={cluster} className="mb-10 last:mb-0">
-              <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted">{cluster}</h3>
+              <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink/80">{cluster}</h3>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {services
                   .filter((s) => s.cluster === cluster)
@@ -208,14 +211,14 @@ export default function HomePage() {
             </table>
           </div>
 
-          <p className="mt-6 text-sm text-muted">
+          <p className="mt-6 text-sm text-ink/80">
             Service also extends to New Albany, Amory, Booneville, Mantachie, Okolona, Belden, Plantersville, and
             several smaller communities throughout the area.{" "}
             <a href="/communities-we-also-serve" className="font-medium text-brand">
               See all service areas →
             </a>
           </p>
-          <p className="mt-4 text-sm text-muted">
+          <p className="mt-4 text-sm text-ink/80">
             Also serving Joyner, Highland Circle, Barnes Crossing, West Jackson Street, South Tupelo/Eason
             Boulevard, and Downtown Tupelo within Tupelo itself.
           </p>

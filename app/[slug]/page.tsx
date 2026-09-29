@@ -101,7 +101,14 @@ function ServicePageView({ slug }: { slug: string }) {
 function LocationPageView({ slug }: { slug: string }) {
   const location = locations.find((l) => l.slug === slug)!;
   const neighbors = locations.filter((l) => location.neighborSlugs.includes(l.slug));
-  const linkedServices = services.slice(0, 8);
+
+  // Prefer this town's curated, relevant services; fall back to a general spread
+  // so brief:true towns (which have no featuredServiceSlugs) still show something.
+  const linkedServices = location.featuredServiceSlugs
+    ? location.featuredServiceSlugs
+        .map((slug) => services.find((s) => s.slug === slug))
+        .filter((s): s is (typeof services)[number] => Boolean(s))
+    : services.slice(0, 8);
 
   const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -121,9 +128,12 @@ function LocationPageView({ slug }: { slug: string }) {
       <div className="mx-auto max-w-6xl px-4 py-12">
         <p className="mb-6 max-w-prose leading-relaxed text-ink/90">{location.reasoning}</p>
 
+        {/* Town-specific content — real local context, unique per page */}
+        {location.localBody && <ContentBlocks blocks={location.localBody} />}
+
         {!location.brief && (
           <>
-            <h2 className="mb-3 font-display text-xl font-bold text-navy">
+            <h2 className="mb-3 mt-8 font-display text-xl font-bold text-navy">
               Plumbing Services in {location.name}
             </h2>
             <div className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

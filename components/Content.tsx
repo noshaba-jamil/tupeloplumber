@@ -34,16 +34,6 @@ export function ContentBlocks({ blocks }: { blocks: ContentBlock[] }) {
             </ul>
           );
         }
-        if (block.type === "note") {
-          return (
-            <p
-              key={i}
-              className="mb-4 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900"
-            >
-              <strong>Before publishing:</strong> {block.text}
-            </p>
-          );
-        }
         if (block.type === "citation") {
           return (
             <p key={i} className="mb-4 text-sm text-muted">
@@ -53,13 +43,14 @@ export function ContentBlocks({ blocks }: { blocks: ContentBlock[] }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-brand underline"
-             <a>
+              <a>
                 {block.source}
               </a>
               .
             </p>
           );
         }
+        // "note" blocks are intentionally never rendered: editorial reminders must not appear on the live site.
         return null;
       })}
     </div>
@@ -71,7 +62,7 @@ export function FAQAccordion({ items }: { items: FAQItem[] }) {
     <div className="divide-y divide-black/10 rounded-xl border border-black/10 bg-white">
       {items.map((item, i) => (
         <details key={i} open={i === 0} className="group px-5 py-4">
-          <summary className="flex cursor-pointer list-none items-center justify-between font-semibold text-navy">
+          <summary className="flex cursor-pointer list-none items-center justify-between font-semibold text-navy [&::-webkit-details-marker]:hidden">
             {item.q}
             <span className="ml-4 shrink-0 text-brand">
               <span className="inline group-open:hidden">+</span>
