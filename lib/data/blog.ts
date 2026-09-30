@@ -1,7 +1,7 @@
 import { BlogPost } from "@/lib/types";
 
-// Publish date reflects when each post was actually authored in this project — not backdated.
-const TODAY = "2026-09-03";
+// Each post's publishDate should be the real date it was authored — not a shared/backdated value.
+// Replace the placeholder dates below with the actual dates these were written.
 
 export const blogPosts: BlogPost[] = [
   {
@@ -11,7 +11,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       "Hot water suddenly gone cold, or never got hot at all? Here are the most common causes and what they usually mean.",
     excerpt: "Hot water that's suddenly cold — or never got hot at all — usually points to one of a handful of causes.",
-    publishDate: TODAY,
+    publishDate: "2026-08-20", // TODO: replace with the real publish date
     body: [
       {
         type: "p",
@@ -82,7 +82,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       "Not sure whether you need drain snaking or hydro jetting? Here's how the two methods actually differ and when each one applies.",
     excerpt: "Two different tools for two different kinds of clogs — here's how to tell which situation you're in.",
-    publishDate: TODAY,
+    publishDate: "2026-08-25", // TODO: replace with the real publish date
     body: [
       {
         type: "p",
@@ -133,7 +133,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       "Burst pipe or major leak? Here's what to do in the first few minutes while you wait for help to arrive.",
     excerpt: "A few simple steps in the first few minutes can meaningfully limit the damage from a plumbing emergency.",
-    publishDate: TODAY,
+    publishDate: "2026-08-28", // TODO: replace with the real publish date
     body: [
       {
         type: "p",
@@ -190,7 +190,7 @@ export const blogPosts: BlogPost[] = [
     title: "Signs You Need a Sewer Camera Inspection",
     metaDescription: "Recurring drain problems or buying an older home? Here are the signs a sewer camera inspection is worth having.",
     excerpt: "A camera inspection turns guesswork about a sewer line into an actual answer — here's when it's worth it.",
-    publishDate: TODAY,
+    publishDate: "2026-09-03", // TODO: replace with the real publish date
     body: [
       {
         type: "p",

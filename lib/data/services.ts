@@ -6,7 +6,7 @@ export const services: ServicePage[] = [
     slug: "plumbing-repair-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Plumbing Repair",
-    title: "Plumbing Repair in Tupelo, MS | Plumber for Common Repairs",
+    title: "Plumbing Repair in Tupelo, MS",
     metaDescription:
       "Plumbing problem in Tupelo, MS? From running toilets to minor leaks, get it diagnosed and repaired — or find the right specific service below.",
     h1: "Plumbing Repair in Tupelo, MS",
@@ -66,7 +66,7 @@ export const services: ServicePage[] = [
     slug: "emergency-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Emergency Plumbing",
-    title: "24/7 Emergency Plumber in Tupelo, MS | Urgent Plumbing Service",
+    title: "24/7 Emergency Plumber in Tupelo, MS",
     metaDescription:
       "Burst pipe, active leak, or sewage backup in Tupelo, MS? 24/7 emergency plumbing service for problems that can't wait.",
     h1: "24/7 Emergency Plumbing in Tupelo, MS",
@@ -123,7 +123,7 @@ export const services: ServicePage[] = [
     slug: "residential-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Residential Plumbing",
-    title: "Residential Plumbing in Tupelo, MS | Home Plumbing Services",
+    title: "Residential Plumbing in Tupelo, MS",
     metaDescription:
       "Plumbing services for homes in Tupelo, MS — from everyday repairs to water heaters, drains, and repiping.",
     h1: "Residential Plumbing in Tupelo, MS",
@@ -175,7 +175,7 @@ export const services: ServicePage[] = [
     slug: "commercial-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Commercial Plumbing",
-    title: "Commercial Plumbing in Tupelo, MS | Business Plumbing Services",
+    title: "Commercial Plumbing in Tupelo, MS",
     metaDescription:
       "Plumbing services for businesses and commercial properties in Tupelo, MS — repairs, drains, water heaters, and more, with minimal disruption.",
     h1: "Commercial Plumbing in Tupelo, MS",
@@ -223,10 +223,10 @@ export const services: ServicePage[] = [
     ctaLabel: "Need Plumbing Service for Your Business?",
   },
   {
-    slug: "new-construction-remodeling-plumbing-tupelo-ms",
+     slug: "new-construction-remodeling-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "New Construction & Remodeling",
-    title: "New Construction & Remodeling Plumbing in Tupelo, MS",
+    title: "New Construction & Remodeling Plumbing",
     metaDescription:
       "Planning a remodel or new build in Tupelo, MS? Plumbing for kitchens, bathrooms, additions, and new construction, coordinated with your project.",
     h1: "New Construction & Remodeling Plumbing in Tupelo, MS",
@@ -275,7 +275,7 @@ export const services: ServicePage[] = [
     slug: "drain-cleaning-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Drain Cleaning",
-    title: "Drain Cleaning in Tupelo, MS | Clogged Drain Repair",
+    title: "Drain Cleaning in Tupelo, MS",
     metaDescription:
       "Clogged or slow drain in Tupelo, MS? Fast, thorough drain cleaning for sinks, tubs, showers, and toilets.",
     h1: "Drain Cleaning in Tupelo, MS",
@@ -322,7 +322,7 @@ export const services: ServicePage[] = [
     slug: "hydro-jetting-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Hydro Jetting",
-    title: "Hydro Jetting in Tupelo, MS | High-Pressure Drain Cleaning",
+    title: "Hydro Jetting in Tupelo, MS",
     metaDescription:
       "Hydro jetting clears stubborn clogs, grease buildup, and root intrusion that standard drain cleaning can't fix. Serving Tupelo, MS.",
     h1: "Hydro Jetting in Tupelo, MS",
@@ -378,7 +378,7 @@ export const services: ServicePage[] = [
     slug: "sewer-line-repair-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Sewer Line Repair",
-    title: "Sewer Line Repair in Tupelo, MS | Repair & Replacement",
+    title: "Sewer Line Repair in Tupelo, MS",
     metaDescription:
       "Sewer backups, recurring clogs, or a damaged main line in Tupelo, MS? Sewer line repair and replacement, diagnosed correctly first.",
     h1: "Sewer Line Repair in Tupelo, MS",
@@ -434,7 +434,7 @@ export const services: ServicePage[] = [
     slug: "sewer-camera-inspection-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Sewer Camera Inspection",
-     title: "Sewer Camera Inspection in Tupelo, MS | See Inside Your Pipes",
+    title: "Sewer Camera Inspection in Tupelo, MS",
     metaDescription:
       "See exactly what's happening inside your sewer line. Camera inspections diagnose recurring clogs, root intrusion, and pipe condition in Tupelo, MS.",
     h1: "Sewer Camera Inspection in Tupelo, MS",
@@ -492,7 +492,7 @@ export const services: ServicePage[] = [
     slug: "water-heater-repair-tupelo-ms",
     cluster: "Water Heaters",
     navLabel: "Water Heater Repair",
-    title: "Water Heater Repair in Tupelo, MS | No Hot Water?",
+    title: "Water Heater Repair in Tupelo, MS",
     metaDescription:
       "No hot water or a water heater acting up? Get it diagnosed and repaired in Tupelo, MS. Common causes, what to check first, and when to call.",
     h1: "Water Heater Repair in Tupelo, MS",
@@ -556,7 +556,7 @@ export const services: ServicePage[] = [
     slug: "water-heater-installation-tupelo-ms",
     cluster: "Water Heaters",
     navLabel: "Water Heater Installation",
-    title: "Water Heater Installation in Tupelo, MS | New Water Heaters",
+    title: "Water Heater Installation in Tupelo, MS",
     metaDescription:
       "Replacing an old water heater or installing a new one in Tupelo, MS? Get help choosing the right size and type, then get it installed correctly.",
     h1: "Water Heater Installation in Tupelo, MS",
@@ -606,7 +606,7 @@ export const services: ServicePage[] = [
     slug: "tankless-water-heaters-tupelo-ms",
     cluster: "Water Heaters",
     navLabel: "Tankless Water Heaters",
-    title: "Tankless Water Heaters in Tupelo, MS | Installation & Repair",
+    title: "Tankless Water Heaters in Tupelo, MS",
     metaDescription:
       "Tankless water heater installation and repair in Tupelo, MS. Continuous hot water without a storage tank — see if it's the right fit.",
     h1: "Tankless Water Heaters in Tupelo, MS",
@@ -659,7 +659,7 @@ export const services: ServicePage[] = [
     slug: "leak-detection-tupelo-ms",
     cluster: "Leaks & Pipes",
     navLabel: "Leak Detection",
-    title: "Leak Detection in Tupelo, MS | Find Hidden Water Leaks",
+    title: "Leak Detection in Tupelo, MS",
     metaDescription:
       "Unexplained water bill, damp spots, or the sound of running water? Leak detection finds the source before it causes more damage.",
     h1: "Leak Detection in Tupelo, MS",
@@ -716,7 +716,7 @@ export const services: ServicePage[] = [
     slug: "slab-leak-repair-tupelo-ms",
     cluster: "Leaks & Pipes",
     navLabel: "Slab Leak Repair",
-    title: "Slab Leak Repair in Tupelo, MS | Foundation Leak Detection",
+    title: "Slab Leak Repair in Tupelo, MS",
     metaDescription:
       "Warm spot on the floor or water near your foundation in Tupelo, MS? Slab leak detection and repair — and how to tell it apart from a foundation issue.",
     h1: "Slab Leak Repair in Tupelo, MS",
@@ -772,7 +772,7 @@ export const services: ServicePage[] = [
     slug: "repiping-tupelo-ms",
     cluster: "Leaks & Pipes",
     navLabel: "Repiping",
-    title: "Repiping in Tupelo, MS | Whole-House Pipe Replacement",
+    title: "Repiping in Tupelo, MS",
     metaDescription:
       "Recurring leaks, low pressure, or discolored water can mean it's time to repipe, not just repair. Repiping services in Tupelo, MS.",
     h1: "Repiping in Tupelo, MS",
@@ -832,7 +832,7 @@ export const services: ServicePage[] = [
     slug: "water-line-services-tupelo-ms",
     cluster: "Leaks & Pipes",
     navLabel: "Water Line Services",
-    title: "Water Line Repair in Tupelo, MS | Water Line Replacement",
+    title: "Water Line Services in Tupelo, MS",
     metaDescription:
       "Whole-house pressure drop, a wet spot in the yard, or a rising water bill in Tupelo, MS? It may be the underground water line, not interior plumbing.",
     h1: "Water Line Services in Tupelo, MS",
@@ -888,7 +888,7 @@ export const services: ServicePage[] = [
     slug: "water-pressure-tupelo-ms",
     cluster: "Leaks & Pipes",
     navLabel: "Water Pressure",
-    title: "Low Water Pressure Repair in Tupelo, MS | Plumbing Fix",
+    title: "Low Water Pressure Repair in Tupelo, MS",
     metaDescription:
       "Low, dropping, or inconsistent water pressure in Tupelo, MS? Find the plumbing cause and get it fixed.",
     h1: "Low Water Pressure Repair in Tupelo, MS",
@@ -942,7 +942,7 @@ export const services: ServicePage[] = [
     slug: "fixture-plumbing-tupelo-ms",
     cluster: "Fixtures",
     navLabel: "Fixture Plumbing",
-     title: "Fixture Plumbing in Tupelo, MS | Faucets, Toilets & More",
+    title: "Fixture Plumbing in Tupelo, MS",
     metaDescription:
       "Faucet, toilet, sink, or garbage disposal problem in Tupelo, MS? Fixture repair and installation for homes and businesses.",
     h1: "Fixture Plumbing in Tupelo, MS",
@@ -1015,7 +1015,7 @@ export const services: ServicePage[] = [
     slug: "gas-line-services-tupelo-ms",
     cluster: "Specialized",
     navLabel: "Gas Line Services",
-    title: "Gas Line Services in Tupelo, MS | Repair & Installation",
+    title: "Gas Line Services in Tupelo, MS",
     metaDescription:
       "Gas line repair and installation in Tupelo, MS — for new appliances, extensions, and non-emergency gas line work.",
     h1: "Gas Line Services in Tupelo, MS",
@@ -1065,7 +1065,7 @@ export const services: ServicePage[] = [
     slug: "backflow-prevention-tupelo-ms",
     cluster: "Specialized",
     navLabel: "Backflow Prevention",
-    title: "Backflow Prevention in Tupelo, MS | Testing & Repair",
+    title: "Backflow Prevention in Tupelo, MS",
     metaDescription: "Backflow preventer testing and repair in Tupelo, MS — for compliance requirements or a malfunctioning device.",
     h1: "Backflow Prevention in Tupelo, MS",
     intro: "Backflow preventer testing and repair for homes and businesses.",
@@ -1142,7 +1142,7 @@ export const services: ServicePage[] = [
     slug: "water-filtration-tupelo-ms",
     cluster: "Specialized",
     navLabel: "Water Filtration",
-    title: "Water Filtration in Tupelo, MS | Water Treatment Systems",
+    title: "Water Filtration in Tupelo, MS",
     metaDescription: "Water tastes or smells off, or feels hard in Tupelo, MS? Whole-house filtration and treatment system installation and repair.",
     h1: "Water Filtration in Tupelo, MS",
     intro: "Water treatment and filtration installation and repair.",
@@ -1193,11 +1193,10 @@ export const services: ServicePage[] = [
     relatedServiceSlugs: ["repiping-tupelo-ms"],
     ctaLabel: "Dealing With Water Quality Issues?",
   },
-  {
-    slug: "sump-pump-tupelo-ms",
+  {    slug: "sump-pump-tupelo-ms",
     cluster: "Specialized",
     navLabel: "Sump Pump",
-    title: "Sump Pump Installation & Repair in Tupelo, MS",
+    title: "Sump Pump Installation & Repair",
     metaDescription: "Basement or crawl space water problems in Tupelo, MS? Sump pump installation and repair, including battery backup options.",
     h1: "Sump Pump Installation & Repair in Tupelo, MS",
     intro: "Keeping basements and crawl spaces dry, including battery backup options.",

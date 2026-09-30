@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Hero, CTABand } from "@/components/Common";
+import { Hero, CTABand, SectionHeading } from "@/components/Common";
 import { Breadcrumbs } from "@/components/Content";
 import { BlogCard } from "@/components/BlogCard";
 import { blogPosts } from "@/lib/data/blog";
@@ -40,6 +40,8 @@ export default function BlogIndexPage() {
             </span>
           ))}
         </div>
+
+        <SectionHeading>Latest Guides</SectionHeading>
 
         <div className="grid gap-6 md:grid-cols-2">
           {blogPosts.map((post, i) => (
