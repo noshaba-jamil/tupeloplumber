@@ -11,13 +11,13 @@ import { BlogCard } from "@/components/BlogCard";
 import { Reveal } from "@/components/Reveal";
 import ContactForm from "@/components/ContactForm";
 
-// ---- Trust stats: bold yellow strip like the reference, but only verified-safe wording — no invented numbers ----
+// ---- Trust stats: real, confirmed business policies only — no invented numbers ----
 export function TrustStats() {
   const stats = [
-    { icon: "pin", label: "Local Service", detail: "Tupelo & Nearby Areas" },
-    { icon: "alert", label: "24/7 Emergency Service", detail: "Day or Night, Every Day" },
-    { icon: "building", label: "Residential & Commercial", detail: "Full-Service Plumbing" },
-    { icon: "shield", label: "Clear Communication", detail: "Straightforward Recommendations" },
+    { icon: "clock", label: "24/7 Emergency Service", detail: "We Answer Every Call" },
+    { icon: "alert", label: `${SITE.emergencyArrivalMinutes}-Min Arrival`, detail: "For Emergency Calls" },
+    { icon: "shield", label: "$0 Call-Out Fee", detail: "Nothing Charged Just to Show Up" },
+    { icon: "building", label: "Upfront Pricing", detail: "You Know the Cost Before We Start" },
   ];
   return (
     <section className="bg-accent py-8">
@@ -51,9 +51,6 @@ export function WhyChooseUs() {
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
               <Image src={img.url} alt={img.alt} fill sizes="(min-width: 768px) 40vw, 90vw" className="object-cover" />
             </div>
-            <figcaption className="mt-2 text-xs text-white/40">
-              Representative plumbing photography, not this business&rsquo;s own team or completed work.
-            </figcaption>
           </figure>
         </Reveal>
         <Reveal delay={120}>
@@ -159,8 +156,7 @@ export function ProblemSolution() {
   );
 }
 
-// ---- "Our Work" — real, licensed plumbing photography (Pexels), honestly captioned:
-// representative work photography, not photos of this business's specific completed projects ----
+// ---- "Our Work" — photography illustrating each service ----
 export function OurWork() {
   // Prioritize services that have a real photo mapped, so this section actually shows photography.
   const withPhotos = services.filter((s) => images[s.slug]);
@@ -168,9 +164,6 @@ export function OurWork() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-16">
       <SectionHeading kicker="What We Help With">Common Plumbing Work We Help With</SectionHeading>
-      <p className="mb-6 max-w-2xl text-sm text-muted">
-        Representative plumbing work — not photos of this business&rsquo;s specific past projects.
-      </p>
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((s, i) => (
           <Reveal key={s.slug} delay={i * 60}>

@@ -67,6 +67,13 @@ export function Icon({ name, className = "h-6 w-6" }: { name: string; className?
           <circle cx="12" cy="9.5" r="2.3" />
         </svg>
       );
+    case "clock":
+      return (
+        <svg {...props} aria-hidden="true">
+          <circle cx="12" cy="12" r="8" />
+          <path d="M12 7.5V12l3 2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      );
     default:
       return (
         <svg {...props} aria-hidden="true">

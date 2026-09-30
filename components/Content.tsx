@@ -34,16 +34,16 @@ export function ContentBlocks({ blocks }: { blocks: ContentBlock[] }) {
             </ul>
           );
         }
-        if (block.type === "citation") {
+                if (block.type === "citation") {
           return (
             <p key={i} className="mb-4 text-sm text-muted">
               {block.text}{" "}
-              
+              <a
                 href={block.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-brand underline"
-              <a>
+              >
                 {block.source}
               </a>
               .

@@ -14,6 +14,12 @@ export const SITE = {
   addressZip: "38801",
   hoursLabel: "Open 24/7 — Emergency Service Available",
   is24_7: true,
+  // Confirmed real business policies — only add fields here once verified true.
+  hasNoCallOutFee: true,
+  hasUpfrontPricing: true,
+  answersAllCalls: true,
+  emergencyArrivalMinutes: 60,
+  hasSameDayService: true,
 } as const;
 
 export const fullAddress = `${SITE.addressLine1}, ${SITE.addressCity}, ${SITE.addressState} ${SITE.addressZip}`;

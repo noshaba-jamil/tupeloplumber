@@ -14,12 +14,11 @@ import {
 } from "@/components/HomeSections";
 import { services } from "@/lib/data/services";
 import { locations } from "@/lib/data/locations";
+import { SITE } from "@/lib/site";
 import { faqPageSchema, socialMeta } from "@/lib/schema";
 import { images } from "@/lib/data/images";
 import { Reveal } from "@/components/Reveal";
 
-// "absolute" skips the layout's "| Tupelo Plumber" template, so the title stays short
-// and the site name isn't doubled or pushed past the ~60 character display limit.
 const homeTitle = "Plumber in Tupelo, MS | Local Plumbing Services";
 const homeDescription =
   "Plumbing services in Tupelo, MS — emergency repairs, drain cleaning, water heaters, and more. Serving Tupelo and nearby communities. Request service today.";
@@ -40,11 +39,11 @@ export default function HomePage() {
   const homeFaqs = [
     {
       q: "What plumbing services are available in Tupelo, MS?",
-      a: "Everything from everyday repairs and emergency plumbing to drain and sewer services, water heaters, leak detection, repiping, and more.",
+      a: "Everything from everyday repairs and emergency plumbing to drain and sewer services, water heaters, leak detection, repiping, and more. See the full service list below, or visit a specific service page for details.",
     },
     {
       q: "When should I call an emergency plumber?",
-      a: "For active leaks, burst pipes, sewage backups, or a complete loss of water.",
+      a: "For active leaks, burst pipes, sewage backups, or a complete loss of water. See Emergency Plumbing for what to do while help is on the way.",
     },
     {
       q: "Do you serve residential and commercial customers?",
@@ -52,7 +51,11 @@ export default function HomePage() {
     },
     {
       q: "What areas near Tupelo do you serve?",
-      a: "Tupelo and surrounding communities including Saltillo, Verona, Shannon, Mooreville, Guntown, Baldwyn, Fulton, Pontotoc, and Nettleton.",
+      a: "Tupelo and surrounding communities including Saltillo, Verona, Shannon, Mooreville, Guntown, Baldwyn, Fulton, Pontotoc, and Nettleton, plus several smaller communities further out.",
+    },
+    {
+      q: "How do I request service?",
+      a: `Call ${SITE.phoneDisplay} directly, or use the contact form to describe the problem and request a callback.`,
     },
   ];
 
@@ -74,7 +77,7 @@ export default function HomePage() {
 
       <QuickContact />
 
-      {/* Emergency triage */}
+      {/* Emergency triage — brief mention + link only; full emergency content lives on the dedicated page */}
       <section className="border-b border-black/5 bg-red-50">
         <div className="mx-auto max-w-6xl px-4 py-10">
           <h2 className="mb-3 font-display text-xl font-bold text-red-900">Is This a Plumbing Emergency?</h2>
@@ -83,10 +86,10 @@ export default function HomePage() {
             into a much larger job, or cause damage to floors, walls, and belongings.
           </p>
           <div className="flex flex-wrap items-center gap-4">
-            
+            <a
               href={`/${emergency.slug}`}
               className="rounded-full bg-red-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-red-700"
-           <a>
+            >
               Call the Emergency Line →
             </a>
             <a href="/plumbing-repair-tupelo-ms" className="text-sm font-semibold text-red-900 underline">
@@ -96,7 +99,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Common problems routing */}
+      {/* Common problems routing — deliberately kept to one-line pointers per service; depth lives on each service page */}
       <section className="mx-auto max-w-6xl px-4 py-16">
         <SectionHeading kicker="Not Sure Where to Start?">Common Plumbing Problems in Tupelo Homes</SectionHeading>
         <p className="mb-6 max-w-2xl text-ink/80">
@@ -168,7 +171,40 @@ export default function HomePage() {
       <OurWork />
 
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <SectionHeading kicker="Why It Matters">Why a Licensed Local Plumber Matters</SectionHeading>
+        <SectionHeading kicker="How It Works">What Happens When You Call</SectionHeading>
+        <div className="grid gap-6 sm:grid-cols-3">
+          <div>
+            <p className="mb-1 font-display font-bold text-navy">1. Describe the Problem</p>
+            <p className="text-sm text-muted">
+              Call {SITE.phoneDisplay} or use the contact form — describing what&rsquo;s happening is enough to get
+              things moving, even without a specific diagnosis yet.
+            </p>
+          </div>
+          <div>
+            <p className="mb-1 font-display font-bold text-navy">2. Get an Accurate Diagnosis</p>
+            <p className="text-sm text-muted">
+              The actual cause gets identified before recommending a fix — not a guess based on symptoms alone.
+            </p>
+          </div>
+          <div>
+            <p className="mb-1 font-display font-bold text-navy">3. Same-Day or 24/7 for Emergencies</p>
+            <p className="text-sm text-muted">
+              Emergency plumbing is available around the clock, and same-day scheduling applies to routine repairs
+              too.
+            </p>
+          </div>
+        </div>
+        <p className="mt-6 max-w-2xl text-sm text-ink/80">
+          Curious what a typical service call costs? See the{" "}
+          <a href="/faq" className="font-medium text-brand underline">
+            Costs and Estimates section of the FAQ
+          </a>{" "}
+          for a general price range.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-16">
+        <SectionHeading kicker="Why It Matters">Why a Professional Diagnosis Matters</SectionHeading>
         <p className="max-w-3xl leading-relaxed text-ink/80">
           Some plumbing issues are genuinely simple — a plunger clears most everyday clogs, and a worn washer is an
           easy fix. Others aren&rsquo;t as simple as they look: a slow leak that seems minor can be a sign of pipe
