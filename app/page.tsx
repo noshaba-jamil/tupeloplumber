@@ -4,9 +4,6 @@ import { ServiceCard, AreaCard, FAQAccordion } from "@/components/Content";
 import {
   TrustStats,
   WhyChooseUs,
-  PlumbingEmergencies,
-  ProblemSolution,
-  OurWork,
   QuickContact,
   QuickLinks,
   LocationMap,
@@ -30,11 +27,20 @@ export const metadata: Metadata = {
   ...socialMeta(homeTitle, homeDescription, "/"),
 };
 
-const clusters = ["Core Plumbing", "Drain & Sewer", "Water Heaters", "Leaks & Pipes", "Fixtures", "Specialized"];
+const clusters = [
+  "Core Plumbing",
+  "Drain & Sewer",
+  "Water Heaters",
+  "Leaks & Pipes",
+  "Fixtures",
+  "Specialized",
+];
 
 export default function HomePage() {
   const tier1 = locations.filter((l) => l.tier === 1);
-  const emergency = services.find((s) => s.slug === "emergency-plumbing-tupelo-ms")!;
+  const emergency = services.find(
+    (s) => s.slug === "emergency-plumbing-tupelo-ms",
+  )!;
 
   const homeFaqs = [
     {
@@ -63,7 +69,9 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(homeFaqs)) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqPageSchema(homeFaqs)),
+        }}
       />
       <Hero
         eyebrow="24/7 Plumbing Services in Tupelo, MS"
@@ -75,15 +83,70 @@ export default function HomePage() {
 
       <TrustStats />
 
+      {/* At a Glance — single Who/What/Where/When answer block. This is the ONLY place this appears. */}
+      <section className="mx-auto max-w-6xl px-4 py-16">
+        <SectionHeading kicker="At a Glance">
+          Plumbing Service in Tupelo, MS
+        </SectionHeading>
+        <div className="grid gap-8 md:grid-cols-2">
+          <div>
+            <h3 className="mb-2 font-display font-bold text-navy">
+              Who We Serve
+            </h3>
+            <p className="text-ink/80">
+              Tupelo Plumber provides residential and commercial plumbing
+              service based in Tupelo, MS, covering everyday repairs,
+              emergencies, and the full range of drain, water heater, and
+              fixture work homes and businesses need over time.
+            </p>
+          </div>
+          <div>
+            <h3 className="mb-2 font-display font-bold text-navy">
+              What We Handle
+            </h3>
+            <p className="text-ink/80">
+              Everything from a running toilet or dripping faucet to burst
+              pipes, sewer line problems, water heater failures, and low water
+              pressure. The full service list is below — each service has its
+              own dedicated page with more detail.
+            </p>
+          </div>
+          <div>
+            <h3 className="mb-2 font-display font-bold text-navy">
+              Where We Work
+            </h3>
+            <p className="text-ink/80">
+              Tupelo and the surrounding Lee County area, including Saltillo,
+              Verona, Shannon, Mooreville, Guntown, Baldwyn, Fulton, Pontotoc,
+              and Nettleton, plus several smaller communities further out. See
+              the full service area list below.
+            </p>
+          </div>
+          <div>
+            <h3 className="mb-2 font-display font-bold text-navy">
+              When We're Available
+            </h3>
+            <p className="text-ink/80">
+              Emergency plumbing service is available 24/7, including nights,
+              weekends, and holidays. Routine repairs can typically be scheduled
+              same-day.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <QuickContact />
 
-      {/* Emergency triage — brief mention + link only; full emergency content lives on the dedicated page */}
+      {/* Emergency — brief introduction + link ONLY. The dedicated emergency page owns this intent. */}
       <section className="border-b border-black/5 bg-red-50">
         <div className="mx-auto max-w-6xl px-4 py-10">
-          <h2 className="mb-3 font-display text-xl font-bold text-red-900">Is This a Plumbing Emergency?</h2>
+          <h2 className="mb-3 font-display text-xl font-bold text-red-900">
+            Is This a Plumbing Emergency?
+          </h2>
           <p className="mb-4 max-w-2xl text-red-900/80">
-            A burst pipe, an active leak, or a sewage backup needs attention right away — waiting can turn a repair
-            into a much larger job, or cause damage to floors, walls, and belongings.
+            A burst pipe, an active leak, or a sewage backup needs attention
+            right away — waiting can turn a repair into a much larger job, or
+            cause damage to floors, walls, and belongings.
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <a
@@ -92,64 +155,113 @@ export default function HomePage() {
             >
               Call the Emergency Line →
             </a>
-            <a href="/plumbing-repair-tupelo-ms" className="text-sm font-semibold text-red-900 underline">
+            <a
+              href="/plumbing-repair-tupelo-ms"
+              className="text-sm font-semibold text-red-900 underline"
+            >
               Something that can be scheduled instead? See Plumbing Repair →
             </a>
           </div>
         </div>
       </section>
 
-      {/* Common problems routing — deliberately kept to one-line pointers per service; depth lives on each service page */}
+      {/* Common Plumbing Problems — symptom → service diagnostic gateway. Kept short per-item. */}
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <SectionHeading kicker="Not Sure Where to Start?">Common Plumbing Problems in Tupelo Homes</SectionHeading>
+        <SectionHeading kicker="Not Sure Where to Start?">
+          Common Plumbing Problems in Tupelo Homes
+        </SectionHeading>
         <p className="mb-6 max-w-2xl text-ink/80">
-          A few issues account for most plumbing calls — knowing which category a problem falls into gets you to the
-          right page faster.
+          A few issues account for most plumbing calls — knowing which category
+          a problem falls into gets you to the right page faster.
         </p>
         <ul className="space-y-3 text-ink/90">
           <li>
-            <strong>Drains that clog repeatedly in the same spot</strong> usually mean buildup along the pipe wall, not
-            just a single blockage — see <a href="/drain-cleaning-tupelo-ms" className="text-brand underline">Drain Cleaning</a> and{" "}
-            <a href="/hydro-jetting-tupelo-ms" className="text-brand underline">Hydro Jetting</a>.
+            <strong>Drains that clog repeatedly in the same spot</strong>{" "}
+            usually mean buildup along the pipe wall, not just a single blockage
+            — see{" "}
+            <a
+              href="/drain-cleaning-tupelo-ms"
+              className="text-brand underline"
+            >
+              Drain Cleaning
+            </a>{" "}
+            and{" "}
+            <a href="/hydro-jetting-tupelo-ms" className="text-brand underline">
+              Hydro Jetting
+            </a>
+            .
           </li>
           <li>
-            <strong>No hot water, or water that&rsquo;s lukewarm and inconsistent</strong>, is almost always a water
-            heater issue — see <a href="/water-heater-repair-tupelo-ms" className="text-brand underline">Water Heater Repair</a>.
+            <strong>No hot water, or water that&rsquo;s lukewarm and inconsistent</strong>, often points to a water
+heater problem — see <a href="/water-heater-repair-tupelo-ms" className="text-brand underline">Water Heater Repair</a>.
+            
+            .
           </li>
           <li>
-            <strong>A rising water bill with no obvious cause</strong> often points to a hidden leak — see{" "}
-            <a href="/leak-detection-tupelo-ms" className="text-brand underline">Leak Detection</a>.
+            <strong>A rising water bill with no obvious cause</strong> often
+            points to a hidden leak — see{" "}
+            <a
+              href="/leak-detection-tupelo-ms"
+              className="text-brand underline"
+            >
+              Leak Detection
+            </a>
+            .
           </li>
           <li>
-            <strong>Multiple drains backing up at once</strong>, or sewage odor in the yard, usually means the main
-            sewer line — see <a href="/sewer-line-repair-tupelo-ms" className="text-brand underline">Sewer Line Repair</a>.
+            <strong>Multiple drains backing up at once</strong>, or sewage odor
+            in the yard, usually means the main sewer line — see{" "}
+            <a
+              href="/sewer-line-repair-tupelo-ms"
+              className="text-brand underline"
+            >
+              Sewer Line Repair
+            </a>
+            .
           </li>
           <li>
-            <strong>Leaks that show up in different places over time</strong>, or discolored water, often mean the pipe
-            material itself is aging out — see <a href="/repiping-tupelo-ms" className="text-brand underline">Repiping</a>.
+            <strong>Leaks that show up in different places over time</strong>, or discolored water, can indicate the pipe
+material itself is aging out — see <a href="/repiping-tupelo-ms" className="text-brand underline">Repiping</a>.
+            
           </li>
           <li>
-            <strong>Weak or fluctuating water pressure</strong> can come from several different causes — see{" "}
-            <a href="/water-pressure-tupelo-ms" className="text-brand underline">Low Water Pressure Repair</a>.
+            <strong>Weak or fluctuating water pressure</strong> can come from
+            several different causes — see{" "}
+            <a
+              href="/water-pressure-tupelo-ms"
+              className="text-brand underline"
+            >
+              Low Water Pressure Repair
+            </a>
+            .
           </li>
         </ul>
         <p className="mt-6 text-sm text-muted">
           If none of these match what you&rsquo;re seeing,{" "}
-          <a href="/plumbing-repair-tupelo-ms" className="font-medium text-brand">
+          <a
+            href="/plumbing-repair-tupelo-ms"
+            className="font-medium text-brand"
+          >
             Plumbing Repair
           </a>{" "}
-          is the right starting point — or call and describe what&rsquo;s happening.
+          is the right starting point — or call and describe what&rsquo;s
+          happening.
         </p>
       </section>
 
       <WhyChooseUs />
 
+      {/* Plumbing Services — the ONE comprehensive service grid on this page. PlumbingEmergencies and OurWork, which duplicated this list, are removed. */}
       <section id="services" className="bg-surface py-16">
         <div className="mx-auto max-w-6xl px-4">
-          <SectionHeading kicker="What We Do">Plumbing Services in Tupelo, MS</SectionHeading>
+          <SectionHeading kicker="What We Do">
+            Plumbing Services in Tupelo, MS
+          </SectionHeading>
           {clusters.map((cluster) => (
             <div key={cluster} className="mb-10 last:mb-0">
-              <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink/80">{cluster}</h3>
+              <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink/80">
+                {cluster}
+              </h3>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {services
                   .filter((s) => s.cluster === cluster)
@@ -164,33 +276,39 @@ export default function HomePage() {
         </div>
       </section>
 
-      <PlumbingEmergencies />
-
-      <ProblemSolution />
-
-      <OurWork />
-
+      {/* How It Works — the ONE process explanation on this page. Includes the "Before You Call" prep items inline instead of as a separate section, since they're closely related and don't need their own heading. */}
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <SectionHeading kicker="How It Works">What Happens When You Call</SectionHeading>
+        <SectionHeading kicker="How It Works">
+          What Happens When You Call
+        </SectionHeading>
         <div className="grid gap-6 sm:grid-cols-3">
           <div>
-            <p className="mb-1 font-display font-bold text-navy">1. Describe the Problem</p>
+            <p className="mb-1 font-display font-bold text-navy">
+              1. Describe the Problem
+            </p>
             <p className="text-sm text-muted">
-              Call {SITE.phoneDisplay} or use the contact form — describing what&rsquo;s happening is enough to get
-              things moving, even without a specific diagnosis yet.
+              Call {SITE.phoneDisplay} or use the contact form. Knowing roughly
+              where the problem is, whether it&rsquo;s getting worse, and having
+              your address ready helps — but a specific diagnosis isn&rsquo;t
+              needed to get started.
             </p>
           </div>
           <div>
-            <p className="mb-1 font-display font-bold text-navy">2. Get an Accurate Diagnosis</p>
+            <p className="mb-1 font-display font-bold text-navy">
+              2. Get an Accurate Diagnosis
+            </p>
             <p className="text-sm text-muted">
-              The actual cause gets identified before recommending a fix — not a guess based on symptoms alone.
+              The actual cause gets identified before recommending a fix — not a
+              guess based on symptoms alone.
             </p>
           </div>
           <div>
-            <p className="mb-1 font-display font-bold text-navy">3. Same-Day or 24/7 for Emergencies</p>
+            <p className="mb-1 font-display font-bold text-navy">
+              3. Same-Day or 24/7 for Emergencies
+            </p>
             <p className="text-sm text-muted">
-              Emergency plumbing is available around the clock, and same-day scheduling applies to routine repairs
-              too.
+              Emergency plumbing is available around the clock, and same-day
+              scheduling applies to routine repairs too.
             </p>
           </div>
         </div>
@@ -204,14 +322,18 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-16">
-        <SectionHeading kicker="Why It Matters">Why a Professional Diagnosis Matters</SectionHeading>
+        <SectionHeading kicker="Why It Matters">
+          Why a Professional Diagnosis Matters
+        </SectionHeading>
         <p className="max-w-3xl leading-relaxed text-ink/80">
-          Some plumbing issues are genuinely simple — a plunger clears most everyday clogs, and a worn washer is an
-          easy fix. Others aren&rsquo;t as simple as they look: a slow leak that seems minor can be a sign of pipe
-          material failing throughout a home, and a drain that clears temporarily but keeps coming back is usually a
-          symptom of a bigger blockage further down the line. Knowing the difference — and having it diagnosed
-          correctly the first time — is usually what separates a quick fix from a repeat call for the same problem a
-          few months later.
+          Some plumbing issues are genuinely simple — a plunger clears most
+          everyday clogs, and a worn washer is an easy fix. Others aren&rsquo;t
+          as simple as they look: a slow leak that seems minor can be a sign of
+          pipe material failing throughout a home, and a drain that clears
+          temporarily but keeps coming back is usually a symptom of a bigger
+          blockage further down the line. Knowing the difference — and having it
+          diagnosed correctly the first time — is usually what separates a quick
+          fix from a repeat call for the same problem a few months later.
         </p>
       </section>
 
@@ -229,18 +351,28 @@ export default function HomePage() {
               <thead>
                 <tr className="border-b border-black/10 text-muted">
                   <th className="px-4 py-3 font-semibold">Town</th>
-                  <th className="px-4 py-3 font-semibold">Distance from Tupelo</th>
+                  <th className="px-4 py-3 font-semibold">
+                    Distance from Tupelo
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 {tier1.map((l) => (
-                  <tr key={l.slug} className="border-b border-black/5 last:border-0">
+                  <tr
+                    key={l.slug}
+                    className="border-b border-black/5 last:border-0"
+                  >
                     <td className="px-4 py-2.5">
-                      <a href={`/${l.slug}`} className="font-medium text-brand hover:underline">
+                      <a
+                        href={`/${l.slug}`}
+                        className="font-medium text-brand hover:underline"
+                      >
                         {l.name}
                       </a>
                     </td>
-                    <td className="px-4 py-2.5 text-ink/70">{l.distanceNote}</td>
+                    <td className="px-4 py-2.5 text-ink/70">
+                      {l.distanceNote}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -248,15 +380,20 @@ export default function HomePage() {
           </div>
 
           <p className="mt-6 text-sm text-ink/80">
-            Service also extends to New Albany, Amory, Booneville, Mantachie, Okolona, Belden, Plantersville, and
-            several smaller communities throughout the area.{" "}
-            <a href="/communities-we-also-serve" className="font-medium text-brand">
+            Service also extends to New Albany, Amory, Booneville, Mantachie,
+            Okolona, Belden, Plantersville, and several smaller communities
+            throughout the area.{" "}
+            <a
+              href="/communities-we-also-serve"
+              className="font-medium text-brand"
+            >
               See all service areas →
             </a>
           </p>
           <p className="mt-4 text-sm text-ink/80">
-            Also serving Joyner, Highland Circle, Barnes Crossing, West Jackson Street, South Tupelo/Eason
-            Boulevard, and Downtown Tupelo within Tupelo itself.
+            Also serving Joyner, Highland Circle, Barnes Crossing, West Jackson
+            Street, South Tupelo/Eason Boulevard, and Downtown Tupelo within
+            Tupelo itself.
           </p>
         </div>
       </section>
@@ -264,11 +401,16 @@ export default function HomePage() {
       <LocationMap />
 
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <SectionHeading kicker="Questions">Frequently Asked Questions</SectionHeading>
+        <SectionHeading kicker="Questions">
+          Frequently Asked Questions
+        </SectionHeading>
         <div className="max-w-2xl">
           <FAQAccordion items={homeFaqs} />
         </div>
-        <a href="/faq" className="mt-4 inline-block text-sm font-medium text-brand">
+        <a
+          href="/faq"
+          className="mt-4 inline-block text-sm font-medium text-brand"
+        >
           View All FAQs →
         </a>
       </section>

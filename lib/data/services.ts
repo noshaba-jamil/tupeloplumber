@@ -1,8 +1,9 @@
 import { ServicePage } from "@/lib/types";
+import { SITE } from "@/lib/site";
 
 export const services: ServicePage[] = [
   // ---------- CORE PLUMBING ----------
-  {
+    {
     slug: "plumbing-repair-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Plumbing Repair",
@@ -26,17 +27,28 @@ export const services: ServicePage[] = [
       {
         type: "list",
         items: [
-          "Running or leaking toilets — usually a worn flapper, fill valve, or flush mechanism",
-          "Dripping faucets — typically a worn washer, cartridge, or O-ring",
-          "Minor leaks under sinks or at fittings — loose connections or worn seals",
-          "Slow or stuck shut-off valves — common in older homes",
-          "Inconsistent water flow at a single fixture",
+          "Running or leaking toilets — usually a worn flapper, fill valve, or flush mechanism, often an inexpensive part-level fix",
+          "Dripping faucets — typically a worn washer, cartridge, or O-ring that wears out gradually with normal use",
+          "Minor leaks under sinks or at fittings — loose connections or worn seals, sometimes just a matter of tightening or resealing a joint",
+          "Slow or stuck shut-off valves — common in older homes where a valve hasn't been operated in years and has partially seized",
+          "Inconsistent water flow at a single fixture — often a clogged aerator, a partially closed valve, or a fixture-specific blockage rather than a whole-house issue",
+          "Running water sounds with no fixture in use — can be a stuck fill valve, a small leak, or a fixture cycling on its own",
         ],
+      },
+      { type: "h2", text: "What Plumbing Repair Covers" },
+      {
+        type: "p",
+        text: "Plumbing repair is the general category for issues that don't fall neatly into a more specific service — not every problem is a drain clog, a water heater issue, or a fixture replacement. If something in the house's plumbing isn't working the way it should and it's not clear which specific service applies, that's exactly what a general repair call is for. A plumber can identify the actual cause during the visit rather than requiring a precise diagnosis beforehand.",
+      },
+      { type: "h2", text: "Repair or Replace?" },
+      {
+        type: "p",
+        text: "Most everyday plumbing issues are repairable — a worn part gets replaced, a loose connection gets resealed, a stuck valve gets freed or swapped. Replacement becomes the better option when a fixture or component has failed in multiple ways, is old enough that replacement parts are hard to source, or when the cost of repeated repairs starts to approach the cost of simply replacing it. An in-person look is the most reliable way to know which applies to a specific situation.",
       },
       { type: "h2", text: "Not Sure What's Wrong?" },
       {
         type: "p",
-        text: "Some problems point toward a more specific service: clogged or slow drains, no hot water or water heater issues, a specific fixture needing repair, or a leak you can't locate. If it's not clear which category fits, that's a normal thing to describe over the phone.",
+        text: "Some problems point toward a more specific service: clogged or slow drains, no hot water or water heater issues, a specific fixture needing repair, or a leak you can't locate. If it's not clear which category fits, that's a normal thing to describe over the phone — describing the symptoms is enough to get started.",
       },
     ],
     faqs: [
@@ -52,6 +64,18 @@ export const services: ServicePage[] = [
         q: "I'm not sure what's wrong — how do I know who to call?",
         a: "Describing the symptoms is enough to start — a specific diagnosis doesn't need to happen before calling.",
       },
+      {
+        q: "Is it cheaper to repair or replace a fixture?",
+        a: "Usually repair, for an otherwise sound fixture with a single worn part. Replacement tends to make more sense once a fixture has failed in multiple ways or parts are hard to find.",
+      },
+      {
+        q: "How long does a typical plumbing repair take?",
+        a: "Most everyday repairs — a running toilet, a dripping faucet, a stuck valve — are completed in a single visit.",
+      },
+      {
+        q: "Do I need to know exactly what's wrong before calling?",
+        a: "No — describing the symptoms is enough. The specific cause gets identified during the visit.",
+      },
     ],
     relatedServiceSlugs: [
       "emergency-plumbing-tupelo-ms",
@@ -62,19 +86,32 @@ export const services: ServicePage[] = [
     ],
     ctaLabel: "Have a Plumbing Problem That Needs Fixing?",
   },
-  {
+    {
     slug: "emergency-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Emergency Plumbing",
     title: "24/7 Emergency Plumber in Tupelo, MS",
     metaDescription:
-      "Burst pipe, active leak, or sewage backup in Tupelo, MS? 24/7 emergency plumbing service for problems that can't wait.",
+      "Burst pipe, sewage backup, or no water in Tupelo, MS? 24/7 emergency plumbing with a 60-minute arrival target and no call-out fee.",
     h1: "24/7 Emergency Plumbing in Tupelo, MS",
     intro: "Available around the clock for plumbing problems that are actively causing damage right now.",
     body: [
       {
         type: "p",
         text: "Some plumbing problems can wait for a scheduled appointment. Others are actively damaging your home or leaving you without water right now — that's what emergency plumbing service is for, available 24 hours a day, 7 days a week.",
+      },
+      { type: "h2", text: "Do I Need an Emergency Plumber Right Now?" },
+      {
+        type: "p",
+        text: "Not every plumbing problem needs to be treated the same way. A rough guide:",
+      },
+      {
+        type: "list",
+        items: [
+          "Call immediately — a burst pipe, an uncontrolled active leak, a sewage backup, water near electrical equipment, or water intruding through a ceiling or wall",
+          "Shut off water and arrange prompt service — a leaking water heater, no water anywhere in the home, or a leak that's visibly worsening",
+          "Can usually wait for scheduled service — a dripping faucet, a slow drain, a minor running toilet, or a cosmetic fixture issue",
+        ],
       },
       { type: "h2", text: "What Counts as a Plumbing Emergency" },
       {
@@ -84,22 +121,70 @@ export const services: ServicePage[] = [
           "Sewage backing up into a sink, tub, or floor drain",
           "Complete loss of water service",
           "A water heater leaking significantly, especially near electrical components",
-          "Any leak spreading toward electrical outlets, wiring, or a ceiling",
+          "An overflowing toilet that won't stop with the shutoff valve closed",
+          "Water coming through a ceiling, wall, or spreading rapidly",
+          "Any leak near electrical outlets, wiring, or a breaker panel",
         ],
       },
-      { type: "h2", text: "What to Do While Waiting" },
-      {
-        type: "list",
-        items: [
-          "Shut off the water at the main shut-off valve if you're able to locate it",
-          "Turn off electricity to the affected area if water is near outlets or wiring",
-          "Move belongings away from the affected area if it's safe to do so",
-        ],
-      },
-      { type: "h2", text: "After the Emergency Is Handled" },
+      { type: "h2", text: "Shutting Off Your Water" },
       {
         type: "p",
-        text: "Some emergencies point to a larger underlying issue — a burst pipe from aging plumbing may point toward needing a broader look at the home's piping, and a sewage backup may point toward a sewer line problem that needs further diagnosis.",
+        text: "Most homes have a main shut-off valve near where the water line enters the house — often in a basement, crawl space, utility closet, or near the water meter. Turning this off stops water flow to the entire home, which is the right first move for almost any active leak or burst pipe while help is on the way. If you don't already know where yours is, it's worth locating it before an emergency happens, not during one.",
+      },
+      { type: "h2", text: "A Burst Pipe" },
+      {
+        type: "p",
+        text: "Shut off the main water valve first, then the water heater if the burst section is on the hot-water side. Open a nearby faucet to relieve pressure in the line, and move anything valuable away from the area. A single burst pipe can be an isolated failure, but repeated failures, visible corrosion, or discolored water afterward can be signs the surrounding piping has aged out more broadly — see Repiping if that pattern sounds familiar.",
+      },
+      { type: "h2", text: "A Sewage Backup" },
+      {
+        type: "p",
+        text: "Stop using drains and toilets in the affected area immediately — running more water through a backed-up line makes the problem worse. Keep people and pets away from the affected area, since sewage backups are a health hazard, not just a mess. A backup that keeps recurring, or affects more than one fixture at once, often points to the main sewer line rather than a single clog — see Sewer Line Repair for how that's diagnosed.",
+      },
+      { type: "h2", text: "An Overflowing Toilet" },
+      {
+        type: "p",
+        text: "Stop flushing — each flush adds more water to an already-overflowing bowl. If accessible, close the toilet's own shutoff valve, usually on the wall or floor behind it; if you can't find it or it doesn't stop the flow, shut off the home's main water valve instead. A toilet that overflows repeatedly, rather than as a one-time clog, is worth having looked at — see Plumbing Repair.",
+      },
+      { type: "h2", text: "A Water Heater Leaking or Failing Suddenly" },
+      {
+        type: "p",
+        text: "Shut off the water supply to the unit and, if it's electric, the breaker; if it's gas, the gas shut-off valve at the unit. Where the leak is coming from matters: a leak from the tank body itself usually means the tank has failed and needs replacement, while a leak from a connection, valve, or fitting is often repairable without replacing the whole unit. See Water Heater Repair for how that distinction gets made.",
+      },
+      { type: "h2", text: "Complete Loss of Water" },
+      {
+        type: "p",
+        text: "If every fixture in the house has lost water at the same time, the cause can be a few different things — a municipal water interruption, the main shutoff having been closed, a failed pressure regulator, a frozen or damaged line, or the underground water line from the street. If an underground line turns out to be the cause, see Water Line Services for how that's diagnosed and repaired.",
+      },
+      { type: "h2", text: "If You Smell Gas" },
+      {
+        type: "p",
+        text: "A suspected gas leak is a safety emergency, not a standard plumbing call. Leave the property immediately, don't operate light switches or anything that could create a spark, and call your gas utility's emergency line or 911 from outside the home. Don't return until it's been confirmed safe.",
+      },
+      { type: "h2", text: "If Water Reaches Electrical Equipment" },
+      {
+        type: "p",
+        text: "This is the one situation where electrical safety comes before the plumbing problem itself. Do not enter standing water near outlets, a breaker panel, or wiring. Do not touch any electrical switch or outlet with wet hands or while standing in water. If power can be shut off at the breaker box without stepping into water, do so; if it can't be reached safely, leave the area and wait for help rather than risk it.",
+      },
+      { type: "h2", text: "Residential vs. Commercial Emergencies" },
+      {
+        type: "p",
+        text: "The response is the same 24/7 service either way, but a business emergency often comes with added considerations — protecting inventory, limiting customer-facing disruption, or coordinating around operating hours. See Commercial Plumbing for how that's handled specifically.",
+      },
+      { type: "h2", text: "What Happens When You Call" },
+      {
+        type: "p",
+        text: `Call ${SITE.phoneDisplay} and describe what's happening — a specific diagnosis isn't needed to get started. Emergency calls target a ${SITE.emergencyArrivalMinutes}-minute arrival, there's no charge just for someone to come look at the problem, and pricing is confirmed before any work begins.`,
+      },
+      { type: "h2", text: "What Affects Emergency Plumbing Cost" },
+      {
+        type: "p",
+        text: "Emergency and after-hours calls typically cost more than a standard scheduled repair, since they involve immediate response outside normal hours. As a general market reference for the Tupelo area — not a fixed price list — plumbing service calls commonly run $70–170, with the total cost depending on factors like the type of emergency, how accessible the problem is, parts needed, and whether excavation or specialized equipment is involved. The exact cost is always confirmed before work starts.",
+      },
+      { type: "h2", text: "Emergency Plumbing Near Tupelo" },
+      {
+        type: "p",
+        text: "Emergency plumbing service is available in Tupelo and the surrounding communities served, including Saltillo, Verona, Shannon, Mooreville, Guntown, Baldwyn, Fulton, Pontotoc, and Nettleton. See the full list of service areas for coverage further out.",
       },
     ],
     faqs: [
@@ -108,18 +193,60 @@ export const services: ServicePage[] = [
         a: "Active leaks, burst pipes, sewage backups, and a total loss of water are the clearest examples.",
       },
       {
-        q: "What should I do before help arrives?",
-        a: "Shut off the water at the main valve if you can access it safely, and turn off electricity to any area where water is near wiring or outlets.",
+        q: "Should I shut off my home's water during a plumbing emergency?",
+        a: "In most active-leak situations, yes — shutting off the main valve stops the damage from getting worse while help is on the way.",
+      },
+      {
+        q: "What should I do if a pipe bursts?",
+        a: "Shut off the main water valve, then the water heater if the burst is on the hot side, open a nearby faucet to relieve pressure, and move valuables away from the area.",
+      },
+      {
+        q: "What should I do if sewage is backing up?",
+        a: "Stop using drains and toilets in the affected area right away, and keep people and pets clear — it's a health hazard, not just a mess.",
+      },
+      {
+        q: "Can a plumbing emergency happen without a visible leak?",
+        a: "Yes — a complete loss of water, a sudden water heater failure, or a hidden slab leak can all be genuine emergencies with little or no visible water at first.",
+      },
+      {
+        q: "Where is my main water shut-off valve?",
+        a: "Most commonly near where the water line enters the home — a basement, crawl space, utility closet, or near the water meter outside.",
+      },
+      {
+        q: "Is it safe to touch anything electrical during a plumbing emergency?",
+        a: "Only if it can be done without entering standing water or touching anything while wet — if there's any doubt, leave power off and wait for help.",
+      },
+      {
+        q: "How quickly can someone get here for an emergency?",
+        a: `Emergency calls target a ${SITE.emergencyArrivalMinutes}-minute arrival.`,
+      },
+      {
+        q: "Is there a charge just to have someone come look at an emergency?",
+        a: "No — there's no call-out fee, and pricing is confirmed before any work starts.",
+      },
+      {
+        q: "Do you provide emergency plumbing for businesses?",
+        a: "Yes — commercial emergency plumbing is available with the same 24/7 response as residential service.",
+      },
+      {
+        q: "What areas around Tupelo do you serve for emergency plumbing?",
+        a: "Tupelo and the surrounding communities, including Saltillo, Verona, Shannon, Mooreville, Guntown, Baldwyn, Fulton, Pontotoc, and Nettleton.",
       },
       {
         q: "Is emergency service available nights and weekends?",
         a: "Yes — emergency plumbing service is available 24/7, including nights, weekends, and holidays.",
       },
     ],
-    relatedServiceSlugs: ["repiping-tupelo-ms", "sewer-line-repair-tupelo-ms"],
+    relatedServiceSlugs: [
+      "plumbing-repair-tupelo-ms",
+      "sewer-line-repair-tupelo-ms",
+      "water-heater-repair-tupelo-ms",
+      "water-line-services-tupelo-ms",
+      "commercial-plumbing-tupelo-ms",
+    ],
     ctaLabel: "Dealing With a Plumbing Emergency Right Now?",
   },
-  {
+    {
     slug: "residential-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Residential Plumbing",
@@ -143,6 +270,7 @@ export const services: ServicePage[] = [
           "Water heaters — repair, installation, and tankless options",
           "Leaks and pipe issues — hidden leaks, slab leaks, repiping",
           "Fixtures — faucets, toilets, sinks, garbage disposals, showers, bathtubs",
+          "Water quality — filtration and treatment for taste, odor, or hardness concerns",
         ],
       },
       { type: "h2", text: "Routine Repairs and Bigger Projects" },
@@ -150,15 +278,42 @@ export const services: ServicePage[] = [
         type: "p",
         text: "Residential plumbing spans both ends of that range — a single worn-out faucet cartridge and a whole-house repiping job are both residential plumbing work, just at very different scales.",
       },
+      { type: "h2", text: "Plumbing Through the Life of a Home" },
+      {
+        type: "p",
+        text: "A newer home and an older home tend to need different things from residential plumbing. Newer construction on PEX supply lines and a concrete slab foundation is more likely to need fixture work and the occasional slab leak check. Older homes are more likely to still have original galvanized or early copper supply lines, aging clay or cast-iron drain lines, and fixtures nearing the end of their service life — which tends to mean more repiping and sewer line conversations over time.",
+      },
+      { type: "h2", text: "New Homeowner and Pre-Purchase Considerations" },
+      {
+        type: "p",
+        text: "Buying an older home is a common reason to have the plumbing looked at before or shortly after move-in — a standard home inspection doesn't always go deep into pipe material or run a sewer camera inspection, so problems that weren't obvious at the walkthrough can show up in the first year of ownership. Getting ahead of that with an inspection of the home's actual plumbing condition can avoid surprises.",
+      },
+      { type: "h2", text: "Rental and Landlord Plumbing" },
+      {
+        type: "p",
+        text: "Rental properties bring their own pattern of plumbing needs — higher fixture turnover from tenant changes, and repairs that a landlord typically wants handled quickly and correctly the first time. The same residential services apply; scheduling and communication are often just handled with a property manager or landlord directly rather than the occupant.",
+      },
     ],
     faqs: [
       {
         q: "What residential plumbing services are offered?",
-        a: "Everything from everyday repairs and emergency plumbing to drains, sewer lines, water heaters, leak detection, repiping, and fixture repair.",
+        a: "Everything from everyday repairs and emergency plumbing to drains, sewer lines, water heaters, leak detection, repiping, fixture repair, and water filtration.",
       },
       {
         q: "Does residential plumbing include bigger jobs like repiping, or just small repairs?",
         a: "Both. Residential plumbing covers the full range.",
+      },
+      {
+        q: "Should I have the plumbing inspected in a home I just bought?",
+        a: "It's worth considering, especially for an older home — a standard home inspection doesn't always catch pipe material or sewer line issues that show up later.",
+      },
+      {
+        q: "Do you work with rental properties and landlords?",
+        a: "Yes — rental and landlord-managed properties receive the same residential plumbing service, typically coordinated through the property manager or landlord.",
+      },
+      {
+        q: "Does an older home need different plumbing service than a newer one?",
+        a: "Often, yes — older homes are more likely to have aging supply and drain line materials, while newer homes tend to have more fixture and water-heater-sizing needs.",
       },
     ],
     relatedServiceSlugs: [
@@ -168,10 +323,11 @@ export const services: ServicePage[] = [
       "water-heater-repair-tupelo-ms",
       "leak-detection-tupelo-ms",
       "fixture-plumbing-tupelo-ms",
+      "repiping-tupelo-ms",
     ],
     ctaLabel: "Looking for Plumbing Service for Your Home?",
   },
-  {
+    {
     slug: "commercial-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Commercial Plumbing",
@@ -194,22 +350,59 @@ export const services: ServicePage[] = [
           "Drains and sewer lines — commercial kitchens and heavier drain demands",
           "Water heaters — commercial-scale needs",
           "New construction and remodeling — build-outs, renovations, tenant improvements",
+          "Backflow prevention testing — often required by code for commercial properties with irrigation or fire suppression connections",
         ],
+      },
+      { type: "h2", text: "What's Different About Commercial Plumbing" },
+      {
+        type: "p",
+        text: "The underlying plumbing work isn't fundamentally different from residential — a clogged drain or a failing water heater behaves the same way regardless of the building type. What changes is the surrounding context: higher usage volume, code requirements specific to commercial properties, and the operational impact of downtime. A restaurant's grease trap and heavy drain demand, for instance, is a different maintenance picture than a typical home kitchen.",
       },
       { type: "h2", text: "Working Around Business Hours" },
       {
         type: "p",
-        text: "Scheduling around a business's operating hours to limit disruption is a normal part of commercial work — worth raising directly when describing the job.",
+        text: "Scheduling around a business's operating hours to limit disruption is a normal part of commercial work — worth raising directly when describing the job. Before- or after-hours service can often be arranged for work that would otherwise interrupt customers or staff.",
+      },
+      { type: "h2", text: "Types of Commercial Properties Served" },
+      {
+        type: "list",
+        items: [
+          "Retail and office spaces",
+          "Restaurants and food service, including grease trap and kitchen drain concerns",
+          "Multi-unit and rental properties",
+          "Light industrial and warehouse space",
+        ],
+      },
+      { type: "h2", text: "Commercial Emergency Plumbing" },
+      {
+        type: "p",
+        text: "A business emergency gets the same 24/7 response as a residential one, with added attention to protecting inventory, minimizing customer-facing disruption, and coordinating with staff or management on-site. See Emergency Plumbing for what counts as an emergency and what to do while help is on the way.",
       },
     ],
     faqs: [
       {
         q: "What commercial plumbing services are offered?",
-        a: "Everything from general repairs and emergency service to drains, water heaters, and new construction/remodeling plumbing.",
+        a: "Everything from general repairs and emergency service to drains, water heaters, new construction/remodeling plumbing, and backflow prevention testing.",
       },
       {
         q: "Can plumbing work be scheduled around business hours?",
-        a: "Working around a business's operating hours to minimize disruption is a normal part of commercial scheduling.",
+        a: "Working around a business's operating hours to minimize disruption is a normal part of commercial scheduling, including before- or after-hours service where needed.",
+      },
+      {
+        q: "Do you work with restaurants and commercial kitchens?",
+        a: "Yes — commercial kitchens have their own drain and grease trap considerations, and that's a regular part of commercial service.",
+      },
+      {
+        q: "Is backflow prevention testing required for my business?",
+        a: "It depends on the property type and local code — properties with irrigation or fire suppression systems are the most common candidates. See Backflow Prevention for more detail.",
+      },
+      {
+        q: "Is commercial plumbing handled differently from residential?",
+        a: "The plumbing work itself is similar, but commercial properties often have higher usage volume, specific code requirements, and scheduling needs tied to business hours.",
+      },
+      {
+        q: "Do you handle emergency plumbing for businesses?",
+        a: "Yes — the same 24/7 emergency response applies to commercial properties as residential.",
       },
     ],
     relatedServiceSlugs: [
@@ -218,6 +411,7 @@ export const services: ServicePage[] = [
       "drain-cleaning-tupelo-ms",
       "hydro-jetting-tupelo-ms",
       "water-heater-repair-tupelo-ms",
+      "backflow-prevention-tupelo-ms",
       "new-construction-remodeling-plumbing-tupelo-ms",
     ],
     ctaLabel: "Need Plumbing Service for Your Business?",
@@ -271,7 +465,7 @@ export const services: ServicePage[] = [
   },
 
   // ---------- DRAIN & SEWER ----------
-  {
+   {
     slug: "drain-cleaning-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Drain Cleaning",
@@ -289,16 +483,40 @@ export const services: ServicePage[] = [
       {
         type: "list",
         items: [
-          "Kitchen sinks — grease, food debris, and buildup over time",
-          "Bathroom sinks and tubs — hair and soap buildup",
-          "Toilets — foreign objects or excess paper",
-          "Floor drains — debris and sediment buildup",
+          "Kitchen sinks — grease, food debris, and buildup over time; grease is a particular problem because it coats the inside of the pipe rather than washing straight through",
+          "Bathroom sinks and tubs — hair and soap buildup, which tends to form a mat that catches more debris as it grows",
+          "Toilets — foreign objects, excess paper, or in some cases a partial blockage further down the line rather than at the toilet itself",
+          "Floor drains — debris and sediment buildup, often in utility rooms, garages, or basements where they're easy to forget about",
         ],
+      },
+      { type: "h2", text: "Signs a Drain Needs Attention" },
+      {
+        type: "list",
+        items: [
+          "Water draining slower than normal, even if it's not fully blocked yet",
+          "Gurgling sounds from a drain when another fixture is used",
+          "A recurring smell from a specific drain",
+          "Water backing up briefly before draining",
+        ],
+      },
+      { type: "h2", text: "What Drain Cleaning Involves" },
+      {
+        type: "p",
+        text: "A plumber identifies where the blockage is and clears it using the appropriate method for that drain — typically a drain snake or auger for a specific, localized clog. The goal is removing the actual blockage, not just temporarily improving flow.",
       },
       { type: "h2", text: "When It's More Than a Simple Clog" },
       {
         type: "p",
-        text: "If the same drain keeps clogging despite being cleared, the cause is often buildup along the pipe itself — grease coating, mineral scale, or root intrusion — rather than a single blockage. Hydro jetting is generally the more effective fix for it.",
+        text: "If the same drain keeps clogging despite being cleared, the cause is often buildup along the pipe itself — grease coating, mineral scale, or root intrusion — rather than a single blockage. Hydro jetting may be more appropriate for recurring buildup because it can clean along more of the pipe rather than clearing only one blockage point. For buildup caused by something other than coating or scale — a structural issue, for instance — a different diagnosis may be needed, which is where a sewer camera inspection comes in.",
+      },
+      {
+  type: "p",
+  text: "One fixture draining slowly is usually a localized blockage in that drain's own line. If several fixtures are slow or backing up at the same time, that's more likely to point toward the main sewer line rather than any single drain — see Sewer Line Repair for that distinction.",
+},
+      { type: "h2", text: "Drain Cleaning vs. a DIY Plunger or Store-Bought Cleaner" },
+      {
+        type: "p",
+        text: "A plunger handles many everyday clogs on its own, and there's no need to call a plumber for every slow drain. Chemical drain cleaners are worth approaching carefully — they can be hard on older pipes with repeated use, and they don't address buildup further down the line. If a clog doesn't respond to a plunger, keeps coming back, or multiple drains are affected, that's when it's worth having looked at professionally.",
       },
     ],
     faqs: [
@@ -314,8 +532,20 @@ export const services: ServicePage[] = [
         q: "What's the difference between drain cleaning and hydro jetting?",
         a: "Drain cleaning clears a specific blockage. Hydro jetting clears buildup along the full length of a pipe.",
       },
+      {
+        q: "Are chemical drain cleaners safe to use?",
+        a: "They can clear minor clogs, but repeated use can be hard on older pipes, and they don't address buildup further down the line the way professional cleaning does.",
+      },
+      {
+        q: "Why does my drain gurgle when I run another fixture?",
+        a: "That's often a sign of a partial blockage or a venting issue affecting how air moves through the drain system — worth having checked if it happens regularly.",
+      },
+      {
+        q: "How often should drains be professionally cleaned?",
+        a: "There's no fixed schedule — it depends on usage and whether a specific drain has a history of slow draining or recurring clogs.",
+      },
     ],
-    relatedServiceSlugs: ["hydro-jetting-tupelo-ms", "sewer-camera-inspection-tupelo-ms"],
+    relatedServiceSlugs: ["hydro-jetting-tupelo-ms", "sewer-camera-inspection-tupelo-ms", "sewer-line-repair-tupelo-ms"],
     ctaLabel: "Dealing With a Clogged Drain?",
   },
   {
@@ -374,7 +604,7 @@ export const services: ServicePage[] = [
     relatedServiceSlugs: ["drain-cleaning-tupelo-ms", "sewer-camera-inspection-tupelo-ms", "sewer-line-repair-tupelo-ms"],
     ctaLabel: "Ready to Clear a Stubborn Drain?",
   },
-  {
+    {
     slug: "sewer-line-repair-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Sewer Line Repair",
@@ -394,19 +624,36 @@ export const services: ServicePage[] = [
         items: [
           "Multiple fixtures backing up or draining slowly at the same time",
           "Sewage odor in the yard or near the foundation",
-          "An unusually green or soggy patch of lawn",
+          "An unusually green or soggy patch of lawn, often over the line's path",
           "Gurgling sounds from drains when other fixtures are used",
+          "A toilet that bubbles or backs up when a washing machine drains",
+        ],
+      },
+      { type: "h2", text: "What Causes Sewer Line Problems" },
+      {
+        type: "list",
+        items: [
+          "Tree root intrusion — roots are drawn to the moisture inside a sewer line and can work their way in through small cracks or joints",
+          "Age and material — older clay or cast-iron lines are more prone to cracking, shifting, or corroding over time than modern materials",
+          "Ground movement — soil that expands and contracts with wet and dry seasons can gradually shift or stress a buried line",
+          "Grease and debris buildup — a heavier version of what causes drain clogs, but along the main line rather than a single fixture's drain",
         ],
       },
       { type: "h2", text: "Repair vs. Replacement" },
       {
         type: "p",
-        text: "A localized issue — a root intrusion at one joint, or a single cracked section — can often be repaired directly. More extensive damage may call for full or partial replacement. Trenchless sewer repair is one method worth knowing about: it repairs or replaces a line without fully excavating the yard where the situation allows.",
+        text: "A localized issue — a root intrusion at one joint, or a single cracked section — can often be repaired directly without touching the rest of the line. More extensive damage, especially along an older line showing multiple problem areas, may call for full or partial replacement. Trenchless sewer repair is one method worth knowing about: it repairs or replaces a line without fully excavating the yard, where the situation allows.",
       },
       { type: "h2", text: "Getting an Accurate Diagnosis First" },
+      
+{
+  type: "p",
+  text: "A sewer camera inspection is the most direct way to see exactly what's happening inside the line and determine the right level of repair — rather than guessing based on symptoms alone and potentially digging in the wrong spot. If sewage is actively backing up into the home or creating an immediate sanitation risk, that's an emergency — see Emergency Plumbing rather than waiting for a scheduled inspection.",
+},
+      { type: "h2", text: "What to Expect From Sewer Line Repair" },
       {
         type: "p",
-        text: "A sewer camera inspection is the most direct way to see exactly what's happening inside the line and determine the right level of repair.",
+        text: "The process typically starts with a camera inspection to locate and assess the problem, followed by a decision on the right repair method based on what's actually found — a spot repair, a trenchless lining or bursting method, or a full dig-and-replace if the line's condition calls for it. The specific approach depends on where the problem is, how extensive it is, and what's accessible at that location.",
       },
     ],
     faqs: [
@@ -426,6 +673,19 @@ export const services: ServicePage[] = [
         q: "Can hydro jetting fix a sewer line problem instead of repair?",
         a: "Sometimes — if the issue is buildup or roots rather than structural damage.",
       },
+      {
+        q: "What causes tree roots to get into a sewer line?",
+        a: "Roots are drawn to the moisture inside the line and can work their way in through small existing cracks or joints, then grow and worsen the opening.",
+      },
+      {
+        q: "Does my whole yard need to be dug up to fix a sewer line?",
+        a: "Not always — trenchless methods can repair or replace a line in many situations without full excavation.",
+      },
+      
+{
+  q: "How is a sewer line problem actually diagnosed?",
+  a: "A sewer camera inspection allows the plumber to see the inside of the line directly and identify visible problems before deciding on the appropriate repair.",
+},
     ],
     relatedServiceSlugs: ["sewer-camera-inspection-tupelo-ms", "hydro-jetting-tupelo-ms", "drain-cleaning-tupelo-ms"],
     ctaLabel: "Dealing With Recurring Backups or a Sewer Line Issue?",
@@ -488,7 +748,7 @@ export const services: ServicePage[] = [
   },
 
   // ---------- WATER HEATERS ----------
-  {
+    {
     slug: "water-heater-repair-tupelo-ms",
     cluster: "Water Heaters",
     navLabel: "Water Heater Repair",
@@ -503,28 +763,48 @@ export const services: ServicePage[] = [
         text: "No hot water — or hot water that's inconsistent, running out fast, or making strange noises — is one of the most common reasons people call a plumber. Most water heater problems have a specific, identifiable cause, and many are repairable without replacing the whole unit.",
       },
       { type: "h2", text: "What to Check First" },
+{
+  type: "list",
+  items: [
+    "For gas units: confirm the pilot light is lit and the gas supply is on",
+    "For electric units: check that the breaker hasn't tripped",
+    "For either type: check that the thermostat setting hasn't been changed",
+  ],
+},
+{
+  type: "p",
+  text: "These are basic, safe checks only — gas valves, electrical components, and internal parts of the unit are best left to a plumber to open up or adjust.",
+},
+      { type: "h2", text: "No Hot Water at All" },
       {
-        type: "list",
-        items: [
-          "For gas units: confirm the pilot light is lit and the gas supply is on",
-          "For electric units: check that the breaker hasn't tripped",
-          "For either type: check that the thermostat setting hasn't been changed",
-        ],
+        type: "p",
+       
+text: "On an electric unit, this is commonly a failed heating element — the component that actually heats the water can burn out over time, especially on an older tank. On a gas unit, a pilot light that's gone out or an ignition problem is the more typical cause. These problems can often be repaired without replacing the entire tank, depending on the condition of the unit.",
       },
-      { type: "h2", text: "Common Water Heater Problems" },
+      { type: "h2", text: "Inconsistent or Lukewarm Water" },
       {
-        type: "list",
-        items: [
-          "No hot water at all — often a failed heating element or pilot/ignition issue",
-          "Inconsistent or lukewarm water — commonly a thermostat problem or sediment buildup",
-          "Water heater making noise — usually sediment buildup",
-          "Water heater leaking — from a loose fitting to a failing tank",
-        ],
+        type: "p",
+        text: "This is often a thermostat problem — either a faulty thermostat or one that's simply been set lower than expected. Sediment buildup in the bottom of the tank is another common cause, since it can interfere with how efficiently the unit heats and holds water.",
+      },
+      { type: "h2", text: "Water Heater Making Noise" },
+      {
+        type: "p",
+        text: "Popping, rumbling, or cracking sounds are usually sediment buildup at the bottom of the tank — as water heats underneath a layer of sediment, it creates these sounds. This is common in units that haven't been flushed in a while, particularly in areas with harder water.",
+      },
+      { type: "h2", text: "Water Heater Leaking" },
+      {
+        type: "p",
+        text: "Where the leak is coming from matters. A leak from a loose fitting, valve, or connection is often a straightforward repair. A leak from the tank body itself generally means the tank has corroded through, which typically means replacement rather than repair — see Water Heater Installation for what that process looks like.",
       },
       { type: "h2", text: "Should the Water Heater Be Repaired or Replaced?" },
       {
         type: "p",
-        text: "A unit nearing the end of its typical service life with a significant failure is often more cost-effective to replace than repair, while component-level issues on an otherwise sound unit are usually straightforward repairs. An in-person diagnosis is the most reliable way to know which applies.",
+        text: "A unit nearing the end of its typical service life with a significant failure — like a leaking tank — is often more cost-effective to replace than repair. Component-level issues on an otherwise sound unit, like a heating element or thermostat, are usually straightforward repairs. An in-person diagnosis is the most reliable way to know which applies to a specific unit.",
+      },
+      { type: "h2", text: "Gas vs. Electric Water Heater Repair" },
+      {
+        type: "p",
+        text: "The two types fail in different ways and get diagnosed differently. Gas units involve the pilot light, thermocouple, gas valve, and venting; electric units involve heating elements, thermostats, and the electrical connection. Both are repaired by the same plumber, but the specific troubleshooting steps differ.",
       },
     ],
     faqs: [
@@ -547,6 +827,18 @@ export const services: ServicePage[] = [
       {
         q: "Should I flush my water heater?",
         a: "Periodic flushing helps remove sediment buildup, particularly in areas with harder water.",
+      },
+      {
+        q: "Why is my water heater making popping or rumbling noises?",
+        a: "Usually sediment buildup at the bottom of the tank, which is common in units that haven't been flushed in a while.",
+      },
+      {
+        q: "My water heater is leaking — does that always mean I need a new one?",
+        a: "Not always. A leak from a connection or valve is often repairable; a leak from the tank body itself usually means replacement.",
+      },
+      {
+        q: "Does it matter if my water heater is gas or electric for repair?",
+        a: "The failure points and troubleshooting steps differ between the two, but the same plumber handles both.",
       },
     ],
     relatedServiceSlugs: ["water-heater-installation-tupelo-ms", "tankless-water-heaters-tupelo-ms"],
