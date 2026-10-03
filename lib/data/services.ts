@@ -548,60 +548,113 @@ export const services: ServicePage[] = [
     relatedServiceSlugs: ["hydro-jetting-tupelo-ms", "sewer-camera-inspection-tupelo-ms", "sewer-line-repair-tupelo-ms"],
     ctaLabel: "Dealing With a Clogged Drain?",
   },
-  {
+    {
     slug: "hydro-jetting-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Hydro Jetting",
     title: "Hydro Jetting in Tupelo, MS",
     metaDescription:
-      "Hydro jetting clears stubborn clogs, grease buildup, and root intrusion that standard drain cleaning can't fix. Serving Tupelo, MS.",
+      "Hydro jetting clears stubborn clogs, grease buildup, and root intrusion that standard drain cleaning can't fully remove. Serving Tupelo, MS.",
     h1: "Hydro Jetting in Tupelo, MS",
-    intro: "High-pressure water clearing for recurring clogs standard cleaning can't fix.",
+    intro:
+      "High-pressure water cleaning for buildup inside drain and sewer pipes that standard cleaning may not fully remove.",
     body: [
       {
         type: "p",
-        text: "Some clogged drains keep coming back. Hydro jetting uses a high-pressure stream of water, delivered through a specialized nozzle, to scour the inside walls of a pipe clean — not just punch a hole through the clog.",
+        text: "Hydro jetting uses specialized high-pressure water equipment to clean stubborn buildup from inside drain and sewer pipes, making it useful for recurring clogs, grease, scale, and other deposits that standard drain cleaning may not fully remove.",
       },
-      { type: "h2", text: "How Hydro Jetting Is Different From Snaking" },
+      { type: "h2", text: "How Hydro Jetting Works" },
       {
         type: "p",
-        text: "Drain snaking breaks up or retrieves a specific blockage. Hydro jetting clears buildup along the entire length of a pipe — grease coating, mineral scale, or root intrusion a snake can't fully remove.",
+        text: "A specialized nozzle feeds into the line on a pressurized hose, directing water at high pressure against the inside walls of the pipe as it moves through. This scours away buildup clinging to the pipe wall, rather than just pushing through the center of a blockage the way a drain snake does.",
       },
-      { type: "h2", text: "When You Might Need Hydro Jetting" },
+      { type: "h2", text: "Drain Snaking vs. Hydro Jetting" },
+      {
+        type: "p",
+        text: "Drain snaking may be the right fit when one localized clog is blocking a single fixture, the obstruction needs to be physically broken up or retrieved, or the problem is otherwise straightforward.",
+      },
+      {
+        type: "p",
+        text: "Hydro jetting may be more appropriate when buildup keeps returning after snaking, grease has accumulated along a line, mineral scale is restricting flow, a longer section of pipe needs cleaning rather than a single point, or previous drain cleaning has only provided temporary relief.",
+      },
+      { type: "h2", text: "What Hydro Jetting Is Used For" },
       {
         type: "list",
         items: [
-          "The same drain clogs again within weeks of being snaked",
-          "Multiple fixtures back up at once, suggesting a main line issue",
-          "A kitchen or commercial line has ongoing grease buildup",
-          "A sewer camera inspection has identified buildup or root intrusion",
+          "Recurring clogs that keep coming back after standard snaking",
+          "Grease buildup, particularly in kitchen lines and commercial kitchen drains",
+          "Mineral and scale buildup narrowing the inside of a pipe over time",
+          "Root intrusion — jetting can cut through and clear roots that have grown into a line",
+        ],
+      },
+      { type: "h2", text: "When Hydro Jetting Is Not the Right Solution" },
+      {
+        type: "p",
+        text: "Jetting cleans a pipe's interior — it doesn't repair a damaged one. A structurally collapsed or severely cracked pipe, a line with a separated joint, or a pipe in unknown condition generally needs a camera inspection first, and may need repair rather than cleaning. Clearing roots from a line also doesn't fix whatever let the roots in — if root intrusion is a recurring problem at the same spot, that's usually a sign of a crack or joint issue worth having looked at directly. See Sewer Camera Inspection to find out what's actually going on inside the line, and Sewer Line Repair if a structural problem is confirmed.",
+      },
+      { type: "h2", text: "What Happens During Hydro Jetting" },
+      {
+        type: "list",
+        items: [
+          "The affected drain or sewer line is identified based on the symptoms described",
+          "Access points are checked to confirm jetting equipment can reach the affected section",
+          "If the line's condition is uncertain, a camera inspection may be recommended first",
+          "The appropriate jetting equipment and nozzle are selected for that pipe and situation",
+          "Controlled high-pressure water clears buildup from the interior of the pipe",
+          "Flow is checked afterward to confirm the clog or buildup has actually cleared",
+          "If a structural problem remains, camera inspection or sewer line repair is recommended",
         ],
       },
       { type: "h2", text: "Is Hydro Jetting Safe for Older Pipes?" },
       {
         type: "p",
-        text: "Jetting is safe and standard for pipe materials in good structural condition. A line that's already cracked or deteriorated may need inspection first — often paired with a camera inspection on older systems.",
+        text: "Jetting is standard practice for pipe materials in good structural condition. A line that's already cracked, deteriorated, or of unknown condition may need a camera inspection first, since jetting a severely compromised pipe isn't the right approach — cleaning doesn't fix structural damage, and in a bad enough line it can make an existing problem worse.",
+      },
+      { type: "h2", text: "Commercial Drain Lines" },
+      {
+        type: "p",
+        text: "Hydro jetting comes up often in commercial settings where drains see heavier use or recurring grease buildup — restaurant kitchen lines being the most common example. See Commercial Plumbing for the broader range of commercial drain and plumbing service.",
       },
     ],
     faqs: [
       {
         q: "What is hydro jetting used for?",
-        a: "Clearing recurring clogs, grease buildup, and root intrusion that standard snaking hasn't fully resolved.",
+        a: "Clearing recurring clogs, grease buildup, mineral scale, and root intrusion that standard snaking hasn't fully resolved.",
       },
       {
         q: "Will hydro jetting damage my pipes?",
-        a: "Jetting is safe for pipes in sound condition. Older or damaged pipes are typically checked with a camera inspection first.",
+        a: "Jetting is safe for pipes in sound structural condition. Pipes that are already cracked, deteriorated, or of unknown condition are typically checked with a camera inspection first.",
       },
       {
         q: "How is hydro jetting different from a regular drain snake?",
-        a: "A snake clears a specific blockage; jetting scours the full pipe wall.",
+        a: "A snake breaks up or retrieves a specific blockage by pushing through it. Jetting uses high-pressure water to scour buildup off the inside walls of the pipe along the accessible section, not just open a path through one spot.",
       },
       {
         q: "Do I need a camera inspection before hydro jetting?",
-        a: "Not always, but it's common — especially for older lines.",
+        a: "Not always, but it's common, especially when the pipe's condition isn't already known or the cause of a recurring clog hasn't been confirmed.",
+      },
+      {
+        q: "Can hydro jetting remove grease buildup?",
+        a: "Yes — grease buildup along the inside of a pipe is one of the most common reasons jetting is used, particularly in kitchen lines.",
+      },
+      {
+        q: "Can hydro jetting remove tree roots from a pipe?",
+        a: "Jetting can cut through and clear roots that have grown into a line, but it doesn't repair whatever let the roots in in the first place — a recurring root problem at the same spot is worth having inspected directly.",
+      },
+      {
+        q: "Does hydro jetting fix a damaged sewer pipe?",
+        a: "No — jetting cleans the inside of a pipe. A damaged, cracked, or collapsed pipe needs repair, not cleaning.",
+      },
+      {
+        q: "How long does hydro jetting take?",
+        a: "It depends on the length of line being cleaned and how much buildup is present — most jobs are completed in a single visit.",
+      },
+      {
+        q: "How often should a line be hydro jetted?",
+        a: "There's no fixed schedule — it depends on usage and whether a specific line has a history of recurring buildup.",
       },
     ],
-    relatedServiceSlugs: ["drain-cleaning-tupelo-ms", "sewer-camera-inspection-tupelo-ms", "sewer-line-repair-tupelo-ms"],
+    relatedServiceSlugs: ["drain-cleaning-tupelo-ms", "sewer-camera-inspection-tupelo-ms", "sewer-line-repair-tupelo-ms", "commercial-plumbing-tupelo-ms"],
     ctaLabel: "Ready to Clear a Stubborn Drain?",
   },
     {
@@ -612,7 +665,7 @@ export const services: ServicePage[] = [
     metaDescription:
       "Sewer backups, recurring clogs, or a damaged main line in Tupelo, MS? Sewer line repair and replacement, diagnosed correctly first.",
     h1: "Sewer Line Repair in Tupelo, MS",
-    intro: "Diagnosing and repairing the main sewer line — from a single root intrusion to full replacement.",
+    intro: "Repairing damaged or failing main sewer lines in Tupelo, from localized problems to partial or full replacement when the line's condition requires it.",
     body: [
       {
         type: "p",
@@ -690,63 +743,102 @@ export const services: ServicePage[] = [
     relatedServiceSlugs: ["sewer-camera-inspection-tupelo-ms", "hydro-jetting-tupelo-ms", "drain-cleaning-tupelo-ms"],
     ctaLabel: "Dealing With Recurring Backups or a Sewer Line Issue?",
   },
-  {
+    {
     slug: "sewer-camera-inspection-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Sewer Camera Inspection",
     title: "Sewer Camera Inspection in Tupelo, MS",
     metaDescription:
-      "See exactly what's happening inside your sewer line. Camera inspections diagnose recurring clogs, root intrusion, and pipe condition in Tupelo, MS.",
+      "See what's actually happening inside your sewer line. Camera inspections diagnose recurring clogs, root intrusion, cracks, and pipe condition in Tupelo, MS.",
     h1: "Sewer Camera Inspection in Tupelo, MS",
-    intro: "A real look inside the line before deciding on any repair.",
+    intro: "A direct visual look inside the sewer line before deciding on any repair.",
     body: [
       {
         type: "p",
-        text: "A sewer line runs underground, out of sight, which makes it one of the hardest parts of a home's plumbing to diagnose by guesswork. A sewer camera inspection solves that directly: a waterproof camera is fed through the line, giving a real, visual look at exactly what's going on inside.",
+        text: "A sewer line runs underground, out of sight, which makes it one of the hardest parts of a home's plumbing to diagnose by guesswork. A sewer camera inspection provides a direct visual view inside the accessible portion of the line, helping identify problems that cannot be confirmed reliably from symptoms alone.",
       },
-      { type: "h2", text: "When You Might Need One" },
+      { type: "h2", text: "How a Sewer Camera Inspection Works" },
+      {
+        type: "p",
+        text: "A waterproof camera, mounted on a flexible cable, is fed through an accessible cleanout or drain opening and guided through the line. The camera transmits a live video view as it travels, letting the plumber see the actual condition of the pipe's interior in real time rather than relying on symptoms alone.",
+      },
+      { type: "h2", text: "What a Camera Inspection Can Reveal" },
+      {
+        type: "list",
+        items: [
+          "Blockages and buildup along the pipe wall",
+          "Tree root intrusion at joints or cracks",
+          "Cracks and fractures in the pipe material",
+          "Misaligned or separated joints",
+          "Collapsed or partially collapsed sections",
+          "General pipe material and condition, including signs of aging",
+        ],
+      },
+      { type: "h2", text: "When a Camera Inspection Is Useful" },
       {
         type: "list",
         items: [
           "A drain keeps clogging in the same place despite being cleared",
-          "Multiple fixtures are slow or backing up and the cause isn't obvious",
+          "Multiple fixtures are slow or backing up and the cause isn't obvious from the surface",
           "A wet spot, unusual growth, or odor in the yard suggests a line problem",
-          "A hydro jetting or drain cleaning job needs a 'before' look",
+          "Confirming a line's condition before deciding between repair and replacement",
+          "A 'before' look ahead of hydro jetting or drain cleaning on a line with an unknown history",
         ],
+      },
+      { type: "h2", text: "Limitations of a Camera Inspection" },
+      {
+        type: "p",
+        text: "A camera can only travel through accessible, navigable sections of pipe — a severe blockage, a fully collapsed section, or an inaccessible access point can limit how much of the line is actually seen in a single pass. A camera inspection is a diagnostic tool, not a guarantee that every possible issue in a line has been found; it's the most direct way to confirm what's visible, not an exhaustive certification of the entire system's condition.",
       },
       { type: "h2", text: "Buying or Selling a Home With an Older Sewer Line" },
       {
         type: "p",
-        text: "Standard home inspections generally don't include a look inside the sewer line itself — a separate camera inspection is the way to confirm its condition before a sale closes.",
+        text: "Standard home inspections generally focus on what's visible and accessible inside the home — underground sewer line condition typically isn't something a general inspection evaluates. A separate camera inspection gives a direct look at the line's actual condition before a sale closes, which can surface a problem that wouldn't otherwise show up until it became a bigger issue after move-in. The inspection provides information about the line's current condition — it doesn't guarantee how the line will perform in the future, especially for an older line nearing the end of its typical service life.",
       },
       { type: "h2", text: "Does It Damage the Pipe?" },
       {
         type: "p",
-        text: "No — the camera itself doesn't affect the pipe. It's a purely diagnostic step.",
+        text: "A sewer camera inspection is a diagnostic procedure rather than a repair method. The camera is designed to travel through the accessible sewer line to provide a visual view of its interior without affecting the pipe itself.",
+      },
+      { type: "h2", text: "After the Inspection" },
+      {
+        type: "p",
+        text: "What happens next depends on what the camera shows. Buildup or a recurring clog with no structural issue may point toward hydro jetting. If the inspection identifies a crack, misalignment, root intrusion at a joint, or a collapsed section, the next step is typically a sewer line repair or replacement assessment based on what was actually found.",
       },
     ],
     faqs: [
       {
         q: "What does a sewer camera inspection find?",
-        a: "Blockages, buildup, tree root intrusion, cracks, and misaligned or collapsed sections of pipe.",
+        a: "Blockages, buildup, tree root intrusion, cracks, misaligned joints, and collapsed or partially collapsed sections of pipe.",
       },
       {
         q: "Do I need a camera inspection before hydro jetting?",
-        a: "Not always, but it's common, especially when the cause of a recurring clog isn't already known.",
+        a: "Not always, but it's common, especially when the cause of a recurring clog isn't already known or the pipe's condition is uncertain.",
       },
       {
         q: "Should I get a sewer camera inspection before buying a house?",
-        a: "It's worth considering for any home with an older sewer line.",
+        a: "It's worth considering for any home with an older sewer line, since standard home inspections typically don't evaluate underground sewer line condition.",
       },
       {
         q: "Will the inspection damage my pipes?",
-        a: "No — it's a diagnostic tool only.",
+        a: "No — it's a diagnostic procedure. The camera is designed to travel through the line to provide a view of its interior without affecting the pipe.",
+      },
+      {
+        q: "Can a camera inspection see the entire sewer line?",
+        a: "It can see accessible, navigable sections of the line. A severe blockage or collapsed section can limit how much of the line is visible in a single pass.",
+      },
+      {
+        q: "What happens after a camera inspection?",
+        a: "It depends on what's found — buildup with no structural issue may point toward hydro jetting, while a crack, misalignment, or collapsed section typically points toward sewer line repair.",
+      },
+      {
+        q: "Does a camera inspection guarantee there are no other problems in the line?",
+        a: "No — it confirms what's visible in the accessible sections inspected, not an exhaustive certification of the entire line's condition.",
       },
     ],
     relatedServiceSlugs: ["hydro-jetting-tupelo-ms", "sewer-line-repair-tupelo-ms", "drain-cleaning-tupelo-ms"],
     ctaLabel: "Want to See What's Really Going On?",
   },
-
   // ---------- WATER HEATERS ----------
     {
     slug: "water-heater-repair-tupelo-ms",
