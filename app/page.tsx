@@ -192,10 +192,17 @@ export default function HomePage() {
             .
           </li>
           <li>
-            <strong>No hot water, or water that&rsquo;s lukewarm and inconsistent</strong>, often points to a water
-heater problem — see <a href="/water-heater-repair-tupelo-ms" className="text-brand underline">Water Heater Repair</a>.
-            
-            .
+            <strong>
+              No hot water, or water that&rsquo;s lukewarm and inconsistent
+            </strong>
+            , often points to a water heater problem — see{" "}
+            <a
+              href="/water-heater-repair-tupelo-ms"
+              className="text-brand underline"
+            >
+              Water Heater Repair
+            </a>
+            . .
           </li>
           <li>
             <strong>A rising water bill with no obvious cause</strong> often
@@ -220,9 +227,13 @@ heater problem — see <a href="/water-heater-repair-tupelo-ms" className="text-
             .
           </li>
           <li>
-            <strong>Leaks that show up in different places over time</strong>, or discolored water, can indicate the pipe
-material itself is aging out — see <a href="/repiping-tupelo-ms" className="text-brand underline">Repiping</a>.
-            
+            <strong>Leaks that show up in different places over time</strong>,
+            or discolored water, can indicate the pipe material itself is aging
+            out — see{" "}
+            <a href="/repiping-tupelo-ms" className="text-brand underline">
+              Repiping
+            </a>
+            .
           </li>
           <li>
             <strong>Weak or fluctuating water pressure</strong> can come from

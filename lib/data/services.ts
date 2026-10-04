@@ -3,7 +3,7 @@ import { SITE } from "@/lib/site";
 
 export const services: ServicePage[] = [
   // ---------- CORE PLUMBING ----------
-    {
+  {
     slug: "plumbing-repair-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Plumbing Repair",
@@ -86,7 +86,7 @@ export const services: ServicePage[] = [
     ],
     ctaLabel: "Have a Plumbing Problem That Needs Fixing?",
   },
-    {
+  {
     slug: "emergency-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Emergency Plumbing",
@@ -94,7 +94,8 @@ export const services: ServicePage[] = [
     metaDescription:
       "Burst pipe, sewage backup, or no water in Tupelo, MS? 24/7 emergency plumbing with a 60-minute arrival target and no call-out fee.",
     h1: "24/7 Emergency Plumbing in Tupelo, MS",
-    intro: "Available around the clock for plumbing problems that are actively causing damage right now.",
+    intro:
+      "Available around the clock for plumbing problems that are actively causing damage right now.",
     body: [
       {
         type: "p",
@@ -246,7 +247,7 @@ export const services: ServicePage[] = [
     ],
     ctaLabel: "Dealing With a Plumbing Emergency Right Now?",
   },
-    {
+  {
     slug: "residential-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Residential Plumbing",
@@ -327,7 +328,7 @@ export const services: ServicePage[] = [
     ],
     ctaLabel: "Looking for Plumbing Service for Your Home?",
   },
-    {
+  {
     slug: "commercial-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "Commercial Plumbing",
@@ -335,7 +336,8 @@ export const services: ServicePage[] = [
     metaDescription:
       "Plumbing services for businesses and commercial properties in Tupelo, MS — repairs, drains, water heaters, and more, with minimal disruption.",
     h1: "Commercial Plumbing in Tupelo, MS",
-    intro: "Plumbing service built around minimizing disruption to your business.",
+    intro:
+      "Plumbing service built around minimizing disruption to your business.",
     body: [
       {
         type: "p",
@@ -417,7 +419,7 @@ export const services: ServicePage[] = [
     ctaLabel: "Need Plumbing Service for Your Business?",
   },
   {
-     slug: "new-construction-remodeling-plumbing-tupelo-ms",
+    slug: "new-construction-remodeling-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "New Construction & Remodeling",
     title: "New Construction & Remodeling Plumbing",
@@ -465,7 +467,7 @@ export const services: ServicePage[] = [
   },
 
   // ---------- DRAIN & SEWER ----------
-   {
+  {
     slug: "drain-cleaning-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Drain Cleaning",
@@ -473,7 +475,8 @@ export const services: ServicePage[] = [
     metaDescription:
       "Clogged or slow drain in Tupelo, MS? Fast, thorough drain cleaning for sinks, tubs, showers, and toilets.",
     h1: "Drain Cleaning in Tupelo, MS",
-    intro: "Clearing clogged and slow-draining sinks, tubs, showers, and toilets.",
+    intro:
+      "Clearing clogged and slow-draining sinks, tubs, showers, and toilets.",
     body: [
       {
         type: "p",
@@ -510,10 +513,13 @@ export const services: ServicePage[] = [
         text: "If the same drain keeps clogging despite being cleared, the cause is often buildup along the pipe itself — grease coating, mineral scale, or root intrusion — rather than a single blockage. Hydro jetting may be more appropriate for recurring buildup because it can clean along more of the pipe rather than clearing only one blockage point. For buildup caused by something other than coating or scale — a structural issue, for instance — a different diagnosis may be needed, which is where a sewer camera inspection comes in.",
       },
       {
-  type: "p",
-  text: "One fixture draining slowly is usually a localized blockage in that drain's own line. If several fixtures are slow or backing up at the same time, that's more likely to point toward the main sewer line rather than any single drain — see Sewer Line Repair for that distinction.",
-},
-      { type: "h2", text: "Drain Cleaning vs. a DIY Plunger or Store-Bought Cleaner" },
+        type: "p",
+        text: "One fixture draining slowly is usually a localized blockage in that drain's own line. If several fixtures are slow or backing up at the same time, that's more likely to point toward the main sewer line rather than any single drain — see Sewer Line Repair for that distinction.",
+      },
+      {
+        type: "h2",
+        text: "Drain Cleaning vs. a DIY Plunger or Store-Bought Cleaner",
+      },
       {
         type: "p",
         text: "A plunger handles many everyday clogs on its own, and there's no need to call a plumber for every slow drain. Chemical drain cleaners are worth approaching carefully — they can be hard on older pipes with repeated use, and they don't address buildup further down the line. If a clog doesn't respond to a plunger, keeps coming back, or multiple drains are affected, that's when it's worth having looked at professionally.",
@@ -545,10 +551,14 @@ export const services: ServicePage[] = [
         a: "There's no fixed schedule — it depends on usage and whether a specific drain has a history of slow draining or recurring clogs.",
       },
     ],
-    relatedServiceSlugs: ["hydro-jetting-tupelo-ms", "sewer-camera-inspection-tupelo-ms", "sewer-line-repair-tupelo-ms"],
+    relatedServiceSlugs: [
+      "hydro-jetting-tupelo-ms",
+      "sewer-camera-inspection-tupelo-ms",
+      "sewer-line-repair-tupelo-ms",
+    ],
     ctaLabel: "Dealing With a Clogged Drain?",
   },
-    {
+  {
     slug: "hydro-jetting-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Hydro Jetting",
@@ -654,10 +664,15 @@ export const services: ServicePage[] = [
         a: "There's no fixed schedule — it depends on usage and whether a specific line has a history of recurring buildup.",
       },
     ],
-    relatedServiceSlugs: ["drain-cleaning-tupelo-ms", "sewer-camera-inspection-tupelo-ms", "sewer-line-repair-tupelo-ms", "commercial-plumbing-tupelo-ms"],
+    relatedServiceSlugs: [
+      "drain-cleaning-tupelo-ms",
+      "sewer-camera-inspection-tupelo-ms",
+      "sewer-line-repair-tupelo-ms",
+      "commercial-plumbing-tupelo-ms",
+    ],
     ctaLabel: "Ready to Clear a Stubborn Drain?",
   },
-    {
+  {
     slug: "sewer-line-repair-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Sewer Line Repair",
@@ -665,7 +680,8 @@ export const services: ServicePage[] = [
     metaDescription:
       "Sewer backups, recurring clogs, or a damaged main line in Tupelo, MS? Sewer line repair and replacement, diagnosed correctly first.",
     h1: "Sewer Line Repair in Tupelo, MS",
-    intro: "Repairing damaged or failing main sewer lines in Tupelo, from localized problems to partial or full replacement when the line's condition requires it.",
+    intro:
+      "Repairing damaged or failing main sewer lines in Tupelo, from localized problems to partial or full replacement when the line's condition requires it.",
     body: [
       {
         type: "p",
@@ -698,11 +714,11 @@ export const services: ServicePage[] = [
         text: "A localized issue — a root intrusion at one joint, or a single cracked section — can often be repaired directly without touching the rest of the line. More extensive damage, especially along an older line showing multiple problem areas, may call for full or partial replacement. Trenchless sewer repair is one method worth knowing about: it repairs or replaces a line without fully excavating the yard, where the situation allows.",
       },
       { type: "h2", text: "Getting an Accurate Diagnosis First" },
-      
-{
-  type: "p",
-  text: "A sewer camera inspection is the most direct way to see exactly what's happening inside the line and determine the right level of repair — rather than guessing based on symptoms alone and potentially digging in the wrong spot. If sewage is actively backing up into the home or creating an immediate sanitation risk, that's an emergency — see Emergency Plumbing rather than waiting for a scheduled inspection.",
-},
+
+      {
+        type: "p",
+        text: "A sewer camera inspection is the most direct way to see exactly what's happening inside the line and determine the right level of repair — rather than guessing based on symptoms alone and potentially digging in the wrong spot. If sewage is actively backing up into the home or creating an immediate sanitation risk, that's an emergency — see Emergency Plumbing rather than waiting for a scheduled inspection.",
+      },
       { type: "h2", text: "What to Expect From Sewer Line Repair" },
       {
         type: "p",
@@ -734,16 +750,20 @@ export const services: ServicePage[] = [
         q: "Does my whole yard need to be dug up to fix a sewer line?",
         a: "Not always — trenchless methods can repair or replace a line in many situations without full excavation.",
       },
-      
-{
-  q: "How is a sewer line problem actually diagnosed?",
-  a: "A sewer camera inspection allows the plumber to see the inside of the line directly and identify visible problems before deciding on the appropriate repair.",
-},
+
+      {
+        q: "How is a sewer line problem actually diagnosed?",
+        a: "A sewer camera inspection allows the plumber to see the inside of the line directly and identify visible problems before deciding on the appropriate repair.",
+      },
     ],
-    relatedServiceSlugs: ["sewer-camera-inspection-tupelo-ms", "hydro-jetting-tupelo-ms", "drain-cleaning-tupelo-ms"],
+    relatedServiceSlugs: [
+      "sewer-camera-inspection-tupelo-ms",
+      "hydro-jetting-tupelo-ms",
+      "drain-cleaning-tupelo-ms",
+    ],
     ctaLabel: "Dealing With Recurring Backups or a Sewer Line Issue?",
   },
-    {
+  {
     slug: "sewer-camera-inspection-tupelo-ms",
     cluster: "Drain & Sewer",
     navLabel: "Sewer Camera Inspection",
@@ -751,7 +771,8 @@ export const services: ServicePage[] = [
     metaDescription:
       "See what's actually happening inside your sewer line. Camera inspections diagnose recurring clogs, root intrusion, cracks, and pipe condition in Tupelo, MS.",
     h1: "Sewer Camera Inspection in Tupelo, MS",
-    intro: "A direct visual look inside the sewer line before deciding on any repair.",
+    intro:
+      "A direct visual look inside the sewer line before deciding on any repair.",
     body: [
       {
         type: "p",
@@ -836,11 +857,15 @@ export const services: ServicePage[] = [
         a: "No — it confirms what's visible in the accessible sections inspected, not an exhaustive certification of the entire line's condition.",
       },
     ],
-    relatedServiceSlugs: ["hydro-jetting-tupelo-ms", "sewer-line-repair-tupelo-ms", "drain-cleaning-tupelo-ms"],
+    relatedServiceSlugs: [
+      "hydro-jetting-tupelo-ms",
+      "sewer-line-repair-tupelo-ms",
+      "drain-cleaning-tupelo-ms",
+    ],
     ctaLabel: "Want to See What's Really Going On?",
   },
   // ---------- WATER HEATERS ----------
-    {
+  {
     slug: "water-heater-repair-tupelo-ms",
     cluster: "Water Heaters",
     navLabel: "Water Heater Repair",
@@ -848,30 +873,31 @@ export const services: ServicePage[] = [
     metaDescription:
       "No hot water or a water heater acting up? Get it diagnosed and repaired in Tupelo, MS. Common causes, what to check first, and when to call.",
     h1: "Water Heater Repair in Tupelo, MS",
-    intro: "Diagnosing and fixing no hot water, inconsistent temperature, and noisy units.",
+    intro:
+      "Diagnosing and fixing no hot water, inconsistent temperature, and noisy units.",
     body: [
       {
         type: "p",
         text: "No hot water — or hot water that's inconsistent, running out fast, or making strange noises — is one of the most common reasons people call a plumber. Most water heater problems have a specific, identifiable cause, and many are repairable without replacing the whole unit.",
       },
       { type: "h2", text: "What to Check First" },
-{
-  type: "list",
-  items: [
-    "For gas units: confirm the pilot light is lit and the gas supply is on",
-    "For electric units: check that the breaker hasn't tripped",
-    "For either type: check that the thermostat setting hasn't been changed",
-  ],
-},
-{
-  type: "p",
-  text: "These are basic, safe checks only — gas valves, electrical components, and internal parts of the unit are best left to a plumber to open up or adjust.",
-},
+      {
+        type: "list",
+        items: [
+          "For gas units: confirm the pilot light is lit and the gas supply is on",
+          "For electric units: check that the breaker hasn't tripped",
+          "For either type: check that the thermostat setting hasn't been changed",
+        ],
+      },
+      {
+        type: "p",
+        text: "These are basic, safe checks only — gas valves, electrical components, and internal parts of the unit are best left to a plumber to open up or adjust.",
+      },
       { type: "h2", text: "No Hot Water at All" },
       {
         type: "p",
-       
-text: "On an electric unit, this is commonly a failed heating element — the component that actually heats the water can burn out over time, especially on an older tank. On a gas unit, a pilot light that's gone out or an ignition problem is the more typical cause. These problems can often be repaired without replacing the entire tank, depending on the condition of the unit.",
+
+        text: "On an electric unit, this is commonly a failed heating element — the component that actually heats the water can burn out over time, especially on an older tank. On a gas unit, a pilot light that's gone out or an ignition problem is the more typical cause. These problems can often be repaired without replacing the entire tank, depending on the condition of the unit.",
       },
       { type: "h2", text: "Inconsistent or Lukewarm Water" },
       {
@@ -933,7 +959,10 @@ text: "On an electric unit, this is commonly a failed heating element — the co
         a: "The failure points and troubleshooting steps differ between the two, but the same plumber handles both.",
       },
     ],
-    relatedServiceSlugs: ["water-heater-installation-tupelo-ms", "tankless-water-heaters-tupelo-ms"],
+    relatedServiceSlugs: [
+      "water-heater-installation-tupelo-ms",
+      "tankless-water-heaters-tupelo-ms",
+    ],
     ctaLabel: "No Hot Water? Get It Diagnosed Today",
   },
   {
@@ -942,48 +971,119 @@ text: "On an electric unit, this is commonly a failed heating element — the co
     navLabel: "Water Heater Installation",
     title: "Water Heater Installation in Tupelo, MS",
     metaDescription:
-      "Replacing an old water heater or installing a new one in Tupelo, MS? Get help choosing the right size and type, then get it installed correctly.",
+      "New water heater or replacement in Tupelo, MS? Get help choosing the right type, size, and fuel source, then get it installed correctly.",
     h1: "Water Heater Installation in Tupelo, MS",
-    intro: "New water heater installation and replacement, sized and specced correctly.",
+    intro:
+      "New water heater installation and replacement, sized and specced correctly.",
     body: [
       {
         type: "p",
-        text: "Whether an old unit has failed beyond repair or a new build needs a water heater from scratch, installation involves more than swapping one unit for another — sizing, fuel type, and unit type all affect how well the new water heater performs.",
+        text: "Whether an old unit has failed beyond repair or a new build needs a water heater from scratch, installation involves more than swapping one unit for another — the right type, fuel source, and sizing all affect how well the new water heater actually performs for the household it serves.",
       },
       { type: "h2", text: "When Replacement Makes More Sense Than Repair" },
       {
         type: "p",
-        text: "A water heater nearing the end of its typical service life, or one with a significant failure like a leaking tank, is usually more cost-effective to replace than to keep repairing.",
+        text: "A leaking tank, repeated failures, frequent repairs, or an aging unit can all be reasons to consider replacement. The right choice depends on the condition of the unit, what the repair would actually involve, and how much service life the unit likely has left — not simply its age on its own. See Water Heater Repair if the unit's current problem hasn't been diagnosed yet; a problem doesn't automatically mean replacement is the answer.",
       },
-      { type: "h2", text: "Choosing the Right Water Heater" },
+      { type: "h2", text: "Signs Your Water Heater May Need Replacement" },
       {
         type: "list",
         items: [
-          "Tank vs. tankless — a tank stores and heats water continuously; tankless heats on demand",
-          "Gas vs. electric — largely determined by available utilities",
-          "Sizing — correct sizing depends on household size and usage patterns",
+          "The tank itself is leaking, rather than a fitting or connection",
+          "The unit has needed repeated repairs",
+          "Hot water has become increasingly unreliable",
+          "Visible corrosion or deterioration on the tank or connections",
+          "The unit no longer keeps up with the household's hot water demand",
         ],
+      },
+      { type: "h2", text: "Choosing the Right Water Heater" },
+      { type: "h2", text: "Tank vs. Tankless" },
+      {
+        type: "p",
+        text: "A tank water heater stores and continuously heats a reserve of hot water; a tankless unit heats water on demand as it flows through, with no standby tank. Which one fits better depends on household hot water demand, available utilities, installation space, and budget. Tankless units typically cost more upfront and can provide continuous hot water within the system's rated flow and capacity. See Tankless Water Heaters for a deeper look at that option specifically.",
+      },
+      { type: "h2", text: "Gas vs. Electric" },
+      {
+        type: "p",
+        text: "Selection is often largely determined by what utility connections are already available at the installation location, but it can also depend on electrical capacity, venting requirements for gas units, and the specific installation space. Switching fuel types — gas to electric or the reverse — isn't a simple one-for-one swap, since it can involve different connections, venting, or electrical requirements than the existing setup. The right fit for a given home is confirmed during the installation assessment rather than decided in the abstract.",
+      },
+      { type: "h2", text: "Sizing" },
+      {
+        type: "p",
+        text: "Correct sizing depends on household size, typical hot water usage, and peak demand — multiple showers running at once, along with appliances like a dishwasher or washing machine, is a different sizing situation than a single-occupant household. For a tank system, recovery capacity (how quickly the tank reheats after use) factors in alongside overall tank size. Getting sizing right matters for both comfort and the practical cost of the unit.",
+      },
+      { type: "h2", text: "What Water Heater Installation Involves" },
+      {
+        type: "list",
+        items: [
+          "Assessing the existing setup or installation location",
+          "Determining the appropriate water heater type and capacity for the household",
+          "Checking available fuel and electrical connections",
+          "Confirming installation requirements and compatibility with the space",
+          "Removing the existing unit, when replacement is involved",
+          "Installing and connecting the new water heater",
+          "Checking connections and confirming the system is operating correctly",
+        ],
+      },
+      { type: "h2", text: "Why Professional Installation Matters" },
+      {
+        type: "p",
+        text: "Correct installation isn't just connecting a new unit — it involves confirming compatibility with the home's existing plumbing and electrical or gas setup, proper venting where applicable, correct sizing for the household, and safe operation once everything's connected. Getting any of these wrong can affect how well the unit performs or how safely it operates, which is why installation is handled as an assessed job rather than a standardized swap.",
+      },
+      { type: "h2", text: "Water Heater Replacement vs. New Installation" },
+      {
+        type: "p",
+        text: "Replacement means swapping out an existing water heater that's failing, aging, or no longer the right fit for the household. New installation means putting in a water heater where one doesn't currently exist — most commonly as part of new construction or a larger remodeling project. See New Construction & Remodeling for how that's coordinated with a broader build or renovation timeline.",
+      },
+      { type: "h2", text: "Factors That Affect the Right Installation" },
+      {
+        type: "p",
+        text: "Beyond the unit itself, the installation location, existing plumbing configuration, available space, and how the new unit needs to connect into the home's current setup all factor into what a given installation actually involves. This is part of why an in-person assessment, rather than a decision made over the phone alone, is the most reliable way to confirm what's needed.",
       },
     ],
     faqs: [
       {
         q: "When should I replace my water heater instead of repairing it?",
-        a: "An older unit with a major failure is usually more cost-effective to replace.",
+        a: "An older unit with a major failure, or one needing repeated repairs, is often more cost-effective to replace — but the right call depends on the unit's actual condition.",
       },
       {
         q: "What size water heater do I need?",
-        a: "Sizing depends on household size and hot water usage patterns.",
+        a: "Sizing depends on household size, hot water usage patterns, and how much simultaneous demand the household places on the system.",
       },
       {
         q: "Should I choose gas or electric?",
-        a: "Largely determined by what utility connections are already available.",
+        a: "Largely determined by what utility connections are already available, though electrical capacity and venting requirements can also factor in.",
       },
       {
-        q: "Is a tankless water heater worth the extra cost?",
-        a: "It depends on household usage — tankless costs more upfront but provides continuous hot water.",
+        q: "What's the difference between a tank and tankless water heater?",
+        a: "A tank stores and continuously heats a reserve of water; a tankless unit heats water on demand with no standby tank. See Tankless Water Heaters for more detail.",
+      },
+      {
+        q: "Can an existing water heater be replaced with a different type?",
+        a: "Often, yes — switching between tank and tankless, or gas and electric, is possible depending on existing utilities, available space, and installation requirements, which get confirmed during an assessment.",
+      },
+      {
+        q: "Can a water heater be installed during a remodeling project?",
+        a: "Yes — new water heater installation is a normal part of new construction and remodeling work. See New Construction & Remodeling.",
+      },
+      {
+        q: "What should I consider before replacing my water heater?",
+        a: "Unit type, fuel source, sizing, available space, and installation requirements are the main factors — along with whether the current unit's issue is actually something that needs replacement at all.",
+      },
+      {
+        q: "How do I know if my water heater needs repair or replacement?",
+        a: "A leaking tank or repeated failures tend to point toward replacement, while a single component issue on an otherwise sound unit is often a repair. See Water Heater Repair for how that diagnosis is made.",
+      },
+      {
+        q: "How long does water heater installation take?",
+        a: "It varies depending on the existing setup, the type of unit being installed, access to the installation location, and whether any modifications are needed — a straightforward replacement is typically quicker than a new installation requiring new connections.",
       },
     ],
-    relatedServiceSlugs: ["water-heater-repair-tupelo-ms", "tankless-water-heaters-tupelo-ms"],
+    relatedServiceSlugs: [
+      "water-heater-repair-tupelo-ms",
+      "tankless-water-heaters-tupelo-ms",
+      "new-construction-remodeling-plumbing-tupelo-ms",
+    ],
     ctaLabel: "Ready for a New Water Heater?",
   },
   {
@@ -992,49 +1092,130 @@ text: "On an electric unit, this is commonly a failed heating element — the co
     navLabel: "Tankless Water Heaters",
     title: "Tankless Water Heaters in Tupelo, MS",
     metaDescription:
-      "Tankless water heater installation and repair in Tupelo, MS. Continuous hot water without a storage tank — see if it's the right fit.",
+      "Considering tankless in Tupelo, MS? Advantages, tradeoffs, sizing, installation, maintenance, and repair for on-demand water heaters.",
     h1: "Tankless Water Heaters in Tupelo, MS",
-    intro: "On-demand hot water — installation, repair, and whether it's the right fit.",
+    intro:
+      "On-demand hot water — whether it's the right fit, installation, maintenance, and repair.",
     body: [
       {
         type: "p",
-        text: "A tankless water heater heats water as it flows through the unit instead of storing and continuously heating a tank of water. That removes the standby tank altogether — no waiting for a tank to refill and reheat.",
+        text: "A tankless water heater heats water as it flows through the unit instead of storing and continuously heating a tank of water. That removes the standby tank altogether, but it also means performance depends on the system's rated capacity rather than how much water happens to be sitting in a tank.",
+      },
+      { type: "h2", text: "What Is a Tankless Water Heater?" },
+      {
+        type: "p",
+        text: "Water enters the unit, passes over a heating element or heat exchanger, and comes out hot — all in the time it takes to flow through, with no tank storing water in advance. Because there's no reservoir, a tankless unit's performance depends on its rated flow and heating capacity relative to how much hot water is actually being asked of it at once, along with the temperature of the water coming in.",
       },
       { type: "h2", text: "Tankless vs. Traditional Tank Water Heaters" },
       {
-        type: "list",
-        items: [
-          "Continuous supply — doesn't run out of hot water during heavy simultaneous use",
-          "Space — significantly smaller, often wall-mounted",
-          "Upfront cost — typically higher than a comparable tank unit",
-          "Lifespan — generally longer than tank units",
-        ],
+        type: "p",
+        text: "Tankless systems have some real advantages: on-demand heating with no large storage tank, a smaller, often wall-mounted footprint, reduced standby heat loss since there's no tank sitting full of hot water around the clock, and often a longer service life than a typical tank unit. The tradeoffs are a higher upfront equipment cost, flow and capacity limits that depend on the specific unit, more particular installation requirements, and system sizing that matters more than it does with a tank.",
       },
-      { type: "h2", text: "Repairing an Existing Tankless Unit" },
       {
         type: "p",
-        text: "Tankless units have their own set of components — venting requirements, flow sensors, and heat exchangers — distinct from a tank unit's troubleshooting steps.",
+        text: "A traditional tank system stores and continuously heats a reserve of hot water. It generally costs less upfront, needs physical space for the tank, and draws from that stored reserve during periods of high demand rather than heating water in real time. Neither type is universally better — the right choice depends on the household and the installation itself.",
+      },
+      { type: "h2", text: "Is a Tankless Water Heater Right for Your Home?" },
+      {
+        type: "p",
+        text: "Suitability depends on more than household size. Relevant factors include how much hot water demand happens simultaneously (multiple showers, a dishwasher, and a washing machine all running at once is a different situation than one fixture at a time), the flow rate and temperature rise a household actually needs, the incoming water temperature, available fuel source and electrical capacity, the installation location, and budget. A properly sized tankless system can provide continuous hot water while demand stays within its rated flow and heating capacity — but demand that exceeds that capacity will still be limited, the same way an undersized tank runs out.",
+      },
+      { type: "h2", text: "Tankless Water Heater Sizing" },
+      {
+        type: "p",
+        text: "Sizing a tankless unit is a different calculation than choosing a tank's storage capacity. It comes down to the maximum simultaneous flow the household needs — how many fixtures might reasonably run at once — along with the temperature rise required, which depends on how cold the incoming water is relative to the desired output temperature. Available gas or electrical capacity at the installation location also factors in, since larger-capacity units require more fuel or power to operate. The right size for a specific home is confirmed against the manufacturer's rated output during an assessment, not estimated from a general rule.",
+      },
+      { type: "h2", text: "Tankless Water Heater Installation" },
+      {
+        type: "list",
+        items: [
+          "Assess the existing system and installation location",
+          "Determine the appropriate tankless system and capacity for the household",
+          "Confirm available fuel or electrical service",
+          "Evaluate required connections and installation conditions",
+          "Address venting requirements for applicable gas systems",
+          "Connect water lines and system components",
+          "Configure and test the system",
+          "Confirm proper operation",
+        ],
+      },
+      {
+        type: "p",
+        text: "See Water Heater Installation for the broader installation and replacement process that applies across water heater types.",
+      },
+      { type: "h2", text: "Tankless Water Heater Maintenance" },
+      {
+        type: "p",
+        text: "Maintenance needs vary by unit and water conditions. Mineral and scale buildup inside the heat exchanger is the most common long-term concern, particularly with harder water, since it can affect efficiency and performance over time. Some systems have filters that need periodic attention. Manufacturer-specific maintenance recommendations are the most reliable guide for a given unit, rather than a single fixed interval that applies to every system.",
+      },
+      { type: "h2", text: "Repairing an Existing Tankless Water Heater" },
+      {
+        type: "p",
+        text: "Tankless units have their own set of failure points, distinct from a tank system's troubleshooting — flow sensors, heat exchangers, ignition components on gas units, and error codes the unit itself can display. Common symptoms include inconsistent hot water, a unit that isn't heating at all, reduced flow, or an active error condition. Diagnosis depends on the specific unit and symptoms, so a plumber identifying the actual cause is more reliable than guessing from the symptom alone. See Water Heater Repair for general water heater troubleshooting that applies across unit types.",
+      },
+      {
+        type: "h2",
+        text: "When Tankless Repair May Make More Sense Than Replacement",
+      },
+      {
+        type: "p",
+        text: "Whether to repair or replace a tankless unit depends on its age and condition, what the specific failure is, whether replacement components are reasonably available, and whether the unit still meets the household's current hot water demand. A component-level issue on an otherwise sound unit is often repairable; a unit that's failed significantly or no longer meets household needs may be a better candidate for replacement.",
+      },
+      {
+        type: "h2",
+        text: "Can You Replace a Traditional Water Heater With Tankless?",
+      },
+      {
+        type: "p",
+        text: "Often, yes, but it's not always a simple one-for-one equipment swap. Switching from tank to tankless can involve evaluating available fuel source, electrical capacity, venting requirements for gas units, how water lines connect, the installation location, and whether the plumbing configuration needs any adjustment. See Water Heater Installation for how that evaluation works.",
       },
     ],
     faqs: [
       {
+        q: "What is a tankless water heater?",
+        a: "A water heater that heats water on demand as it flows through the unit, rather than storing and continuously heating a tank of water in advance.",
+      },
+      {
+        q: "Are tankless water heaters worth it?",
+        a: "It depends on the household — tankless systems offer space savings and reduced standby heat loss, but cost more upfront. The right fit depends on hot water demand, budget, and installation requirements.",
+      },
+      {
+        q: "Can a tankless water heater run multiple showers at once?",
+        a: "It depends on the unit's rated flow capacity, the incoming water temperature, and the required temperature rise — demand within the unit's capacity is fine, but exceeding it will limit performance the same way an undersized tank would.",
+      },
+      {
         q: "How long do tankless water heaters last?",
-        a: "Tankless units generally have a longer service life than traditional tank water heaters.",
+        a: "Tankless units can have a longer service life than many traditional tank systems, though actual lifespan depends on the unit, water conditions, and maintenance.",
       },
       {
-        q: "Is a tankless water heater a good fit for my household?",
-        a: "Households with high or simultaneous hot water demand tend to benefit most.",
+        q: "Do tankless water heaters need maintenance?",
+        a: "Maintenance needs can be important depending on the system and local water conditions, particularly around mineral and scale buildup in the heat exchanger.",
       },
       {
-        q: "Can a tankless water heater be repaired, or does it need to be replaced?",
-        a: "Many tankless issues, including flow sensor and heat exchanger problems, are repairable.",
+        q: "Do gas tankless water heaters need special venting?",
+        a: "Gas tankless units can have specific venting requirements that depend on the equipment and installation — this gets confirmed as part of the installation assessment.",
       },
       {
-        q: "Do tankless water heaters need special venting?",
-        a: "Gas tankless units generally have specific venting requirements.",
+        q: "Can a traditional water heater be replaced with tankless?",
+        a: "Often, yes, but it requires evaluating available fuel source, electrical capacity, venting, and the installation location rather than assuming a direct swap.",
+      },
+      {
+        q: "What size tankless water heater do I need?",
+        a: "Sizing depends on simultaneous flow demand, incoming water temperature, and required temperature rise, confirmed against a specific unit's rated output during an assessment.",
+      },
+      {
+        q: "Can a tankless water heater be repaired?",
+        a: "Many tankless issues — including flow sensor, heat exchanger, and ignition-related problems — are repairable, depending on the specific unit and failure.",
+      },
+      {
+        q: "Why isn't my tankless water heater producing enough hot water?",
+        a: "Possible causes include demand exceeding the unit's rated capacity, scale buildup affecting the heat exchanger, or a sensor or component issue — a plumber can confirm the actual cause for a specific unit.",
       },
     ],
-    relatedServiceSlugs: ["water-heater-installation-tupelo-ms", "water-heater-repair-tupelo-ms"],
+    relatedServiceSlugs: [
+      "water-heater-installation-tupelo-ms",
+      "water-heater-repair-tupelo-ms",
+    ],
     ctaLabel: "Considering Tankless, or Need an Existing Unit Serviced?",
   },
 
@@ -1045,7 +1226,7 @@ text: "On an electric unit, this is commonly a failed heating element — the co
     navLabel: "Leak Detection",
     title: "Leak Detection in Tupelo, MS",
     metaDescription:
-      "Unexplained water bill, damp spots, or the sound of running water? Leak detection finds the source before it causes more damage.",
+      "Unexplained water bill, damp spots, or the sound of running water in Tupelo, MS? Leak detection finds the source before it causes more damage.",
     h1: "Leak Detection in Tupelo, MS",
     intro: "Finding hidden leaks before they cause more damage.",
     body: [
@@ -1057,28 +1238,68 @@ text: "On an electric unit, this is commonly a failed heating element — the co
       {
         type: "list",
         items: [
-          "A noticeably higher water bill with no change in usage",
+          "An increase in water usage with no change in habits",
           "The sound of running water when nothing is turned on",
           "A damp or discolored spot on a wall, ceiling, or floor",
           "A consistently damp area in the yard with no clear cause",
           "Low water pressure that developed gradually",
         ],
       },
+      { type: "h2", text: "What Leak Detection Does" },
+      {
+        type: "p",
+        text: "Leak detection is about locating the source of a hidden or hard-to-trace leak, rather than repairing a leak that's already visible. A dripping faucet or a leaking fitting under a sink is usually a straightforward plumbing repair — leak detection is for the cases where something's clearly wrong, but it isn't obvious where the water is actually coming from.",
+      },
+      { type: "h2", text: "How Leak Detection Works" },
+      {
+        type: "list",
+        items: [
+          "Reviewing the symptoms and where water or its effects are showing up",
+          "Checking accessible plumbing and fixtures first to rule out the obvious",
+          "Narrowing down the suspected leak location based on what's been found so far",
+          "Using appropriate detection methods for the situation to pinpoint the source",
+          "Identifying the likely source and the area affected",
+          "Recommending the appropriate repair based on what's actually found",
+        ],
+      },
+      { type: "h2", text: "Where Hidden Leaks Can Occur" },
+      {
+        type: "list",
+        items: [
+          "Inside walls, behind fixtures or supply lines",
+          "Beneath floors, including slab leaks under a concrete foundation",
+          "In the underground water line between the street or meter and the house",
+          "At concealed supply pipe connections not visible without investigation",
+          "Around fixture connections that aren't actively dripping but are seeping slowly",
+        ],
+      },
       { type: "h2", text: "Could It Be a Slab Leak?" },
       {
         type: "p",
-        text: "If the suspected leak is under the concrete slab or foundation — often a warm spot on the floor, or sounds of running water near the foundation — that's a specific case with its own considerations.",
+        text: "If the suspected leak is under the concrete slab or foundation — which can sometimes be associated with a warm spot on the floor, or the sound of running water near the foundation — that's a specific situation with its own considerations. Leak detection finds where a hidden leak is occurring; slab leak repair addresses a leak that's been located beneath or associated with the foundation. See Slab Leak Repair for that distinction in more detail.",
       },
-      { type: "h2", text: "When a Leak Points to a Bigger Pattern" },
+      { type: "h2", text: "When Should You Consider Leak Detection?" },
+      {
+        type: "list",
+        items: [
+          "The source of dampness or moisture isn't obvious",
+          "Water usage has increased without a clear reason",
+          "Running water sounds continue with everything turned off",
+          "A wall, floor, or ceiling keeps becoming damp despite no visible cause",
+          "Water pressure has changed gradually with no obvious plumbing event behind it",
+          "An underground or concealed leak is suspected but hasn't been confirmed",
+        ],
+      },
+      { type: "h2", text: "What Happens After a Leak Is Located?" },
       {
         type: "p",
-        text: "If leak detection turns up more than one leak, or the underlying pipe material looks like the real issue, that's a sign the home may need a broader look at its piping rather than another individual repair.",
+        text: "What happens next depends entirely on what's found. A leak at an accessible fitting or connection is often a straightforward repair. A leak under a slab points toward slab leak repair. A leak in an underground supply line may call for water line service, depending on where the leak is located and what the inspection finds. And if leak detection turns up more than one leak, or the pipe material itself looks like the underlying issue, that's a sign worth evaluating the home's piping more broadly — see Repiping for what that conversation looks like.",
       },
     ],
     faqs: [
       {
         q: "How do I know if I have a hidden leak?",
-        a: "A rising water bill with no change in usage, the sound of running water with everything off, or unexplained damp spots.",
+        a: "An increase in water usage with no change in habits, the sound of running water with everything off, or unexplained damp spots can be signs of a hidden leak, particularly when they occur without an obvious plumbing cause.",
       },
       {
         q: "What are the signs of a slab leak specifically?",
@@ -1086,14 +1307,31 @@ text: "On an electric unit, this is commonly a failed heating element — the co
       },
       {
         q: "How is a hidden leak found without tearing open walls?",
-        a: "Leak detection tools locate the leak's position first, so any repair is targeted.",
+        a: "Depending on the location and type of leak, appropriate detection methods can help narrow down where the leak is occurring before opening walls, floors, or other areas for repair.",
       },
       {
         q: "Why did my water bill suddenly go up?",
-        a: "A hidden leak is one of the most common causes of an unexplained water bill increase.",
+        a: "An unexplained increase in water usage can be a sign of a hidden leak, especially when your normal water-use habits haven't changed.",
+      },
+      {
+        q: "What's the difference between leak detection and slab leak repair?",
+        a: "Leak detection finds where a hidden leak is occurring. Slab leak repair addresses a leak that's been located beneath or associated with the foundation.",
+      },
+      {
+        q: "What happens if leak detection finds more than one leak?",
+        a: "Multiple leaks, or a pipe material that looks like the underlying issue, can be a sign the home's piping needs a broader evaluation rather than another individual repair — see Repiping.",
+      },
+      {
+        q: "Is leak detection the same as plumbing repair?",
+        a: "No — leak detection is the diagnostic step that finds where a leak is coming from. The repair itself, whether it's a fitting, a slab leak, or a water line, is a separate next step based on what's found.",
       },
     ],
-    relatedServiceSlugs: ["slab-leak-repair-tupelo-ms", "repiping-tupelo-ms"],
+    relatedServiceSlugs: [
+      "slab-leak-repair-tupelo-ms",
+      "repiping-tupelo-ms",
+      "water-line-services-tupelo-ms",
+      "plumbing-repair-tupelo-ms",
+    ],
     ctaLabel: "Suspect a Hidden Leak?",
   },
   {
@@ -1102,13 +1340,13 @@ text: "On an electric unit, this is commonly a failed heating element — the co
     navLabel: "Slab Leak Repair",
     title: "Slab Leak Repair in Tupelo, MS",
     metaDescription:
-      "Warm spot on the floor or water near your foundation in Tupelo, MS? Slab leak detection and repair — and how to tell it apart from a foundation issue.",
+      "Warm spot on the floor or water near your foundation in Tupelo, MS? Slab leak repair, diagnosis, and how it's different from a foundation issue.",
     h1: "Slab Leak Repair in Tupelo, MS",
-    intro: "Detecting and repairing leaks under a concrete foundation.",
+    intro: "Repairing leaks beneath or associated with a concrete foundation.",
     body: [
       {
         type: "p",
-        text: "A slab leak is a leak in a water line running underneath a home's concrete foundation. Because the pipe is inaccessible without specialized detection, slab leaks tend to go unnoticed longer than other leaks — and they're often confused with foundation problems.",
+        text: "A slab leak generally refers to a leak in plumbing located beneath or associated with a home's concrete slab foundation. Because the pipe is inaccessible without specialized detection, slab leaks tend to go unnoticed longer than other leaks — and they're often confused with foundation problems.",
       },
       { type: "h2", text: "Signs of a Slab Leak" },
       {
@@ -1116,40 +1354,103 @@ text: "On an electric unit, this is commonly a failed heating element — the co
         items: [
           "A warm or noticeably damp spot on an otherwise cool floor",
           "The sound of running water near the foundation with no fixture in use",
-          "A water bill that's risen with no change in usage",
+          "An unexplained increase in water usage",
           "Reduced water pressure that developed gradually",
+          "Persistent moisture or water appearing near the slab edge",
         ],
       },
-      { type: "h2", text: "Slab Leak vs. Foundation Problem — How to Tell Them Apart" },
       {
         type: "p",
-        text: "A slab leak is a plumbing problem — a pipe under the slab has failed. A foundation problem is a structural issue with the slab or footing itself, which needs a foundation repair specialist instead. If water usage or a warm floor spot is the main symptom, that points toward a plumbing leak. If it's primarily cracking or structural movement with no water signs, that's more likely a foundation matter.",
+        text: "No single symptom on its own confirms a slab leak — these can be signs worth having looked at, particularly in combination or without another obvious explanation.",
+      },
+      { type: "h2", text: "What Causes Slab Leaks" },
+      {
+        type: "list",
+        items: [
+          "Pipe deterioration or corrosion over time, depending on the pipe material and condition",
+          "Damaged connections or joints beneath the slab",
+          "Ground shifting or movement placing stress on the piping",
+          "Pressure-related stress on a section of line",
+          "General age and material-related deterioration",
+        ],
+      },
+      { type: "h2", text: "How a Slab Leak Is Diagnosed" },
+      {
+        type: "p",
+        text: "Diagnosis typically starts the same way leak detection does more broadly — reviewing symptoms, checking accessible plumbing, and narrowing down the likely location before deciding on a repair approach. See Leak Detection for more on how that process works. Once a leak is confirmed to be under or associated with the slab, the next step is figuring out the right repair approach for that specific location and pipe condition.",
+      },
+      { type: "h2", text: "Slab Leak Repair Options" },
+      {
+        type: "p",
+        text: "The right approach depends on the location and condition of the affected line. Depending on the situation, repair may involve accessing the affected area through the slab to repair or replace that section directly, or rerouting the affected water line above the slab instead, where the layout and situation allow for it. Neither approach is automatically the right call for every slab leak — the specific location, extent of damage, and plumbing layout determine which makes more sense.",
+      },
+      { type: "h2", text: "Does the Slab Always Need to Be Opened?" },
+      {
+        type: "p",
+        text: "Not every slab leak requires the same repair approach. Depending on where the leak is located, the condition of the piping, and the layout of the plumbing system, repair may involve accessing the affected section directly or considering an alternate routing approach that avoids opening the slab at all. Which option applies is confirmed once the leak's location and the surrounding plumbing are actually assessed.",
+      },
+      {
+        type: "h2",
+        text: "Slab Leak vs. Foundation Problem — How to Tell Them Apart",
+      },
+      {
+        type: "p",
+        text: "A slab leak is a plumbing problem — a pipe under the slab has failed. A foundation problem is a structural issue with the slab or footing itself, which needs a foundation repair specialist instead. Water-related symptoms can point toward a plumbing leak, while cracking or structural movement without accompanying water symptoms may warrant evaluation by a foundation specialist. When the signs overlap, professional assessment is needed to determine the cause.",
       },
       { type: "h2", text: "Is a Slab Leak an Emergency?" },
       {
         type: "p",
-        text: "Not always as urgent as a burst pipe, but it shouldn't be ignored — left unaddressed, it can lead to water damage, mold, and higher water bills over time.",
+        text: "Not always as urgent as a burst pipe, but it shouldn't be ignored — left unaddressed, it can lead to water damage, mold, and higher water bills over time. A slab leak that's actively causing significant water intrusion is worth treating with more urgency; see Emergency Plumbing if water is actively flooding or spreading.",
+      },
+      { type: "h2", text: "What Happens After a Slab Leak Is Located" },
+      {
+        type: "p",
+        text: "Once the leak's location and the affected pipe's condition are confirmed, the repair options are evaluated against that specific situation — direct access and repair, or rerouting above the slab — and the appropriate approach is carried out. After the repair, the affected plumbing can be checked to verify that the leak has been addressed and the system is functioning as expected.",
       },
     ],
     faqs: [
       {
         q: "What is a slab leak?",
-        a: "A leak in a water line running underneath a home's concrete foundation.",
+        a: "A leak in plumbing located beneath or associated with a home's concrete slab foundation.",
       },
       {
-        q: "How do I know if it's a slab leak or a foundation problem?",
-        a: "Water-related symptoms point toward a plumbing leak; structural symptoms with no water signs point toward a foundation issue.",
+        q: "What are the signs of a slab leak?",
+        a: "A warm or damp spot on the floor, the sound of running water near the foundation, an unexplained rise in water usage, or gradually reduced water pressure.",
+      },
+      {
+        q: "How is a slab leak diagnosed?",
+        a: "The process starts with reviewing symptoms and checking accessible plumbing, similar to leak detection generally, before narrowing down the leak's specific location beneath or near the slab.",
+      },
+      {
+        q: "Does a slab leak always require breaking the concrete?",
+        a: "Not always — depending on the leak's location and the plumbing layout, rerouting the affected line above the slab can sometimes avoid opening the slab at all.",
+      },
+      {
+        q: "Can a slab leak be repaired without opening the slab?",
+        a: "In some situations, yes, by rerouting the affected water line above the slab instead of accessing it directly — whether that's an option depends on the specific leak and layout.",
+      },
+      {
+        q: "How serious is a slab leak?",
+        a: "It's not always as urgent as a burst pipe, but it shouldn't be ignored — left unaddressed, it can lead to water damage, mold, and rising water bills over time.",
       },
       {
         q: "Is a slab leak an emergency?",
-        a: "Not usually as urgent as a burst pipe, but shouldn't be ignored.",
+        a: "Not usually as urgent as a burst pipe, but it's worth prompt attention. If water is actively flooding or spreading, treat it as an emergency.",
       },
       {
-        q: "Does the slab have to be broken open to fix it?",
-        a: "Sometimes, but not always — the water line can sometimes be rerouted above the slab instead.",
+        q: "How do I know if it's a slab leak or a foundation problem?",
+        a: "Water-related symptoms point toward a plumbing leak; structural symptoms like cracking or movement with no water signs point toward a foundation issue instead.",
+      },
+      {
+        q: "What happens after a slab leak is located?",
+        a: "The repair options are evaluated based on the leak's specific location and the pipe's condition, the appropriate repair is carried out, and the surrounding plumbing is checked afterward to confirm the issue is resolved.",
       },
     ],
-    relatedServiceSlugs: ["leak-detection-tupelo-ms"],
+    relatedServiceSlugs: [
+      "leak-detection-tupelo-ms",
+      "water-line-services-tupelo-ms",
+      "plumbing-repair-tupelo-ms",
+    ],
     ctaLabel: "Suspect a Slab Leak?",
   },
   {
@@ -1185,7 +1486,10 @@ text: "On an electric unit, this is commonly a failed heating element — the co
           "Aging copper — can develop pinhole leaks in multiple spots",
         ],
       },
-      { type: "h2", text: "How Repiping Is Different From a Water Line Replacement" },
+      {
+        type: "h2",
+        text: "How Repiping Is Different From a Water Line Replacement",
+      },
       {
         type: "p",
         text: "Repiping refers to the supply piping inside the home. The underground water line from the street or meter to the house is a separate matter.",
@@ -1209,7 +1513,10 @@ text: "On an electric unit, this is commonly a failed heating element — the co
         a: "An in-person evaluation of the home's current piping is the right first step.",
       },
     ],
-    relatedServiceSlugs: ["leak-detection-tupelo-ms", "water-line-services-tupelo-ms"],
+    relatedServiceSlugs: [
+      "leak-detection-tupelo-ms",
+      "water-line-services-tupelo-ms",
+    ],
     ctaLabel: "Noticing Repeated Leaks or Pressure Problems?",
   },
   {
@@ -1220,7 +1527,8 @@ text: "On an electric unit, this is commonly a failed heating element — the co
     metaDescription:
       "Whole-house pressure drop, a wet spot in the yard, or a rising water bill in Tupelo, MS? It may be the underground water line, not interior plumbing.",
     h1: "Water Line Services in Tupelo, MS",
-    intro: "Repair and replacement of the buried line from the street to your home.",
+    intro:
+      "Repair and replacement of the buried line from the street to your home.",
     body: [
       {
         type: "p",
@@ -1265,7 +1573,11 @@ text: "On an electric unit, this is commonly a failed heating element — the co
         a: "Pipe age and material, ground shifting, tree root intrusion, and corrosion.",
       },
     ],
-    relatedServiceSlugs: ["repiping-tupelo-ms", "slab-leak-repair-tupelo-ms", "leak-detection-tupelo-ms"],
+    relatedServiceSlugs: [
+      "repiping-tupelo-ms",
+      "slab-leak-repair-tupelo-ms",
+      "leak-detection-tupelo-ms",
+    ],
     ctaLabel: "Suspect a Water Line Problem?",
   },
   {
@@ -1317,7 +1629,11 @@ text: "On an electric unit, this is commonly a failed heating element — the co
         a: "If the regulator itself is the cause, adjusting or replacing it can resolve the issue.",
       },
     ],
-    relatedServiceSlugs: ["leak-detection-tupelo-ms", "repiping-tupelo-ms", "water-line-services-tupelo-ms"],
+    relatedServiceSlugs: [
+      "leak-detection-tupelo-ms",
+      "repiping-tupelo-ms",
+      "water-line-services-tupelo-ms",
+    ],
     ctaLabel: "Dealing With Low or Inconsistent Water Pressure?",
   },
 
@@ -1390,7 +1706,10 @@ text: "On an electric unit, this is commonly a failed heating element — the co
         a: "Yes — fixture installation is a normal part of a kitchen or bathroom remodel.",
       },
     ],
-    relatedServiceSlugs: ["drain-cleaning-tupelo-ms", "new-construction-remodeling-plumbing-tupelo-ms"],
+    relatedServiceSlugs: [
+      "drain-cleaning-tupelo-ms",
+      "new-construction-remodeling-plumbing-tupelo-ms",
+    ],
     ctaLabel: "Have a Fixture That Needs Repair or Replacement?",
   },
 
@@ -1403,7 +1722,8 @@ text: "On an electric unit, this is commonly a failed heating element — the co
     metaDescription:
       "Gas line repair and installation in Tupelo, MS — for new appliances, extensions, and non-emergency gas line work.",
     h1: "Gas Line Services in Tupelo, MS",
-    intro: "Gas line installation and repair — with clear safety guidance for suspected leaks.",
+    intro:
+      "Gas line installation and repair — with clear safety guidance for suspected leaks.",
     body: [
       {
         type: "p",
@@ -1450,7 +1770,8 @@ text: "On an electric unit, this is commonly a failed heating element — the co
     cluster: "Specialized",
     navLabel: "Backflow Prevention",
     title: "Backflow Prevention in Tupelo, MS",
-    metaDescription: "Backflow preventer testing and repair in Tupelo, MS — for compliance requirements or a malfunctioning device.",
+    metaDescription:
+      "Backflow preventer testing and repair in Tupelo, MS — for compliance requirements or a malfunctioning device.",
     h1: "Backflow Prevention in Tupelo, MS",
     intro: "Backflow preventer testing and repair for homes and businesses.",
     body: [
@@ -1483,7 +1804,11 @@ text: "On an electric unit, this is commonly a failed heating element — the co
       { type: "h2", text: "Signs a Backflow Preventer May Have Failed" },
       {
         type: "list",
-        items: ["Water leaking from the device itself", "Discolored or unusual-tasting water", "Failing a required annual test"],
+        items: [
+          "Water leaking from the device itself",
+          "Discolored or unusual-tasting water",
+          "Failing a required annual test",
+        ],
       },
       { type: "h2", text: "Testing vs. Repair" },
       {
@@ -1527,7 +1852,8 @@ text: "On an electric unit, this is commonly a failed heating element — the co
     cluster: "Specialized",
     navLabel: "Water Filtration",
     title: "Water Filtration in Tupelo, MS",
-    metaDescription: "Water tastes or smells off, or feels hard in Tupelo, MS? Whole-house filtration and treatment system installation and repair.",
+    metaDescription:
+      "Water tastes or smells off, or feels hard in Tupelo, MS? Whole-house filtration and treatment system installation and repair.",
     h1: "Water Filtration in Tupelo, MS",
     intro: "Water treatment and filtration installation and repair.",
     body: [
@@ -1577,13 +1903,16 @@ text: "On an electric unit, this is commonly a failed heating element — the co
     relatedServiceSlugs: ["repiping-tupelo-ms"],
     ctaLabel: "Dealing With Water Quality Issues?",
   },
-  {    slug: "sump-pump-tupelo-ms",
+  {
+    slug: "sump-pump-tupelo-ms",
     cluster: "Specialized",
     navLabel: "Sump Pump",
     title: "Sump Pump Installation & Repair",
-    metaDescription: "Basement or crawl space water problems in Tupelo, MS? Sump pump installation and repair, including battery backup options.",
+    metaDescription:
+      "Basement or crawl space water problems in Tupelo, MS? Sump pump installation and repair, including battery backup options.",
     h1: "Sump Pump Installation & Repair in Tupelo, MS",
-    intro: "Keeping basements and crawl spaces dry, including battery backup options.",
+    intro:
+      "Keeping basements and crawl spaces dry, including battery backup options.",
     body: [
       {
         type: "p",
