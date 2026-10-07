@@ -78,12 +78,12 @@ export const services: ServicePage[] = [
       },
     ],
     relatedServiceSlugs: [
-      "emergency-plumbing-tupelo-ms",
-      "drain-cleaning-tupelo-ms",
-      "water-heater-repair-tupelo-ms",
-      "fixture-plumbing-tupelo-ms",
-      "leak-detection-tupelo-ms",
-    ],
+  "emergency-plumbing-tupelo-ms",
+  "drain-cleaning-tupelo-ms",
+  "water-heater-repair-tupelo-ms",
+  "water-filtration-tupelo-ms",
+  "sump-pump-tupelo-ms",
+],
     ctaLabel: "Have a Plumbing Problem That Needs Fixing?",
   },
   {
@@ -239,12 +239,12 @@ export const services: ServicePage[] = [
       },
     ],
     relatedServiceSlugs: [
-      "plumbing-repair-tupelo-ms",
-      "sewer-line-repair-tupelo-ms",
-      "water-heater-repair-tupelo-ms",
-      "water-line-services-tupelo-ms",
-      "commercial-plumbing-tupelo-ms",
-    ],
+  "plumbing-repair-tupelo-ms",
+  "sewer-line-repair-tupelo-ms",
+  "water-heater-repair-tupelo-ms",
+  "sump-pump-tupelo-ms",
+  "commercial-plumbing-tupelo-ms",
+],
     ctaLabel: "Dealing With a Plumbing Emergency Right Now?",
   },
   {
@@ -317,16 +317,16 @@ export const services: ServicePage[] = [
         a: "Often, yes — older homes are more likely to have aging supply and drain line materials, while newer homes tend to have more fixture and water-heater-sizing needs.",
       },
     ],
-    relatedServiceSlugs: [
-      "plumbing-repair-tupelo-ms",
-      "emergency-plumbing-tupelo-ms",
-      "drain-cleaning-tupelo-ms",
-      "water-heater-repair-tupelo-ms",
-      "leak-detection-tupelo-ms",
-      "fixture-plumbing-tupelo-ms",
-      "repiping-tupelo-ms",
-    ],
-    ctaLabel: "Looking for Plumbing Service for Your Home?",
+relatedServiceSlugs: [
+  "plumbing-repair-tupelo-ms",
+  "emergency-plumbing-tupelo-ms",
+  "drain-cleaning-tupelo-ms",
+  "gas-line-services-tupelo-ms",
+  "leak-detection-tupelo-ms",
+  "sump-pump-tupelo-ms",
+  "repiping-tupelo-ms",
+],
+ ctaLabel: "Looking for Plumbing Service for Your Home?",
   },
   {
     slug: "commercial-plumbing-tupelo-ms",
@@ -462,7 +462,7 @@ export const services: ServicePage[] = [
         a: "Yes — repiping addresses aging pipe material in a home that isn't otherwise being renovated.",
       },
     ],
-    relatedServiceSlugs: ["fixture-plumbing-tupelo-ms", "repiping-tupelo-ms"],
+   relatedServiceSlugs: ["fixture-plumbing-tupelo-ms", "repiping-tupelo-ms", "gas-line-services-tupelo-ms"],
     ctaLabel: "Planning a Remodel or New Build?",
   },
 
@@ -1459,13 +1459,13 @@ export const services: ServicePage[] = [
     navLabel: "Repiping",
     title: "Repiping in Tupelo, MS",
     metaDescription:
-      "Recurring leaks, low pressure, or discolored water can mean it's time to repipe, not just repair. Repiping services in Tupelo, MS.",
+      "Recurring leaks, low pressure, or discolored water in Tupelo, MS? Repiping evaluation, scope, and process — and how it differs from a single repair.",
     h1: "Repiping in Tupelo, MS",
-    intro: "Replacing aging supply piping throughout a home.",
+    intro: "Replacing deteriorating supply piping throughout a home.",
     body: [
       {
         type: "p",
-        text: "When a house has one leak, the fix is usually simple: repair that section of pipe. But when leaks keep showing up in different places, water pressure has been dropping, or the water itself looks discolored, the problem often isn't any single pipe — it's the pipe material itself reaching the end of its usable life.",
+        text: "When a house has one leak, the fix is usually simple: repair that section of pipe. But when leaks keep showing up in different places, water pressure has been dropping, or the water itself looks discolored, the problem may not be limited to any single pipe — repeated issues can indicate that the existing piping is deteriorating or that broader replacement should be evaluated.",
       },
       { type: "h2", text: "Signs It May Be Time to Repipe" },
       {
@@ -1474,17 +1474,57 @@ export const services: ServicePage[] = [
           "Leaks appearing in different locations over a short span of time",
           "Water pressure that's gradually dropped throughout the whole house",
           "Discolored or rust-colored water, particularly after the water's been off",
-          "Older galvanized steel, aging copper, or polybutylene piping",
+          "Older galvanized steel, aging copper, or polybutylene piping, particularly when combined with recurring leaks or other performance problems",
+        ],
+      },
+      { type: "h2", text: "Repiping vs. Repair" },
+      {
+        type: "p",
+        text: "An isolated, single leak is usually a case for a standard repair — see Plumbing Repair. Repeated leaks showing up in different areas of the home over time are what starts to make repiping worth evaluating, since they can point toward the pipe material itself deteriorating rather than one unlucky fitting. Widespread deterioration across the system is where replacement tends to make more sense than continuing to chase individual repairs. A localized problem doesn't automatically mean the whole house needs repiping — that's exactly what an evaluation is for.",
+      },
+      { type: "h2", text: "Partial Repiping vs. Whole-House Repiping" },
+      {
+        type: "p",
+        text: "Repiping doesn't always mean replacing every pipe in the house. The actual scope can depend on the condition of the existing piping, how extensive the deterioration is, which areas are affected, accessibility, and any piping that's already been replaced in past work. Some homes genuinely need a full whole-house repipe; others may only need specific sections addressed. What applies to a given home is determined during an evaluation, not assumed upfront.",
+      },
+      { type: "h2", text: "What a Repiping Evaluation Looks At" },
+      {
+        type: "list",
+        items: [
+          "The material of the existing piping",
+          "The visible condition of accessible pipe sections",
+          "History of repeated leaks and where they've occurred",
+          "Water pressure patterns throughout the house",
+          "Which fixtures or areas are affected",
+          "How accessible the piping is for replacement work",
+          "The overall extent of deterioration",
         ],
       },
       { type: "h2", text: "Pipe Materials That Commonly Need Replacing" },
       {
         type: "list",
         items: [
-          "Galvanized steel — corrodes internally over time",
-          "Polybutylene — becomes brittle and fails with age",
-          "Aging copper — can develop pinhole leaks in multiple spots",
+          "Galvanized steel — can corrode internally over time, narrowing the pipe and affecting pressure",
+          "Polybutylene — can become brittle with age and condition, increasing the risk of failure",
+          "Aging copper — can develop pinhole leaks in multiple spots as it deteriorates",
         ],
+      },
+      { type: "h2", text: "The Repiping Process" },
+      {
+        type: "list",
+        items: [
+          "Evaluate the existing piping's material, condition, and history",
+          "Identify which sections of piping are affected and need replacement",
+          "Determine the appropriate scope — partial or whole-house",
+          "Plan access and routing for the new piping",
+          "Replace the affected piping",
+          "Test the system to confirm pressure and connections are working correctly",
+        ],
+      },
+      { type: "h2", text: "What Homeowners Should Expect" },
+      {
+        type: "p",
+        text: "Access to walls, ceilings, or floors may be necessary depending on how the existing piping is routed and what the project's scope ends up being. Water service is typically interrupted for portions of the work while connections are made. How much disruption a project involves — and what's needed to restore access points afterward — depends heavily on the home's layout and the actual scope of the work, which is why these details get confirmed during the evaluation rather than promised in advance.",
       },
       {
         type: "h2",
@@ -1492,30 +1532,51 @@ export const services: ServicePage[] = [
       },
       {
         type: "p",
-        text: "Repiping refers to the supply piping inside the home. The underground water line from the street or meter to the house is a separate matter.",
+        text: "Repiping refers to the supply piping inside the home. The underground water line from the street or meter to the house is a separate matter — see Water Line Services for that distinction.",
       },
     ],
     faqs: [
       {
-        q: "How do I know if I need to repipe instead of just repairing a leak?",
-        a: "Repeated leaks in different locations, gradually declining water pressure, or discolored water.",
+        q: "How do I know if I need repiping?",
+        a: "Repeated leaks in different locations, gradually declining water pressure, or discolored water can be signs that broader piping replacement should be evaluated. An in-person evaluation helps determine whether repiping is actually appropriate.",
+      },
+      {
+        q: "Is repiping better than repairing repeated leaks?",
+        a: "It depends on the pattern — an isolated leak is usually a standard repair, while leaks recurring in different areas can point toward the pipe material itself needing replacement.",
+      },
+      {
+        q: "Does repiping mean replacing every pipe in the house?",
+        a: "Not necessarily — the scope depends on the condition and extent of deterioration, and can range from specific sections to a full whole-house repipe.",
+      },
+      {
+        q: "Can only part of a house be repiped?",
+        a: "In many cases, yes — partial repiping can be appropriate when deterioration is limited to specific areas rather than the whole system.",
       },
       {
         q: "What pipe materials typically need to be replaced?",
-        a: "Galvanized steel and polybutylene are the most common; aging copper can also develop multiple leaks.",
+        a: "Galvanized steel and polybutylene are examples of piping that may warrant replacement depending on their condition; aging copper can also develop multiple leaks over time.",
       },
       {
         q: "Is repiping the same as replacing my water line?",
-        a: "No — repiping is the supply piping inside the home. The underground line is separate.",
+        a: "No — repiping is the supply piping inside the home. The underground water line between the street or meter and the house is a separate matter.",
+      },
+      {
+        q: "What happens during a repiping project?",
+        a: "The existing piping is evaluated, the appropriate scope is determined, the affected piping is replaced, and the system is tested afterward to confirm everything's working correctly.",
+      },
+      {
+        q: "Will walls or ceilings need to be opened?",
+        a: "Possibly, depending on how the existing piping is routed and the project's scope — this gets confirmed during the evaluation.",
       },
       {
         q: "How do I find out if repiping is actually needed?",
-        a: "An in-person evaluation of the home's current piping is the right first step.",
+        a: "An in-person evaluation of the home's current piping — material, condition, leak history, and affected areas — is the right first step.",
       },
     ],
     relatedServiceSlugs: [
       "leak-detection-tupelo-ms",
       "water-line-services-tupelo-ms",
+      "plumbing-repair-tupelo-ms",
     ],
     ctaLabel: "Noticing Repeated Leaks or Pressure Problems?",
   },
@@ -1525,7 +1586,7 @@ export const services: ServicePage[] = [
     navLabel: "Water Line Services",
     title: "Water Line Services in Tupelo, MS",
     metaDescription:
-      "Whole-house pressure drop, a wet spot in the yard, or a rising water bill in Tupelo, MS? It may be the underground water line, not interior plumbing.",
+      "Whole-house pressure drop, a wet spot in the yard, or a rising water bill in Tupelo, MS? Water line repair and replacement, diagnosed correctly first.",
     h1: "Water Line Services in Tupelo, MS",
     intro:
       "Repair and replacement of the buried line from the street to your home.",
@@ -1544,33 +1605,89 @@ export const services: ServicePage[] = [
           "The sound of running water near where the line enters the property",
         ],
       },
-      { type: "h2", text: "Water Line vs. Interior Plumbing vs. Slab Leak" },
+      { type: "h2", text: "What Can Cause an Underground Water Line Problem" },
+      {
+        type: "list",
+        items: [
+          "Pipe age and material — older pipe materials can deteriorate or corrode over time",
+          "Ground shifting — soil movement can stress or shift a buried line",
+          "Tree root intrusion — roots can work into a line through an existing crack or joint, where conditions allow",
+          "Corrosion — depending on the pipe material and soil conditions",
+        ],
+      },
+      { type: "h2", text: "Water Line Repair vs. Replacement" },
       {
         type: "p",
-        text: "Water line problems affect the whole house at once, often showing up outdoors. Interior leaks are usually more localized. Slab leaks are specifically under the foundation, often with a warm floor spot.",
+        text: "The right solution depends on where the failure is, the condition of the pipe, how extensive the damage is, and the pipe material. A single, localized failure can often be repaired directly at that section. More extensive damage, or a line showing problems in multiple places, may call for full or partial replacement. A failed water line doesn't automatically mean the entire line needs replacing — that's determined by what's actually found once the line is evaluated.",
+      },
+      { type: "h2", text: "How a Water Line Problem Is Diagnosed" },
+      {
+        type: "p",
+        text: "Diagnosis generally starts with the symptoms, then checking accessible interior plumbing to help determine whether the issue is inside the home or in the buried line itself. From there, the affected section is located, the pipe's condition is evaluated, and the appropriate repair or replacement scope is determined based on what's found.",
+      },
+      {
+        type: "h2",
+        text: "Underground Water Line vs. Interior Leak vs. Slab Leak",
+      },
+      {
+        type: "p",
+        text: "A water line problem can affect water pressure throughout the home and may show up as unexplained moisture or other signs outdoors — a wet yard, running water sounds near where the line enters the property, or pressure loss throughout the whole house. An interior leak tends to be more localized, affecting one fixture or area rather than the entire home. A slab leak involves plumbing beneath or associated with the home's foundation and may produce different signs depending on where the leak occurs. Symptoms alone don't always identify the exact source — see Leak Detection if it's not clear which of these applies.",
+      },
+      { type: "h2", text: "Water Line Repair and Replacement Process" },
+      {
+        type: "list",
+        items: [
+          "Evaluate the symptoms and the water line itself",
+          "Locate the affected section",
+          "Determine the pipe's condition and the appropriate scope",
+          "Choose a repair or replacement approach suited to the situation",
+          "Access the affected line",
+          "Complete the repair or replacement",
+          "Test the system afterward to confirm pressure and connections",
+        ],
       },
       { type: "h2", text: "Does the Yard Have to Be Dug Up?" },
       {
         type: "p",
-        text: "Not always. Depending on the location and extent of the problem, some water line repairs can be done with trenchless methods.",
+        text: "Not always. Depending on the location and extent of the problem, some water line repairs can be done with trenchless methods, where the situation and access allow for it. Whether that's an option for a specific line is determined during the evaluation.",
       },
     ],
     faqs: [
       {
-        q: "How do I know if it's my water line and not something inside the house?",
-        a: "A whole-house pressure drop, a wet spot in the yard, or a rising water bill with no interior leak found.",
+        q: "What is a residential water line?",
+        a: "The buried pipe that carries water from the street or meter to the house, separate from the plumbing inside the home.",
       },
       {
-        q: "What's the difference between a water line problem and a slab leak?",
-        a: "A water line problem is buried outside the home; a slab leak is under the foundation.",
+        q: "How do I know if my water line is leaking?",
+        a: "A whole-house pressure drop, a wet or unusually green patch of yard along the line's path, or a rising water bill with no interior leak found are the clearest signs.",
       },
       {
-        q: "Does the yard have to be dug up to repair a water line?",
-        a: "Not always — trenchless methods may apply depending on the situation.",
+        q: "How do I tell whether the problem is the water line or indoor plumbing?",
+        a: "Water line problems tend to affect the whole house and show up outdoors; interior leaks are usually more localized to one area. An evaluation, or leak detection, can confirm which applies.",
       },
       {
-        q: "What causes a water line to fail?",
-        a: "Pipe age and material, ground shifting, tree root intrusion, and corrosion.",
+        q: "What causes underground water lines to fail?",
+        a: "Pipe age and material, ground shifting, tree root intrusion, and corrosion are the most common contributing factors.",
+      },
+      {
+        q: "Does a water line always need to be replaced?",
+        a: "No — a localized failure can often be repaired directly. More extensive or widespread damage is what tends to call for replacement.",
+      },
+      {
+        q: "Can a water line be repaired instead of replaced?",
+        a: "Yes, when the damage is localized to one section rather than affecting the line more broadly.",
+      },
+      {
+        q: "Does the yard have to be excavated?",
+        a: "Not always — trenchless methods may apply depending on the location and extent of the problem.",
+      },
+      {
+        q: "What is trenchless water line repair?",
+        a: "A method of repairing or replacing a water line without fully excavating the yard, where the situation and access allow for it.",
+      },
+      {
+        q: "How is an underground water line problem diagnosed?",
+        a: "By reviewing the symptoms, checking accessible interior plumbing to help narrow down the source, then locating and evaluating the affected section of the line.",
       },
     ],
     relatedServiceSlugs: [
@@ -1644,23 +1761,23 @@ export const services: ServicePage[] = [
     navLabel: "Fixture Plumbing",
     title: "Fixture Plumbing in Tupelo, MS",
     metaDescription:
-      "Faucet, toilet, sink, or garbage disposal problem in Tupelo, MS? Fixture repair and installation for homes and businesses.",
+      "Faucet, toilet, sink, or garbage disposal problem in Tupelo, MS? Fixture repair, installation, and replacement for homes and businesses.",
     h1: "Fixture Plumbing in Tupelo, MS",
     intro: "Repair and installation for faucets, toilets, sinks, and more.",
     body: [
       {
         type: "p",
-        text: "Faucets, toilets, sinks, garbage disposals, showers, and bathtubs each fail or wear out in their own specific ways. Fixture plumbing covers repairing or replacing any of them.",
+        text: "Faucets, toilets, sinks, garbage disposals, showers, and bathtubs each fail or wear out in their own specific ways. Fixture plumbing covers repairing, replacing, or installing any of them.",
       },
       { type: "h2", text: "Faucets" },
       {
         type: "p",
-        text: "A dripping or leaking faucet is usually a worn washer, cartridge, or O-ring. A faucet that's outdated or damaged beyond repair is a replacement instead.",
+        text: "A dripping or leaking faucet can result from a worn washer, cartridge, O-ring, valve component, connection, or another internal issue, depending on the fixture. A faucet that's outdated or damaged beyond repair is a replacement instead.",
       },
       { type: "h2", text: "Toilets" },
       {
         type: "p",
-        text: "Running toilets, weak flushes, and leaks at the base are typically tied to the flapper, fill valve, or wax ring seal.",
+        text: "Running toilets, weak flushes, and leaks at the base can have different causes, including problems with the flapper, fill valve, flush components, or the toilet's seal.",
       },
       { type: "h2", text: "Sinks" },
       {
@@ -1670,49 +1787,70 @@ export const services: ServicePage[] = [
       { type: "h2", text: "Garbage Disposals" },
       {
         type: "p",
-        text: "A disposal that's jammed, humming without spinning, or leaking usually points to a clog, a worn motor, or a failing seal.",
+        text: "A disposal that's jammed, humming without spinning, or leaking can have several causes, including an obstruction, a motor or component problem, or a failed seal.",
       },
       { type: "h2", text: "Showers and Bathtubs" },
       {
         type: "p",
         text: "Leaking showerheads, faulty diverter valves, and worn tub/shower faucets are common repairs, along with fixture replacement as part of a remodel.",
       },
+      { type: "h2", text: "Fixture Installation and Replacement" },
+      {
+        type: "p",
+        text: "Fixture installation covers putting in a new faucet, toilet, sink, garbage disposal, or shower/tub fixture — whether replacing something old or adding a new one as part of a renovation. The replacement fixture needs to be compatible with the existing plumbing connections, configuration, and available space, which is confirmed as part of the installation.",
+      },
       { type: "h2", text: "Repair or Replace?" },
       {
         type: "p",
-        text: "A specific worn part on an otherwise sound fixture is usually a repair. Multiple issues, visible damage, or simply updating an older fixture points toward replacement.",
+        text: "A specific worn part on an otherwise sound fixture is usually a repair. Multiple issues, repeated failures, visible cracking or corrosion, a fixture that's no longer functioning properly, or simply wanting to update an older fixture as part of a renovation or design change all point toward replacement instead.",
       },
       { type: "h2", text: "A Note on Efficiency When Replacing" },
       {
         type: "p",
-        text: "When a fixture is being replaced anyway, WaterSense-certified faucets, showerheads, and toilets — a real EPA efficiency program, not just a marketing label — use meaningfully less water while maintaining normal performance, worth considering for the replacement's long-term cost.",
+        text: "When replacing a fixture, WaterSense-labeled faucets, showerheads, and toilets are worth considering for their water-efficiency benefits while maintaining performance standards established by the EPA program.",
       },
     ],
     faqs: [
       {
         q: "Should a fixture be repaired or replaced?",
-        a: "A specific worn part on an otherwise sound fixture is usually a repair; multiple issues or visible damage points toward replacement.",
+        a: "A specific worn part on an otherwise sound fixture is usually a repair; multiple issues, repeated failures, or visible damage points toward replacement.",
+      },
+      {
+        q: "What plumbing fixtures can you repair or replace?",
+        a: "Faucets, toilets, sinks, garbage disposals, and shower or tub fixtures.",
+      },
+      {
+        q: "Should I repair or replace my faucet?",
+        a: "A single worn part — a washer, cartridge, or O-ring — is usually repairable. A faucet that's outdated, damaged, or failed in multiple ways is better replaced.",
+      },
+      {
+        q: "Can you install fixtures during a bathroom remodel?",
+        a: "Yes — fixture installation is a normal part of a kitchen or bathroom remodel, coordinated with the rest of the renovation.",
+      },
+      {
+        q: "Can you replace an existing toilet or sink?",
+        a: "Yes — replacement fixtures are confirmed for compatibility with the existing plumbing connections and space before installation.",
+      },
+      {
+        q: "What should I consider when choosing a replacement fixture?",
+        a: "Compatibility with existing plumbing connections and space, along with water efficiency — WaterSense-labeled fixtures are worth considering for that.",
+      },
+      {
+        q: "Can a plumbing fixture problem actually be a drain problem?",
+        a: "Yes — a slow drain at a sink, tub, or shower can look like a fixture issue but actually be a clog. See Drain Cleaning if that's the case.",
       },
       {
         q: "Are new fixtures more water-efficient?",
-        a: "Often, yes — WaterSense-certified fixtures use less water while maintaining normal performance, worth factoring in when replacement is already on the table.",
-      },
-      {
-        q: "What are the most common fixture problems?",
-        a: "Dripping faucets, running toilets, slow sink drains, jammed disposals, and leaking shower/tub fixtures.",
-      },
-      {
-        q: "Can new fixtures be installed as part of a remodel?",
-        a: "Yes — fixture installation is a normal part of a kitchen or bathroom remodel.",
+        a: "Often, yes — WaterSense-labeled fixtures use less water while maintaining normal performance, worth factoring in when replacement is already on the table.",
       },
     ],
     relatedServiceSlugs: [
       "drain-cleaning-tupelo-ms",
       "new-construction-remodeling-plumbing-tupelo-ms",
+      "plumbing-repair-tupelo-ms",
     ],
     ctaLabel: "Have a Fixture That Needs Repair or Replacement?",
   },
-
   // ---------- SPECIALIZED ----------
   {
     slug: "gas-line-services-tupelo-ms",
@@ -1720,14 +1858,14 @@ export const services: ServicePage[] = [
     navLabel: "Gas Line Services",
     title: "Gas Line Services in Tupelo, MS",
     metaDescription:
-      "Gas line repair and installation in Tupelo, MS — for new appliances, extensions, and non-emergency gas line work.",
+      "Gas line installation, repair, and appliance connections in Tupelo, MS — plus clear safety guidance if you suspect a gas leak.",
     h1: "Gas Line Services in Tupelo, MS",
     intro:
       "Gas line installation and repair — with clear safety guidance for suspected leaks.",
     body: [
       {
         type: "p",
-        text: "Gas line work covers everything from installing a new line for a gas appliance to repairing an existing line — most of which is routine, planned work. A suspected gas leak is different, and it's important to be clear about that distinction upfront.",
+        text: "Gas line work covers everything from installing a new line for a gas appliance to repairing an existing one — most of which is routine, planned work. A suspected gas leak is different, and it's important to be clear about that distinction upfront.",
       },
       { type: "h2", text: "If You Smell Gas Right Now" },
       {
@@ -1738,14 +1876,59 @@ export const services: ServicePage[] = [
           "Do not return until it's confirmed safe",
         ],
       },
-      { type: "h2", text: "Routine Gas Line Services" },
+      { type: "h2", text: "Gas Line Services" },
       {
         type: "list",
         items: [
           "New gas line installation for a range, dryer, water heater, or outdoor feature",
+          "Gas line extensions for a new appliance or addition",
           "Gas line repair for a damaged, corroded, or improperly installed line",
           "Gas appliance connections",
         ],
+      },
+      { type: "h2", text: "Signs a Gas Line May Need Attention" },
+      {
+        type: "p",
+        text: "Visible corrosion or damage to accessible piping, concerns about an appliance's connection, a suspicion of damaged piping after work elsewhere in the home, or needing to evaluate existing piping after a remodel or appliance relocation are all reasons to have a gas line looked at. If there's ever an actual smell of gas, treat that as the emergency above rather than something to evaluate casually — don't inspect or attempt to manipulate gas piping yourself.",
+      },
+      { type: "h2", text: "Gas Line Installation and Extension" },
+      {
+        type: "p",
+        text: "Installation and extension work covers adding new gas piping — for a new appliance, an addition to the home, or an outdoor feature like a grill or fire pit — or extending existing piping to reach a new location. This is planned work, coordinated around what's being added and where it needs to connect.",
+      },
+      { type: "h2", text: "Gas Line Repair" },
+      {
+        type: "p",
+        text: "Repair addresses an existing gas line that's damaged, corroded, or was improperly installed. Unlike installation, repair starts with evaluating what's actually wrong with the existing piping before determining the right fix.",
+      },
+      { type: "h2", text: "Gas Appliance Connections" },
+      {
+        type: "p",
+        text: "Connecting a range, dryer, water heater, or other gas appliance to the existing gas line is routine work, whether it's a new appliance or replacing an existing one.",
+      },
+      { type: "h2", text: "How Gas Line Service Works" },
+      {
+        type: "list",
+        items: [
+          "Understand the appliance, project, or reported problem",
+          "Evaluate accessible gas piping and connections",
+          "Determine whether installation, extension, repair, or replacement is appropriate",
+          "Complete the required gas line work",
+          "Test the completed work as appropriate",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Gas Line Work During Remodeling or Appliance Changes",
+      },
+      {
+        type: "p",
+        text: "Adding a gas appliance, relocating one, or changing a kitchen or outdoor layout during a remodel often means the existing gas piping needs to be extended, rerouted, or evaluated for the new configuration. See New Construction & Remodeling for how gas line work coordinates with a broader renovation project.",
+      },
+      { type: "h2", text: "Gas Utility vs. Plumber" },
+      {
+        type: "p",
+        text: "Gas utility responsibility typically includes the meter and utility-side service equipment, while a plumber may handle gas piping on the customer side of the meter. Exact responsibility can vary by utility and location.",
       },
     ],
     faqs: [
@@ -1755,14 +1938,38 @@ export const services: ServicePage[] = [
       },
       {
         q: "Can a gas line be extended for a new appliance?",
-        a: "Yes — extending an existing line is a common, routine gas line service.",
+        a: "Yes — extending an existing line to reach a new appliance or addition is a common, routine gas line service.",
+      },
+      {
+        q: "What's the difference between gas line installation and repair?",
+        a: "Installation adds new piping for an appliance or project. Repair addresses an existing line that's damaged, corroded, or was improperly installed.",
       },
       {
         q: "What gas line work does a plumber handle versus the gas utility?",
-        a: "The utility is generally responsible for the meter and the line up to that point; plumbing work covers the piping from the meter into and through the home.",
+        a: "The utility typically handles the meter and utility-side equipment, while a plumber may handle gas piping on the customer side — exact responsibility can vary by utility and location.",
+      },
+      {
+        q: "Can gas line work be done during a kitchen or outdoor remodel?",
+        a: "Yes — relocating or extending gas piping for a new layout or appliance is a normal part of remodeling work.",
+      },
+      {
+        q: "How do I know if my gas line needs repair?",
+        a: "Visible corrosion or damage to accessible piping, concerns about an appliance connection, or changes to the gas piping after other work in the home may be reasons to have the system professionally evaluated. If you smell gas, leave the property and follow the emergency steps above rather than inspecting or manipulating the piping yourself.",
+      },
+      {
+        q: "Can a gas appliance be connected to an existing line?",
+        a: "Yes — connecting a new or replacement gas appliance to existing gas piping is routine work.",
+      },
+      {
+        q: "Is it safe to try to find a gas leak myself?",
+        a: "No — if you smell gas, leave the property and call your gas utility's emergency line or 911 rather than trying to locate or address it yourself.",
       },
     ],
-    relatedServiceSlugs: [],
+    relatedServiceSlugs: [
+      "new-construction-remodeling-plumbing-tupelo-ms",
+      "plumbing-repair-tupelo-ms",
+      "emergency-plumbing-tupelo-ms",
+    ],
     ctaLabel: "Need Gas Line Installation or Repair?",
   },
   {
@@ -1779,7 +1986,12 @@ export const services: ServicePage[] = [
         type: "p",
         text: "A backflow preventer stops water from flowing backward into the clean water supply — a real risk in situations like irrigation systems, commercial fire suppression lines, or any connection where contaminated water could otherwise be drawn back into the system.",
       },
-      { type: "h2", text: "Who Typically Needs Backflow Testing" },
+      { type: "h2", text: "Backflow Prevention vs. Backflow Testing" },
+      {
+        type: "p",
+        text: "Backflow prevention is the protection provided by an appropriate device or assembly installed at the connection. Backflow testing evaluates whether an already-installed device is functioning correctly. Testing doesn't replace the need for an appropriately selected and properly maintained backflow preventer in the first place.",
+      },
+      { type: "h2", text: "Who May Need Backflow Testing" },
       {
         type: "list",
         items: [
@@ -1791,15 +2003,20 @@ export const services: ServicePage[] = [
       { type: "h2", text: "Common Backflow Preventer Types" },
       {
         type: "p",
-        text: "Different situations call for different device types — which one applies depends on the specific connection and its hazard classification, not a one-size-fits-all answer.",
+        text: "Different situations call for different device types — which one applies depends on the specific connection, its hazard classification, and applicable local and water-system requirements, not a one-size-fits-all answer.",
       },
       {
         type: "list",
         items: [
-          "RPZ (Reduced Pressure Zone assembly) — used for higher-hazard situations, such as fire suppression systems or connections with a more serious contamination risk",
-          "DCVA (Double Check Valve Assembly) — used for lower-hazard cross-connections",
-          "PVB (Pressure Vacuum Breaker) — commonly used for irrigation systems connected to municipal water",
+          "RPZ (Reduced Pressure Zone assembly) — used where the applicable cross-connection requirements call for protection against a higher degree of contamination hazard",
+          "DCVA (Double Check Valve Assembly) — used for certain cross-connections where the applicable requirements call for this type of backflow protection",
+          "PVB (Pressure Vacuum Breaker) — commonly associated with certain irrigation applications, depending on the system configuration and applicable requirements",
         ],
+      },
+      { type: "h2", text: "What Backflow Testing Involves" },
+      {
+        type: "p",
+        text: "A qualified tester evaluates the backflow prevention assembly to determine whether it's functioning as intended. The process can include identifying the device, checking its condition, performing the applicable test, and documenting the results.",
       },
       { type: "h2", text: "Signs a Backflow Preventer May Have Failed" },
       {
@@ -1813,7 +2030,12 @@ export const services: ServicePage[] = [
       { type: "h2", text: "Testing vs. Repair" },
       {
         type: "p",
-        text: "Testing confirms the device is functioning correctly — often done specifically to satisfy an annual compliance requirement. Repair follows when a test reveals a problem.",
+        text: "Testing evaluates whether the device is functioning correctly and meeting the applicable testing requirements — often done specifically to satisfy an annual compliance requirement. Repair may be needed when testing reveals a problem.",
+      },
+      { type: "h2", text: "When Repair or Replacement May Be Needed" },
+      {
+        type: "p",
+        text: "A failed test, a leaking device, damaged components, corrosion or deterioration, or a device that's no longer functioning as required are all reasons repair may be needed. Replacement becomes the better option when repair isn't appropriate for the device's condition — not every failed test means a device needs to be replaced.",
       },
       {
         type: "citation",
@@ -1828,23 +2050,42 @@ export const services: ServicePage[] = [
         a: "Backflow is water flowing backward into the clean water supply, which can draw in contaminants.",
       },
       {
-        q: "Who needs backflow testing?",
-        a: "Properties with irrigation systems, commercial fire suppression systems, and businesses required by local code.",
+        q: "What's the difference between backflow testing and repair?",
+        a: "Testing evaluates whether an already-installed device is functioning correctly. Repair addresses a problem the test reveals.",
+      },
+      {
+        q: "Who may need backflow testing?",
+        a: "Properties with irrigation systems, commercial fire suppression systems, and businesses required by local code to have testing on file.",
       },
       {
         q: "What's the difference between the device types?",
-        a: "An RPZ is used for higher-hazard situations like fire suppression; a DCVA is used for lower-hazard connections; a PVB is commonly used for irrigation systems.",
+        a: "An RPZ is used where requirements call for protection against a higher contamination hazard; a DCVA is used for certain lower-hazard cross-connections; a PVB is commonly associated with certain irrigation applications. Which applies depends on the specific connection and applicable requirements.",
       },
       {
         q: "What happens if a backflow preventer fails?",
-        a: "A failed device no longer protects against backflow and typically needs repair or replacement.",
+        a: "A device that fails the applicable test may not be providing the required backflow protection and may need repair or replacement, depending on the cause and condition.",
+      },
+      {
+        q: "Can a backflow preventer that fails testing be repaired?",
+        a: "Often, yes, depending on what's causing the failure and the device's overall condition — replacement is the better option when repair isn't appropriate.",
+      },
+      {
+        q: "How often does a backflow preventer need to be tested?",
+        a: "Testing frequency depends on the property, device, water utility, and applicable local requirements — some properties may be subject to annual testing requirements.",
+      },
+      {
+        q: "Does every home need a backflow preventer?",
+        a: "Requirements depend on the property, its connections, the hazards involved, and applicable local requirements — not every home needs one.",
       },
       {
         q: "Is backflow testing required by law?",
         a: "Requirements vary by property type, water utility, and local code — ask when you call and it'll be confirmed for your specific situation.",
       },
     ],
-    relatedServiceSlugs: ["commercial-plumbing-tupelo-ms"],
+    relatedServiceSlugs: [
+      "commercial-plumbing-tupelo-ms",
+      "water-filtration-tupelo-ms",
+    ],
     ctaLabel: "Need Backflow Testing or Repair?",
   },
   {
@@ -1853,13 +2094,13 @@ export const services: ServicePage[] = [
     navLabel: "Water Filtration",
     title: "Water Filtration in Tupelo, MS",
     metaDescription:
-      "Water tastes or smells off, or feels hard in Tupelo, MS? Whole-house filtration and treatment system installation and repair.",
+      "Water tastes or smells off, or feels hard in Tupelo, MS? Whole-house filtration and treatment system installation, repair, and maintenance.",
     h1: "Water Filtration in Tupelo, MS",
     intro: "Water treatment and filtration installation and repair.",
     body: [
       {
         type: "p",
-        text: "Water quality problems show up in different ways — an off taste or smell, water that feels hard, sediment, or mineral buildup on fixtures over time. Filtration and treatment systems address these issues at the source.",
+        text: "Water quality problems show up in different ways — an off taste or smell, water that feels hard, sediment, or mineral buildup on fixtures over time. Filtration and treatment systems address these issues at the source, but the right system depends on what's actually causing the problem.",
       },
       { type: "h2", text: "Common Water Quality Issues" },
       {
@@ -1867,9 +2108,19 @@ export const services: ServicePage[] = [
         items: [
           "Taste or odor — often addressed with a carbon-based filtration system",
           "Hard water — typically addressed with a water softener",
-          "Sediment — often from aging pipes or well water",
-          "Well water specifically — may carry mineral, sediment, or bacterial concerns",
+          "Sediment — can come from well water, disturbed plumbing, aging infrastructure, or other conditions depending on the water source and plumbing system",
+          "Well water specifically — can present different treatment considerations than municipal water, including sediment, minerals, and other water-quality concerns",
         ],
+      },
+      { type: "h2", text: "What Water Filtration Can Address" },
+      {
+        type: "p",
+        text: "The right treatment depends on what's actually affecting the water. Carbon filtration may help with certain taste and odor issues, while sediment filtration targets suspended particles. Hardness is generally addressed with a water softener rather than a conventional filter. Where a specific contaminant is suspected, water testing can help determine what treatment is appropriate — not every water-quality problem should be treated with the same system.",
+      },
+      { type: "h2", text: "Water Testing and Treatment Selection" },
+      {
+        type: "p",
+        text: "Choosing a filtration or treatment system starts with understanding the water problem. Taste, odor, sediment, hardness, and other water-quality concerns can have different causes. Where the cause isn't clear, appropriate water testing can help identify what needs to be treated and prevent choosing a system that doesn't address the actual problem.",
       },
       { type: "h2", text: "Water Softener vs. Water Filter" },
       {
@@ -1880,6 +2131,21 @@ export const services: ServicePage[] = [
       {
         type: "p",
         text: "A whole-house system treats all water entering the home. A point-of-use filter addresses one specific fixture.",
+      },
+      { type: "h2", text: "Water Filtration Installation" },
+      {
+        type: "p",
+        text: "Installation depends on the type of treatment being installed, where the system needs to go, the available plumbing connections, whether it's a whole-house or point-of-use setup, and what access the system needs for ongoing maintenance.",
+      },
+      { type: "h2", text: "Water Filtration Repair and Maintenance" },
+      {
+        type: "p",
+        text: "Common issues include reduced water flow, leaks around the system, a clogged or loaded filter, and changes in system performance over time. Filter and media replacement is a normal part of upkeep — manufacturer requirements for a specific system are the most reliable guide for how often that's needed.",
+      },
+      { type: "h2", text: "Well Water Considerations" },
+      {
+        type: "p",
+        text: "Well water can present different treatment considerations than municipal water, including sediment, minerals, and other water-quality concerns. The appropriate treatment depends on the characteristics of the specific water supply, and filtration isn't automatically a guarantee that an otherwise unsafe well water supply becomes safe to drink.",
       },
     ],
     faqs: [
@@ -1897,10 +2163,26 @@ export const services: ServicePage[] = [
       },
       {
         q: "Is water treatment different for well water vs. city water?",
-        a: "Often, yes — well water can have different mineral, sediment, or bacterial considerations.",
+        a: "Often, yes — well water can have different mineral, sediment, or bacterial considerations than municipal water.",
+      },
+      {
+        q: "What does a whole-house water filter do?",
+        a: "It treats water entering the home so the selected treatment applies to multiple fixtures rather than only one tap. What it removes or reduces depends on the specific filtration technology.",
+      },
+      {
+        q: "Can a water filter remove hard water?",
+        a: "A conventional water filter isn't the same as a water softener. Hardness is generally addressed with a water-softening system designed for that purpose.",
+      },
+      {
+        q: "How do I know what type of water treatment I need?",
+        a: "The appropriate system depends on the water-quality issue and, where necessary, testing or evaluation of the water source.",
+      },
+      {
+        q: "How often do water filters need to be replaced?",
+        a: "Replacement frequency varies by filter type, water quality, system design, and usage — the manufacturer's requirements for a specific system are the most reliable guide.",
       },
     ],
-    relatedServiceSlugs: ["repiping-tupelo-ms"],
+    relatedServiceSlugs: ["repiping-tupelo-ms", "plumbing-repair-tupelo-ms"],
     ctaLabel: "Dealing With Water Quality Issues?",
   },
   {
@@ -1909,7 +2191,7 @@ export const services: ServicePage[] = [
     navLabel: "Sump Pump",
     title: "Sump Pump Installation & Repair",
     metaDescription:
-      "Basement or crawl space water problems in Tupelo, MS? Sump pump installation and repair, including battery backup options.",
+      "Basement or crawl space water problems in Tupelo, MS? Sump pump installation, repair, and battery backup options.",
     h1: "Sump Pump Installation & Repair in Tupelo, MS",
     intro:
       "Keeping basements and crawl spaces dry, including battery backup options.",
@@ -1917,6 +2199,16 @@ export const services: ServicePage[] = [
       {
         type: "p",
         text: "A sump pump moves water away from a basement or crawl space before it accumulates into standing water or damage.",
+      },
+      { type: "h2", text: "When You May Need a Sump Pump" },
+      {
+        type: "p",
+        text: "Recurring water in a basement or crawl space, water accumulating in an existing sump pit, a high water table, previous water intrusion, or drainage conditions that direct groundwater toward the foundation are all reasons a sump pump may be worth considering. Not every home with one of these conditions automatically needs a pump — whether one makes sense depends on the specific property and situation.",
+      },
+      { type: "h2", text: "Sump Pump Installation" },
+      {
+        type: "p",
+        text: "Installation involves considering whether a suitable sump pit already exists, the right pump capacity for the application, how the discharge line will be routed, available power at the location, whether a battery backup is needed, and how the system will be accessed for future maintenance. These factors are confirmed as part of the installation rather than assumed in advance.",
       },
       { type: "h2", text: "Why a Sump Pump Stops Working" },
       {
@@ -1928,10 +2220,25 @@ export const services: ServicePage[] = [
           "A clogged or frozen discharge line",
         ],
       },
+      { type: "h2", text: "Sump Pump Repair" },
+      {
+        type: "p",
+        text: "Troubleshooting a sump pump that's stopped working or isn't performing as expected can involve checking the power supply, the float switch, the pump motor, the discharge line, and the check valve or other components where applicable. The goal is distinguishing a repairable component issue from a pump that's reached the end of its usable life.",
+      },
+      { type: "h2", text: "When Replacement May Make More Sense" },
+      {
+        type: "p",
+        text: "A sump pump may need replacement when the motor or pump assembly has failed, the unit has become repeatedly unreliable, or the existing pump is no longer appropriate for the application's needs. A single failure doesn't automatically mean the entire system needs replacement — that depends on what's actually found during repair.",
+      },
       { type: "h2", text: "Battery Backup Sump Pumps" },
       {
         type: "p",
-        text: "Because sump pumps often fail during storms specifically because of power outages, a battery backup system keeps the pump running when the power doesn't.",
+        text: "A primary sump pump handles normal pumping, typically running on household power. A battery backup provides pumping capability when the primary pump can't operate because of a power outage or certain primary-pump failures, depending on the system. Storms can increase the need for sump pump operation while power outages can prevent a primary electric pump from running, which is why battery backup can be valuable — though backup runtime varies by system and isn't unlimited.",
+      },
+      { type: "h2", text: "What Happens During Sump Pump Service" },
+      {
+        type: "p",
+        text: "Service starts with understanding the symptom — a pump that's stopped running, isn't keeping up, or a system that needs to be installed from scratch. From there, the relevant components are checked, the cause is identified, and the appropriate repair, part replacement, or new installation is carried out.",
       },
       {
         type: "p",
@@ -1940,23 +2247,38 @@ export const services: ServicePage[] = [
     ],
     faqs: [
       {
-        q: "Why did my sump pump stop working?",
-        a: "Power loss, a stuck float switch, a worn motor, or a clogged discharge line.",
+        q: "What does a sump pump do?",
+        a: "It moves water away from a basement or crawl space before it accumulates into standing water or damage.",
       },
       {
-        q: "Do I need a sump pump if I've never had flooding?",
-        a: "Homes with a history of water intrusion or a high water table are the clearest candidates.",
+        q: "Why did my sump pump stop working?",
+        a: "Common causes include power loss, a stuck float switch, a worn motor, or a clogged discharge line.",
+      },
+      {
+        q: "When does a home need a sump pump?",
+        a: "Recurring basement or crawl space water, a high water table, previous water intrusion, or drainage that directs groundwater toward the foundation are the clearest indicators — whether one's actually needed depends on the specific property.",
       },
       {
         q: "What is a battery backup sump pump, and do I need one?",
-        a: "It keeps a sump pump running during a power outage.",
+        a: "It keeps a sump pump running during a power outage, when the primary pump otherwise couldn't operate. Whether one makes sense depends on how reliant the home is on sump pump operation during storms.",
+      },
+      {
+        q: "Should I repair or replace my sump pump?",
+        a: "A component-level issue — the float switch, motor, or discharge line — is often repairable. A pump that's failed repeatedly or is no longer right for the application may be a better candidate for replacement.",
       },
       {
         q: "How urgent is sump pump repair during a storm?",
         a: "A failed pump during active water intrusion is a genuinely urgent situation.",
       },
+      {
+        q: "Can a sump pump s against all basement flooding?",
+        a: "A sump pump can help manage groundwater entering a sump pit, but it isn't designed to prevent every possible source of basement or crawl space water intrusion.",
+      },
     ],
-    relatedServiceSlugs: [],
+    relatedServiceSlugs: [
+      "emergency-plumbing-tupelo-ms",
+      "plumbing-repair-tupelo-ms",
+    ],
     ctaLabel: "Dealing With a Failed Sump Pump or Basement Water?",
   },
 ];
