@@ -1,6 +1,7 @@
 import { SITE, fullAddress } from "@/lib/site";
 import { ServicePage, LocationPage, FAQItem, BlogPost } from "@/lib/types";
 import { images } from "@/lib/data/images";
+import { locations } from "@/lib/data/locations";
 
 // Stable @id values so every schema block references the SAME entities
 // instead of duplicating the business object on every page.
@@ -19,6 +20,12 @@ export function businessSchema() {
     description: "Plumbing services for Tupelo, MS and the surrounding area.",
     telephone: SITE.phoneTel,
     email: SITE.email,
+    // Official profiles, so search and AI systems can recognise the business entity.
+    sameAs: [...SITE.sameAs],
+    areaServed: [
+      { "@type": "City", name: "Tupelo, MS" },
+      ...locations.map((l) => ({ "@type": "City", name: `${l.name}, MS` })),
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: SITE.addressLine1,

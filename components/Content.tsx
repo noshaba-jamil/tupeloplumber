@@ -34,7 +34,7 @@ export function ContentBlocks({ blocks }: { blocks: ContentBlock[] }) {
             </ul>
           );
         }
-                if (block.type === "citation") {
+        if (block.type === "citation") {
           return (
             <p key={i} className="mb-4 text-sm text-muted">
               {block.text}{" "}
@@ -76,7 +76,9 @@ export function FAQAccordion({ items }: { items: FAQItem[] }) {
   );
 }
 
-export function ServiceCard({ service }: { service: ServicePage }) {
+// `description` is optional: location pages pass a town-specific version of the
+// service intro so cards don't say "Tupelo" inside a Saltillo/Verona/etc. page.
+export function ServiceCard({ service, description }: { service: ServicePage; description?: string }) {
   const img = images[service.slug];
   return (
     <Link
@@ -103,7 +105,7 @@ export function ServiceCard({ service }: { service: ServicePage }) {
           {service.navLabel}
           <span className="translate-x-0 text-brand transition group-hover:translate-x-1">→</span>
         </h3>
-        <p className="mt-1 text-sm text-muted">{service.intro}</p>
+        <p className="mt-1 text-sm text-muted">{description ?? service.intro}</p>
       </div>
     </Link>
   );

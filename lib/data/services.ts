@@ -95,7 +95,7 @@ export const services: ServicePage[] = [
       "Burst pipe, sewage backup, or no water in Tupelo, MS? 24/7 emergency plumbing with a 60-minute arrival target and no call-out fee.",
     h1: "24/7 Emergency Plumbing in Tupelo, MS",
     intro:
-      "Available around the clock for plumbing problems that are actively causing damage right now.",
+      "Available 24/7 for urgent plumbing problems, including burst pipes, active leaks, and sewage backups.",
     body: [
       {
         type: "p",
@@ -418,13 +418,13 @@ relatedServiceSlugs: [
     ],
     ctaLabel: "Need Plumbing Service for Your Business?",
   },
-  {
+      {
     slug: "new-construction-remodeling-plumbing-tupelo-ms",
     cluster: "Core Plumbing",
     navLabel: "New Construction & Remodeling",
-    title: "New Construction & Remodeling Plumbing",
+    title: "New Build & Remodel Plumbing in Tupelo, MS",
     metaDescription:
-      "Planning a remodel or new build in Tupelo, MS? Plumbing for kitchens, bathrooms, additions, and new construction, coordinated with your project.",
+      "Planning a new build, kitchen remodel, or bathroom addition in Tupelo, MS? Explore plumbing rough-ins, fixture installation, and project coordination.",
     h1: "New Construction & Remodeling Plumbing in Tupelo, MS",
     intro: "Plumbing planned around your build or renovation timeline.",
     body: [
@@ -432,20 +432,46 @@ relatedServiceSlugs: [
         type: "p",
         text: "Plumbing for a new build or a remodel is different from a standard repair — it's planned as part of a larger project, often coordinated with a contractor's timeline, and involves decisions that don't come up when fixing something that already exists.",
       },
-      { type: "h2", text: "What's Involved" },
+      { type: "h2", text: "New Construction and Remodel Plumbing Services" },
       {
         type: "list",
         items: [
           "New construction — plumbing rough-in for a new home or addition",
           "Kitchen and bathroom remodels — relocating or updating plumbing to match a new layout",
           "Additions — extending plumbing service to a new room or structure",
-          "Fixture upgrades — installing new fixtures as part of a broader renovation",
+          "Fixture installation — setting and connecting fixtures as part of a broader renovation",
+          "Commercial build-outs and tenant improvements — plumbing for a business space",
         ],
+      },
+      { type: "h2", text: "Rough-In and Finish Plumbing" },
+      {
+        type: "p",
+        text: "Most projects have two plumbing stages. Rough-in happens before walls and floors are closed up — supply and drain lines are run to where fixtures will go. Finish plumbing comes later, once surfaces are done: fixtures are set and connected and the system is tested. Planning both stages with the builder avoids opening finished walls to fix a layout issue.",
+      },
+      { type: "h2", text: "Kitchen and Bathroom Remodels" },
+      {
+        type: "p",
+        text: "Keeping fixtures where they already are is usually the simplest path. Moving a sink, shower, or toilet means relocating supply and drain lines, which depends on the structure and what's under the floor. Whether the existing plumbing can be reused, or is better updated while walls are open, is worth deciding early.",
+      },
+      { type: "h2", text: "Additions and New Bathrooms" },
+      {
+        type: "p",
+        text: "Adding a bathroom, laundry, or kitchen means connecting new fixtures to the home's existing supply and drain system and considering whether that system, and the water heater, can support the added demand. See Water Heater Installation if the unit may need to be upgraded, and Fixture Plumbing for fixture installation.",
+      },
+      { type: "h2", text: "Coordinating With Your Contractor" },
+      {
+        type: "p",
+        text: "It helps to bring plans or a fixture list, the planned layout, and the project timeline when you call. Working directly with a general contractor or builder's schedule is normal. Permit and inspection requirements depend on the project and the local jurisdiction, so confirm them with your builder or the permitting office.",
       },
       { type: "h2", text: "Remodel Plumbing vs. Repiping an Existing Home" },
       {
         type: "p",
-        text: "Repiping replaces aging pipe material in a home that isn't otherwise being renovated, while remodel plumbing is part of a broader construction project that's already relocating walls, fixtures, or layout.",
+        text: "Repiping replaces aging pipe material in a home that isn't otherwise being renovated, while remodel plumbing is part of a broader construction project that's already relocating walls, fixtures, or layout. See Repiping if the question is the age or condition of existing pipes.",
+      },
+      { type: "h2", text: "Serving Tupelo and Nearby Communities" },
+      {
+        type: "p",
+        text: "New construction and remodeling plumbing is available in Tupelo and the surrounding service area, including Saltillo, Verona, Shannon, Mooreville, Guntown, and nearby communities. Give the project address when you call so availability and scheduling can be confirmed.",
       },
     ],
     faqs: [
@@ -454,18 +480,42 @@ relatedServiceSlugs: [
         a: "Relocating supply and drain lines, installing new fixtures, and coordinating rough-in work with the rest of the renovation.",
       },
       {
+        q: "What is plumbing rough-in?",
+        a: "Running supply and drain lines to where fixtures will go, before walls and floors are closed up. Finish plumbing follows, when fixtures are set and connected.",
+      },
+      {
         q: "Can plumbing be coordinated directly with my contractor?",
         a: "Yes — working directly with a general contractor or builder's timeline is normal.",
+      },
+      {
+        q: "Do I have to move plumbing for a kitchen or bathroom remodel?",
+        a: "Not necessarily. Keeping fixtures in place is usually simpler. Moving them means relocating supply and drain lines.",
+      },
+      {
+        q: "Can you add a bathroom or plumb an addition?",
+        a: "Yes — new fixtures are connected to the home's supply and drain system, with attention to whether the existing system and water heater can handle the added demand.",
+      },
+      {
+        q: "Do you handle plumbing for commercial build-outs?",
+        a: "Yes — build-outs, renovations, and tenant improvements are part of commercial plumbing. See Commercial Plumbing.",
+      },
+      {
+        q: "Who handles permits and inspections?",
+        a: "Requirements depend on the project and the local jurisdiction. Confirm them with your builder or the permitting office.",
       },
       {
         q: "Is this different from repiping my current home?",
         a: "Yes — repiping addresses aging pipe material in a home that isn't otherwise being renovated.",
       },
     ],
-   relatedServiceSlugs: ["fixture-plumbing-tupelo-ms", "repiping-tupelo-ms", "gas-line-services-tupelo-ms"],
+    relatedServiceSlugs: [
+      "fixture-plumbing-tupelo-ms",
+      "repiping-tupelo-ms",
+      "water-heater-installation-tupelo-ms",
+      "commercial-plumbing-tupelo-ms",
+    ],
     ctaLabel: "Planning a Remodel or New Build?",
   },
-
   // ---------- DRAIN & SEWER ----------
   {
     slug: "drain-cleaning-tupelo-ms",
@@ -1589,7 +1639,7 @@ relatedServiceSlugs: [
       "Whole-house pressure drop, a wet spot in the yard, or a rising water bill in Tupelo, MS? Water line repair and replacement, diagnosed correctly first.",
     h1: "Water Line Services in Tupelo, MS",
     intro:
-      "Repair and replacement of the buried line from the street to your home.",
+      "Diagnosis, repair, and replacement of the buried water line serving your home, depending on where the problem is and where utility responsibility ends.",
     body: [
       {
         type: "p",
@@ -1697,59 +1747,124 @@ relatedServiceSlugs: [
     ],
     ctaLabel: "Suspect a Water Line Problem?",
   },
-  {
+      {
     slug: "water-pressure-tupelo-ms",
     cluster: "Leaks & Pipes",
     navLabel: "Water Pressure",
     title: "Low Water Pressure Repair in Tupelo, MS",
     metaDescription:
-      "Low, dropping, or inconsistent water pressure in Tupelo, MS? Find the plumbing cause and get it fixed.",
+      "Low, dropping, or inconsistent water pressure in Tupelo, MS? What causes it, what to check first, and who to call.",
     h1: "Low Water Pressure Repair in Tupelo, MS",
     intro: "Diagnosing and fixing weak or fluctuating water pressure.",
     body: [
       {
         type: "p",
-        text: "Water pressure that's weak, has dropped gradually, or fluctuates unpredictably usually has a specific plumbing cause — and it's not always the same cause.",
+        text: "Water pressure that's weak, has dropped gradually, or fluctuates unpredictably usually has a specific plumbing cause — and it's not always the same cause. If you're not sure who to call, a plumber can sort out whether the problem is inside the home, in the supply line, or on the water utility's side.",
+      },
+      { type: "h2", text: "Water Pressure vs. Water Flow" },
+      {
+        type: "p",
+        text: "The two are related but not the same. Water pressure is the force pushing water through the plumbing system; water flow is how much comes out of a fixture over time. A clogged aerator can reduce flow at one faucet without any whole-house pressure problem, while a failing regulator affects pressure throughout the home.",
+      },
+      { type: "h2", text: "Where Is the Pressure Problem?" },
+      {
+        type: "list",
+        items: [
+          "One fixture only — often a clogged aerator or showerhead, or a problem with that fixture's own valve or supply line",
+          "Hot water only — points toward the water heater or its connections rather than the home's supply",
+          "Every fixture in the house — more likely upstream of the interior plumbing",
+          "A sudden drop — often tied to a specific event, such as a leak, a failed regulator, or a closed or partially closed valve",
+          "A gradual decline over months or years — can point to buildup or aging pipe",
+          "Pressure that surges or fluctuates — can involve the regulator or the supply",
+        ],
       },
       { type: "h2", text: "Common Causes of Low Water Pressure" },
       {
         type: "list",
         items: [
           "A faulty or poorly set pressure regulator",
+          "A partially closed shut-off valve",
           "Sediment or mineral buildup in pipes or fixtures",
           "A hidden leak",
           "Aging pipe material narrowing the effective diameter",
           "A water line problem affecting the whole house",
+          "A supply problem on the water utility's side",
         ],
       },
-      { type: "h2", text: "Whole-House vs. Single-Fixture Pressure Problems" },
+      { type: "h2", text: "What to Check First" },
+      {
+        type: "list",
+        items: [
+          "Whether the problem is at one fixture or throughout the home",
+          "Whether hot water, cold water, or both are affected",
+          "Whether neighbors have the same problem",
+          "Whether the main shut-off valve is fully open",
+        ],
+      },
       {
         type: "p",
-        text: "If only one fixture has weak pressure, the cause is usually localized. If the whole house is affected, the cause is more likely upstream.",
+        text: "If nearby homes have the same sudden pressure drop, contact your water provider and ask whether there's a supply interruption or maintenance work — a plumber can investigate if the problem appears limited to your property. These are basic checks only; the pressure regulator, valves, and supply piping are best left to a plumber to adjust.",
+      },
+      { type: "h2", text: "How a Pressure Problem Is Diagnosed" },
+      {
+        type: "p",
+        text: "Diagnosis starts with where and when the pressure drops — which fixtures, hot or cold, sudden or gradual. From there the likely sources are narrowed down: the pressure regulator and shut-off valves, accessible piping, the water heater for hot-side problems, and the supply coming into the home. What's found determines whether the fix is an adjustment or a part replacement, or points toward a larger issue.",
+      },
+      { type: "h2", text: "Can Old Plumbing Cause Low Water Pressure?" },
+      {
+        type: "p",
+        text: "It can. Corrosion and mineral deposits inside older pipes can narrow them and restrict flow. That doesn't mean every older home needs new piping — many pressure problems have simpler fixes, and an evaluation shows which applies. See Repiping if aging supply piping may be the cause.",
+      },
+      { type: "h2", text: "When Low Pressure Points to Another Problem" },
+      {
+        type: "p",
+        text: "A hidden leak can divert water before it reaches your fixtures — see Leak Detection. Pressure loss throughout the whole house, especially with a wet spot in the yard, can point to the buried line — see Water Line Services.",
+      },
+      { type: "h2", text: "Is Low Water Pressure an Emergency?" },
+      {
+        type: "p",
+        text: "Usually not — it's a problem worth scheduling. Sudden pressure loss alongside visible water, a wet ceiling, or a spreading leak is different; see Emergency Plumbing.",
       },
     ],
     faqs: [
       {
         q: "What causes low water pressure?",
-        a: "A faulty pressure regulator, sediment buildup, a hidden leak, aging pipe material, or a water line problem.",
+        a: "A faulty pressure regulator, a partially closed valve, sediment buildup, a hidden leak, aging pipe material, a water line problem, or a supply issue on the utility's side.",
+      },
+      {
+        q: "Who do I call for low water pressure?",
+        a: "A plumber can investigate by checking fixtures, shut-off valves, the pressure regulator, supply piping, and the incoming water line. If nearby properties have the same problem, contact your water provider first.",
       },
       {
         q: "Why did my water pressure suddenly drop?",
-        a: "A sudden drop is more likely tied to a specific event — a leak starting, a regulator failing, or a water line issue.",
+        a: "A sudden drop is more likely tied to a specific event — a leak starting, a regulator failing, a valve being closed, or a supply issue.",
+      },
+      {
+        q: "Why is the pressure low at only one faucet?",
+        a: "That's usually localized — often a clogged aerator or showerhead, or a problem with that fixture's valve or supply line.",
+      },
+      {
+        q: "Why is the pressure low only on the hot side?",
+        a: "That points toward the water heater or its connections rather than the home's main supply. See Water Heater Repair.",
       },
       {
         q: "Is low water pressure a sign of a leak?",
-        a: "It can be — a leak diverts water that would otherwise reach your fixtures.",
+        a: "It can be — a leak diverts water that would otherwise reach your fixtures. See Leak Detection if you suspect one.",
       },
       {
         q: "Can a pressure regulator fix low water pressure?",
         a: "If the regulator itself is the cause, adjusting or replacing it can resolve the issue.",
       },
+      {
+        q: "Does low water pressure mean I need to repipe?",
+        a: "Not necessarily. Aging pipe can be a cause, but many pressure problems have simpler fixes. An evaluation shows which applies.",
+      },
     ],
     relatedServiceSlugs: [
       "leak-detection-tupelo-ms",
-      "repiping-tupelo-ms",
       "water-line-services-tupelo-ms",
+      "repiping-tupelo-ms",
+      "plumbing-repair-tupelo-ms",
     ],
     ctaLabel: "Dealing With Low or Inconsistent Water Pressure?",
   },
@@ -2271,7 +2386,7 @@ relatedServiceSlugs: [
         a: "A failed pump during active water intrusion is a genuinely urgent situation.",
       },
       {
-        q: "Can a sump pump s against all basement flooding?",
+        q: "Can a sump pump protect against all basement flooding?",
         a: "A sump pump can help manage groundwater entering a sump pit, but it isn't designed to prevent every possible source of basement or crawl space water intrusion.",
       },
     ],

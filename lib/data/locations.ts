@@ -906,4 +906,4 @@ export const extendedCommunities: { name: string; county?: string }[] = [
   { name: "Marietta" },
   { name: "Kirkville", county: "Itawamba County" },
   { name: "Fairview" },
-]
+];

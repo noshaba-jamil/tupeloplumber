@@ -103,7 +103,7 @@ function LocationPageView({ slug }: { slug: string }) {
   const neighbors = locations.filter((l) => location.neighborSlugs.includes(l.slug));
 
   // Prefer this town's curated, relevant services; fall back to a general spread
-  // so brief:true towns (which have no featuredServiceSlugs) still show something.
+  // so towns without featuredServiceSlugs still show something.
   const linkedServices = location.featuredServiceSlugs
     ? location.featuredServiceSlugs
         .map((slug) => services.find((s) => s.slug === slug))
@@ -138,7 +138,11 @@ function LocationPageView({ slug }: { slug: string }) {
             </h2>
             <div className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {linkedServices.map((s) => (
-                <ServiceCard key={s.slug} service={s} />
+                <ServiceCard
+                  key={s.slug}
+                  service={s}
+                  description={s.intro.replace(/Tupelo/g, location.name)}
+                />
               ))}
             </div>
           </>
@@ -171,21 +175,21 @@ function LocationPageView({ slug }: { slug: string }) {
             <p className="mb-1 font-display font-bold text-navy">1. Describe the Problem</p>
             <p className="text-sm text-muted">
               Call or request service and describe what&rsquo;s happening — that&rsquo;s enough to get the right next
-              step moving, even without knowing the exact cause yet.
+              step moving, even without knowing the exact cause yet. Include your street or road name so coverage can
+              be confirmed.
             </p>
           </div>
           <div className="rounded-xl border border-black/10 bg-white p-5">
-            <p className="mb-1 font-display font-bold text-navy">2. Get an Accurate Diagnosis</p>
+            <p className="mb-1 font-display font-bold text-navy">2. Get Your Problem Assessed</p>
             <p className="text-sm text-muted">
-              The actual cause gets identified in {location.name} before recommending a fix — not a guess based on
-              symptoms alone.
+              The issue is assessed before a repair is recommended, and the findings and next steps are explained.
             </p>
           </div>
           <div className="rounded-xl border border-black/10 bg-white p-5">
-            <p className="mb-1 font-display font-bold text-navy">3. Same-Day, 24/7 for Emergencies</p>
+            <p className="mb-1 font-display font-bold text-navy">3. Same-Day Repairs & 24/7 Emergencies</p>
             <p className="text-sm text-muted">
-              Emergency plumbing is available around the clock, and same-day scheduling applies to routine repairs
-              too — a plumbing problem in {location.name} doesn&rsquo;t have to wait a week.
+              Emergency plumbing is available around the clock, and same-day appointments are available for routine
+              repairs in {location.name}. Call to discuss the problem and confirm a time.
             </p>
           </div>
         </div>

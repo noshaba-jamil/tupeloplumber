@@ -7,9 +7,10 @@ import { SITE } from "@/lib/site";
 import { aboutPageSchema, breadcrumbSchema, socialMeta } from "@/lib/schema";
 import { images } from "@/lib/data/images";
 
-const pageTitle = "About Tupelo Plumber | Local Plumbing Service in Tupelo, MS";
+// Deliberately brand-led, with no "plumber in Tupelo" phrasing, so this page does not compete with the homepage.
+const pageTitle = "About Us | Tupelo Plumber";
 const description =
-  "Learn about Tupelo Plumber, serving Tupelo, MS and nearby communities with residential, commercial, and 24/7 emergency plumbing services.";
+  "Learn how Tupelo Plumber works, what we cover, and how to request service or confirm coverage at your address.";
 
 export const metadata: Metadata = {
   title: { absolute: pageTitle },

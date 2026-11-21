@@ -20,6 +20,12 @@ export const SITE = {
   answersAllCalls: true,
   emergencyArrivalMinutes: 60,
   hasSameDayService: true,
+  sameAs: [
+  "https://www.facebook.com/profile.php?id=61594641583908",
+  "https://www.instagram.com/tupeloplumber",
+  "https://www.linkedin.com/company/tupelo-plumber/",
+  "https://youtube.com/@plumberstupeloms",
+],
 } as const;
 
 export const fullAddress = `${SITE.addressLine1}, ${SITE.addressCity}, ${SITE.addressState} ${SITE.addressZip}`;
